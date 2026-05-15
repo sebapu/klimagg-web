@@ -1,6 +1,6 @@
 # KlimaGG-Web
 
-**KlimaGG-Web** ist die öffentliche Codebasis der Webseite zum Klima-Generationen-Gesetz (KlimaGG).
+**KlimaGG-Web** ist die öffentliche Codebasis der Webseite zum Klima-Generationen-Gesetz (KlimaGG: www.klimagg.de / www.klima-generationen-gesetz.de).
 
 Die Webseite dient als offene Beteiligungsplattform für die Entwicklung, Diskussion und Verbesserung eines deutschen Klimaschutz-Gesetzentwurfs. Nutzerinnen und Nutzer können den Gesetzentwurf lesen, Artikel bewerten, Änderungsvorschläge kommentieren und Beiträge im Review-Prozess einordnen.
 
