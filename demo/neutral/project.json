@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0.0",
+  "profile": "neutral",
+  "project": {
+    "name": "Muster-Gesetz über öffentliche Trinkwasserstellen",
+    "short_name": "MusterTG",
+    "platform_name": "klimagg-web",
+    "subtitle": "Neutrales Demo-Profil",
+    "language": "de"
+  },
+  "demo_notice": {
+    "title": "Neutrales Demo-Profil",
+    "text": "Der Musterentwurf und sämtliche Beteiligungsdaten sind vollständig synthetisch.",
+    "show_on_home": true
+  },
+  "home": {
+    "kicker": "Offener Regeltext · Demo",
+    "title": "Regeltexte gemeinsam weiterentwickeln.",
+    "claim": "Lesen, bewerten, konkrete Änderungen vorschlagen, prüfen und daraus nachvollziehbar eine neue Version entwickeln.",
+    "primary_action": {
+      "label": "Entwurf lesen",
+      "href": "#entwurf"
+    },
+    "secondary_actions": [
+      {
+        "label": "Mitmachen",
+        "href": "/mitmachen"
+      },
+      {
+        "label": "Versionen",
+        "href": "/versionen"
+      }
+    ]
+  },
+  "features": {
+    "analytics": false,
+    "votes": true,
+    "reactions": true,
+    "comments": true,
+    "reviews": true,
+    "next_draft": true,
+    "releases": true,
+    "llm_context": true
+  }
+}

@@ -1,0 +1,112 @@
+{# ======================================================================
+  KlimaGG-Web — versionen.html
+  ----------------------------------------------------------------------
+  Version:        v2.0.1
+  Route:          GET /versionen
+  Role:           Public server-rendered release/snapshot index.
+====================================================================== #}
+{% extends "base.html" %}
+
+{% block title %}{{ settings.PROJECT_NAME }} · Versionen{% endblock %}
+{% block page_kind %}static{% endblock %}
+{% block klimagg_app %}false{% endblock %}
+{% block header_subtitle %}Versionen · Releases · Snapshots{% endblock %}
+
+{% block main %}
+<main id="hauptinhalt">
+  <section class="hero">
+    <div class="shell">
+      <div class="section-header">
+        <div>
+          <h1 class="section-title">Versionen &amp; Releases</h1>
+          <p class="section-sub">Veröffentlichte HTML-Snapshots des Entwurfs.</p>
+        </div>
+      </div>
+
+      <div class="law-surface">
+        <div class="einleitung" id="zweck">
+          <p>
+            Jeder Release-Snapshot ist eine statische, personenbezugsfreie Momentaufnahme
+            des veröffentlichten Text- und Beteiligungsstands.
+          </p>
+          <p class="klein">
+            Ablage: <code>versions/release/</code> · Dateischema:
+            <code>vYY-MM-DD_&lt;document-tag&gt;_entwurf.html</code>.
+          </p>
+        </div>
+
+        <h2 id="releases">Releases</h2>
+
+        {% if release_items and release_items|length > 0 %}
+          <div class="news-list" style="margin-top: 0.9rem;">
+            {% for r in release_items %}
+              <article class="news-item" id="{{ r.folder }}">
+                <div class="news-meta">
+                  <div class="news-meta-title">{{ r.folder }}</div>
+                  <div class="news-meta-date">{{ r.date_human }}</div>
+                  <div class="news-meta-author">Snapshot</div>
+                </div>
+                <div class="news-content">
+                  <div class="news-item-body klein">
+                    {% if r.files.html %}
+                      <a href="{{ r.files.html.url }}">Snapshot ansehen</a>
+                      <span class="klein">· {{ r.files.html.size_kb }} KB</span>
+                    {% endif %}
+                  </div>
+                </div>
+              </article>
+            {% endfor %}
+          </div>
+        {% else %}
+          <div class="anmerkung" style="margin-top: 0.9rem;">
+            <p class="klein">
+              Noch keine Release-Snapshots gefunden.
+              Erwarteter Pfad: <code>versions/release/vYY-MM-DD_&lt;document-tag&gt;_entwurf.html</code>
+            </p>
+          </div>
+        {% endif %}
+
+        <p style="margin-top: 1.1rem;">
+          <a class="btn btn-ghost" href="/">Zurück zur Startseite</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
+
+{% block overlays %}
+<nav class="toc app-sidebar app-left" aria-label="Orientierung">
+  <div class="app-panel">
+    <div class="app-panel-header">
+      <h3>Orientierung</h3>
+      <small>Sitemap · Versionen</small>
+    </div>
+
+    <details class="app-details" open>
+      <summary>Inhalt</summary>
+      <div class="app-details-body">
+        <div class="nav-block">
+          <div class="nav-block-title klein">Sitemap</div>
+          <a class="toc-static-link" href="/">Startseite</a>
+          <a class="toc-static-link" href="/#entwurf">Entwurf</a>
+          <a class="toc-static-link" href="/mitmachen">Mitmachen</a>
+          <a class="toc-static-link" href="/methodik">Methodik</a>
+          <a class="toc-static-link is-active" href="/versionen">Versionen</a>
+          <a class="toc-static-link" href="/rechtliches">Rechtliches</a>
+        </div>
+      </div>
+    </details>
+
+    <details class="app-details" open>
+      <summary>Versionen</summary>
+      <div class="app-details-body">
+        <ul class="toc-static-list">
+          <li><a class="toc-static-link" href="#zweck">Zweck</a></li>
+          <li><a class="toc-static-link" href="#releases">Releases</a></li>
+        </ul>
+      </div>
+    </details>
+  </div>
+</nav>
+{% endblock %}

@@ -1,0 +1,1240 @@
+{
+  "schema_version": "2.0.0",
+  "law": {
+    "slug": "bundesschienenmobilitaetsgesetz",
+    "title": "Bundesschienenmobilitätsgesetz",
+    "short_title": "BSchMG",
+    "version": "1.2",
+    "status": "published",
+    "version_label": "Arbeitsstand v1.2",
+    "long_title": "Entwurf eines Gesetzes über das öffentliche Schienenmobilitätssystem des Bundes"
+  },
+  "articles": [
+    {
+      "public_code": "§ 1",
+      "slug": "paragraf-1-zweck-des-gesetzes",
+      "sort_order": 10,
+      "title": "Zweck des Gesetzes",
+      "type": "article",
+      "part": "Teil 1 – Zweck, Auftrag und Grundsätze",
+      "blocks": {
+        "kurzinfo": [
+          "Definiert das öffentliche Schienenmobilitätssystem als langfristige europäische Daseinsvorsorge mit Tür-zu-Tür-, Erreichbarkeits- und Ressourcenzielen."
+        ],
+        "juristisch": [
+          "(1) Zweck dieses Gesetzes ist die Errichtung, Erhaltung und Weiterentwicklung eines sicheren, leistungsfähigen, allgemein zugänglichen, europäischen und langfristig finanzierbaren öffentlichen Schienenmobilitätssystems.",
+          "(2) Das Schienenmobilitätssystem ist Teil der öffentlichen Daseinsvorsorge und des europäischen Mobilitätsnetzes. Sein wirtschaftlicher Betrieb ist Mittel zur möglichst wirksamen Erfüllung des öffentlichen Mobilitätsauftrags und kein Selbstzweck.",
+          "(3) Das System ist insbesondere darauf auszurichten,",
+          "1. Menschen und Gütern eine zuverlässige, schnelle und ressourceneffiziente Mobilität zu ermöglichen,\n2. die tatsächliche Tür-zu-Tür-Reisezeit einschließlich Zugangs-, Warte- und Umsteigezeiten zu verringern,\n3. eine spontane Nutzung durch hohe Verfügbarkeit und kurze Zugfolgen zu ermöglichen,\n4. Sicherheit und Barrierefreiheit zu gewährleisten,\n5. Bevölkerung, Arbeitsplätze, Bildung, Versorgung und öffentliche Einrichtungen räumlich gut zu erschließen,\n6. Verkehrs-, Siedlungs- und Quartiersentwicklung langfristig aufeinander abzustimmen,\n7. den Flächen-, Energie- und Ressourcenverbrauch des Verkehrssystems insgesamt zu vermindern und das Schienensystem sinnvoll in das öffentliche Energiesystem zu integrieren,\n8. Straßen- und Luftverkehr dort zu ersetzen, wo die Schiene gesamtgesellschaftlich vorteilhaft ist,\n9. ein dichtes und vermaschtes Netz mit hoher Erreichbarkeit und angemessener Redundanz zu schaffen,\n10. einen einheitlichen europäischen Mobilitätsraum ohne unnötige technische, tarifliche oder organisatorische Grenzen zu fördern,\n11. Umschlag-, Umsteige- und Standzeiten ebenso systematisch zu minimieren wie reine Fahrzeiten.",
+          "(4) Bundesgrenzen sind bei Planung, Betrieb, Information und Vertrieb grundsätzlich nicht als Systemgrenzen zu behandeln."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 2",
+      "slug": "paragraf-2-zielhierarchie",
+      "sort_order": 20,
+      "title": "Zielhierarchie",
+      "type": "article",
+      "part": "Teil 1 – Zweck, Auftrag und Grundsätze",
+      "blocks": {
+        "kurzinfo": [
+          "Ordnet Sicherheit, Zugang, Substanzerhalt, Zuverlässigkeit und Erreichbarkeit vor Reisezeit, Ressourcen- und Kostenoptimierung."
+        ],
+        "juristisch": [
+          "(1) Entscheidungen nach diesem Gesetz orientieren sich in folgender Reihenfolge an:",
+          "1. Sicherheit und Schutz der körperlichen Unversehrtheit,\n2. diskriminierungsfreiem Zugang und Barrierefreiheit,\n3. langfristiger Funktionsfähigkeit und Substanzerhaltung des Gesamtsystems,\n4. Zuverlässigkeit und Verfügbarkeit,\n5. räumlicher Erreichbarkeit,\n6. Tür-zu-Tür-Reisezeit,\n7. gesamtgesellschaftlichem Ressourcen-, Flächen- und Energieaufwand,\n8. Lebenszykluskosten,\n9. Nutzerkosten.",
+          "(2) Einzelbetriebliche Gewinne, kurzfristige Haushaltseffekte und möglichst hohe Auslastung einzelner Anlagen sind keine eigenständigen Ziele.",
+          "(3) Maßnahmen dürfen nicht allein deshalb unterbleiben, weil ihre einzelbetriebliche Rendite negativ ist, sofern ihr gesamtgesellschaftlicher Nutzen ihre Kosten rechtfertigt und die Finanzierung beschlossen ist."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 3",
+      "slug": "paragraf-3-erschliessungs-und-netzgrundsatz",
+      "sort_order": 30,
+      "title": "Erschließungs- und Netzgrundsatz",
+      "type": "article",
+      "part": "Teil 1 – Zweck, Auftrag und Grundsätze",
+      "blocks": {
+        "kurzinfo": [
+          "Plant das Netz als langfristige Grundinfrastruktur und bewertet zusätzlich zu heutiger Nachfrage Netzwirkung, Entwicklung und Resilienz."
+        ],
+        "juristisch": [
+          "(1) Das Schienennetz ist als langfristige öffentliche Grundinfrastruktur zu planen.",
+          "(2) Seine Dichte bestimmt sich nicht allein nach gegenwärtiger Nachfrage, sondern insbesondere nach",
+          "1. erreichbarer Bevölkerung und erreichbaren Arbeitsplätzen,\n2. zukünftiger Siedlungs- und Quartiersentwicklung,\n3. durch ein verbessertes Angebot induzierbarer Nachfrage,\n4. Netzwirkungen und neuen Verbindungsmöglichkeiten,\n5. Redundanz und Resilienz,\n6. der Möglichkeit zur Verlagerung anderer Verkehrsmittel,\n7. langfristigem gesellschaftlichem Nutzen.",
+          "(3) Eine gegenwärtig geringe Fahrgastzahl begründet für sich genommen weder den Verzicht auf eine Strecke oder Station noch deren Stilllegung.",
+          "(4) Neue Schieneninfrastruktur und räumliche Entwicklung sollen gemeinsam geplant werden. Insbesondere sollen neue Stationen geeignete Schwerpunkte für Wohnen, Arbeitsplätze, Dienstleistungen und öffentliche Einrichtungen bilden.",
+          "(5) Straßengebundener Verkehr ist nicht allein wegen einer geringeren gegenwärtigen Nachfrage als vorzugswürdige Grundlösung anzunehmen.",
+          "(6) Netzdichte ist kein Selbstzweck. Zusätzliche Strecken und Stationen müssen einen langfristigen Erschließungs-, Netz-, Entwicklungs- oder Resilienznutzen aufweisen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 4",
+      "slug": "paragraf-4-gemeinwohlauftrag-und-ausschluss-der-gewinnmaximierung",
+      "sort_order": 40,
+      "title": "Gemeinwohlauftrag und Ausschluss der Gewinnmaximierung",
+      "type": "article",
+      "part": "Teil 1 – Zweck, Auftrag und Grundsätze",
+      "blocks": {
+        "kurzinfo": [
+          "Schließt Gewinnmaximierung als Ziel öffentlicher Schienenunternehmen aus und bindet Überschüsse an das Mobilitätssystem."
+        ],
+        "juristisch": [
+          "(1) Die Eisenbahnunternehmen des Bundes nach diesem Gesetz werden wirtschaftlich, jedoch nicht mit dem Ziel der Gewinnmaximierung geführt.",
+          "(2) Unzulässig sind insbesondere:",
+          "1. Ausschüttungsziele,\n2. Dividendenpflichten,\n3. allgemeine Renditevorgaben auf das eingesetzte Bundesvermögen,\n4. überwiegend an Gewinn, EBITDA oder Umsatz orientierte Managementziele,\n5. die Verschiebung notwendiger Erhaltungsmaßnahmen zur Verbesserung kurzfristiger Jahresergebnisse.",
+          "(3) Jahresüberschüsse verbleiben im Mobilitätssystem und sind für",
+          "1. Erhaltung,\n2. Erneuerung,\n3. Ausbau,\n4. Qualitätsverbesserung,\n5. Resilienz oder\n6. Verringerung künftigen öffentlichen Finanzierungsbedarfs",
+          "zu verwenden.",
+          "(4) Ein aufgrund gesetzlich bestellter Leistungen entstehender Jahresfehlbetrag stellt für sich genommen keine wirtschaftliche Fehlleistung dar.",
+          "(5) Wirtschaftlichkeit bedeutet die effiziente und langfristig substanzschonende Erfüllung des gesetzlichen Auftrags."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 5",
+      "slug": "paragraf-5-bundesschieneninfrastruktur-ag",
+      "sort_order": 50,
+      "title": "Bundesschieneninfrastruktur AG",
+      "type": "article",
+      "part": "Teil 2 – Öffentliche Unternehmen und Verantwortlichkeiten",
+      "blocks": {
+        "kurzinfo": [
+          "Definiert die öffentliche Infrastrukturgesellschaft BSI und ihre Verantwortung für Netz, Stationen, Energie, Kommunikation und Asset-Planung."
+        ],
+        "juristisch": [
+          "(1) Der Bund hält sämtliche Anteile der Bundesschieneninfrastruktur AG – BSI.",
+          "(2) Eine Veräußerung von Anteilen ist ausgeschlossen.",
+          "(3) Die BSI ist verantwortlich für",
+          "1. Schienenwege,\n2. Stationen,\n3. Energieversorgung einschließlich Traktionsunterwerken, Speichern und bahnbezogener lokaler Erzeugung,\n4. Leit-, Sicherungs- und Kommunikationstechnik,\n5. Bauwerke,\n6. Infrastrukturplanung,\n7. Infrastrukturwartung und -erneuerung,\n8. Kapazitätsplanung,\n9. diskriminierungsfreie Kapazitätsbereitstellung,\n10. Planung geeigneter gemeinsamer Energie-, Telekommunikations- und Kabelkorridore entlang neuer Schieneninfrastruktur."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 6",
+      "slug": "paragraf-6-bundesmobilitaet-schiene-ag",
+      "sort_order": 60,
+      "title": "Bundesmobilität Schiene AG",
+      "type": "article",
+      "part": "Teil 2 – Öffentliche Unternehmen und Verantwortlichkeiten",
+      "blocks": {
+        "kurzinfo": [
+          "Definiert die öffentliche Mobilitätsgesellschaft BMS für Grundangebot, Flotte, Disposition, Reiseintegration, Service und standardisierte Logistik."
+        ],
+        "juristisch": [
+          "(1) Der Bund hält sämtliche Anteile der Bundesmobilität Schiene AG – BMS.",
+          "(2) Die BMS gewährleistet das öffentliche Grundangebot im Schienenpersonenverkehr und dessen Integration in die gesamte öffentliche Mobilität. Sie darf zusätzlich standardisierte öffentliche Schienenlogistik- und Gepäckdienste betreiben, soweit Netzzugang und Wettbewerb diskriminierungsfrei bleiben.",
+          "(3) Zu ihren Aufgaben gehören insbesondere:",
+          "1. Betrieb einer öffentlichen Personenverkehrsflotte,\n2. Echtzeit-Disposition,\n3. Nachfragebündelung,\n4. Reisendeninformation,\n5. integriertes Routing von Ausgangsort zu Zielort,\n6. Fahrgastservice,\n7. Fahrzeugwartung,\n8. Mobilitätsabrechnung,\n9. Organisation durchgehender Reisen,\n10. Kooperation mit regionalen, kommunalen und europäischen Mobilitätsanbietern,\n11. Betrieb oder Beauftragung standardisierter Cargo- und Gepäckdienste sowie automatisierter Umschlagpunkte.",
+          "(4) Die BMS besitzt keinen Anspruch auf ausschließliche Nutzung öffentlicher Schieneninfrastruktur."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 7",
+      "slug": "paragraf-7-rechtliche-und-funktionale-trennung",
+      "sort_order": 70,
+      "title": "Rechtliche und funktionale Trennung",
+      "type": "article",
+      "part": "Teil 2 – Öffentliche Unternehmen und Verantwortlichkeiten",
+      "blocks": {
+        "kurzinfo": [
+          "Trennt Infrastruktur und Betrieb rechtlich sowie organisatorisch und schützt diskriminierungsrelevante Kapazitätsentscheidungen."
+        ],
+        "juristisch": [
+          "(1) BSI und BMS sind rechtlich, organisatorisch und rechnungsmäßig getrennt.",
+          "(2) Entscheidungen über",
+          "1. Trassenvergabe,\n2. Kapazitätszuweisung und\n3. Infrastrukturentgelte",
+          "werden unabhängig von einzelnen Verkehrsunternehmen getroffen.",
+          "(3) Politische oder unternehmerische Einflussnahme auf konkrete diskriminierungsrelevante Kapazitätsentscheidungen ist unzulässig.",
+          "(4) Betriebs- und Nachfragedaten dürfen gemeinsam verarbeitet werden, soweit dies zur Optimierung des Gesamtsystems erforderlich ist und keine diskriminierenden Wettbewerbsvorteile entstehen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 8",
+      "slug": "paragraf-8-bundesschienenplan",
+      "sort_order": 80,
+      "title": "Bundesschienenplan",
+      "type": "article",
+      "part": "Teil 3 – Demokratische Steuerung",
+      "blocks": {
+        "kurzinfo": [
+          "Verankert einen fünfjährig gesetzlich beschlossenen Bundesschienenplan mit mindestens 20 Jahren Planungshorizont."
+        ],
+        "juristisch": [
+          "(1) Der Deutsche Bundestag beschließt mit Zustimmung des Bundesrates alle fünf Jahre durch Gesetz einen Bundesschienenplan.",
+          "(2) Der Bundesschienenplan besitzt einen Planungshorizont von mindestens 20 Jahren.",
+          "(3) Er enthält insbesondere:",
+          "1. Zielnetz,\n2. Erreichbarkeitsziele,\n3. europäische Korridore,\n4. Kapazitätsziele,\n5. Zielwerte für Zugangs-, Warte- und Reisezeiten,\n6. Mindestangebotsstandards,\n7. Zuverlässigkeitsziele,\n8. Ausbau- und Erneuerungsvorhaben,\n9. Fahrzeugbedarf,\n10. langfristigen Finanzbedarf,\n11. Entwicklung des Infrastrukturvermögens,\n12. Personal- und Qualifikationsbedarf,\n13. räumliche Entwicklungsschwerpunkte an Stationen,\n14. Cargo-Hub- und Umschlagkonzept,\n15. Energie-, Speicher- und Netzkopplungskonzept.",
+          "(4) Für die ersten fünf Jahre werden verbindliche Umsetzungsschritte festgelegt."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 9",
+      "slug": "paragraf-9-erreichbarkeitsplanung",
+      "sort_order": 90,
+      "title": "Erreichbarkeitsplanung",
+      "type": "article",
+      "part": "Teil 3 – Demokratische Steuerung",
+      "blocks": {
+        "kurzinfo": [
+          "Macht bundesweite Erreichbarkeit und strukturell unzureichend erschlossene Räume zu einem eigenen Planungsgegenstand."
+        ],
+        "juristisch": [
+          "(1) Der Bundesschienenplan enthält eine bundesweite Erreichbarkeitsanalyse.",
+          "(2) Sie stellt insbesondere dar,",
+          "1. welcher Anteil der Bevölkerung das Schienennetz innerhalb definierter Zugangszeiten erreicht,\n2. welche Bevölkerung, Arbeitsplätze und Einrichtungen innerhalb von 15, 30, 60 und 120 Minuten erreichbar sind,\n3. welche Räume strukturell unzureichend erschlossen sind,\n4. wo neue Strecken, Stationen oder Verbindungen besonders hohe Netzwirkungen erzeugen.",
+          "(3) Konkrete Mindestwerte werden durch den Bundesschienenplan festgelegt.",
+          "(4) Streckenkilometer oder gegenwärtige Fahrgastzahlen dürfen nicht alleinige Ziel- oder Bewertungskriterien sein."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 10",
+      "slug": "paragraf-10-bewertungsmassstab",
+      "sort_order": 100,
+      "title": "Bewertungsmaßstab",
+      "type": "article",
+      "part": "Teil 3 – Demokratische Steuerung",
+      "blocks": {
+        "kurzinfo": [
+          "Bewertet Infrastrukturentscheidungen nach langfristigen Wirkungen auf Mobilität, Raum, Energie, Klima, Netzwirkung und Lebenszykluskosten."
+        ],
+        "juristisch": [
+          "(1) Infrastrukturentscheidungen werden anhand ihrer langfristigen Wirkungen auf das gesamte Mobilitäts- und Siedlungssystem bewertet.",
+          "(2) Zu berücksichtigen sind insbesondere:",
+          "* Reisezeit,\n* Zuverlässigkeit,\n* Sicherheit,\n* Erreichbarkeit,\n* Netzwirkung,\n* Redundanz,\n* Flächenverbrauch,\n* Energieverbrauch,\n* Klima- und Umweltwirkungen,\n* Straßen- und Luftverkehr,\n* Unfallfolgekosten,\n* Wohnungs- und Quartiersentwicklung,\n* Arbeitsmarkterreichbarkeit,\n* induzierte Nachfrage,\n* europäische Netzwirkungen,\n* Umsteige-, Lade-, Umschlag- und Standzeiten,\n* Integration von Rekuperation, Speichern und erneuerbarer Energie,\n* Lebenszykluskosten.",
+          "(3) Die gegenwärtige Nachfrage darf nicht alleiniger oder ausschlaggebender Maßstab sein.",
+          "(4) Auswirkungen auf Räume außerhalb Deutschlands sind einzubeziehen, soweit sie für den europäischen Gesamtnutzen erheblich sind."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 11",
+      "slug": "paragraf-11-stilllegung-und-wesentliche-angebotsreduzierung",
+      "sort_order": 110,
+      "title": "Stilllegung und wesentliche Angebotsreduzierung",
+      "type": "article",
+      "part": "Teil 3 – Demokratische Steuerung",
+      "blocks": {
+        "kurzinfo": [
+          "Bindet Stilllegungen und wesentliche Angebotsreduzierungen an eine ausdrückliche politische Entscheidung und langfristige Bewertung."
+        ],
+        "juristisch": [
+          "(1) Die Stilllegung einer Strecke oder Station sowie eine dauerhafte wesentliche Angebotsreduzierung bedürfen einer ausdrücklichen Entscheidung im Bundesschienenplan oder eines Gesetzes.",
+          "(2) Vor einer Stilllegung sind mindestens zu bewerten:",
+          "1. langfristige Erschließungswirkung,\n2. potenzielle Nachfrage bei verbessertem Angebot,\n3. Entwicklungsmöglichkeiten des Umfelds,\n4. Netz- und Redundanzwirkung,\n5. Wiederherstellungskosten bei späterem Bedarf,\n6. alternative Nutzungen,\n7. gesamtgesellschaftliche Auswirkungen.",
+          "(3) Vorübergehend geringe Nachfrage oder ein kurzfristiger betriebswirtschaftlicher Verlust reichen als Stilllegungsgrund nicht aus."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 12",
+      "slug": "paragraf-12-operative-unabhaengigkeit",
+      "sort_order": 120,
+      "title": "Operative Unabhängigkeit",
+      "type": "article",
+      "part": "Teil 3 – Demokratische Steuerung",
+      "blocks": {
+        "kurzinfo": [
+          "Trennt politische Ziel- und Finanzierungsentscheidungen von fachlich-operativer Umsetzung und Einzelfallsteuerung."
+        ],
+        "juristisch": [
+          "(1) Parlament und Bundesregierung bestimmen Ziele, gesetzliche Standards und Finanzierung.",
+          "(2) Das Management entscheidet innerhalb dieses Rahmens über deren fachliche und operative Umsetzung.",
+          "(3) Einzelweisungen zu",
+          "* Zugläufen,\n* konkreter Disposition,\n* einzelner Trassenvergabe,\n* einzelnen Beschaffungen,\n* einzelnen Instandhaltungsmaßnahmen oder\n* Personalentscheidungen",
+          "sind unzulässig."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 13",
+      "slug": "paragraf-13-aufsichtsraete",
+      "sort_order": 130,
+      "title": "Aufsichtsräte",
+      "type": "article",
+      "part": "Teil 4 – Unternehmensführung und Kontrolle",
+      "blocks": {
+        "kurzinfo": [
+          "Legt Anforderungen an fachlich qualifizierte und politisch begrenzte Aufsichtsräte fest."
+        ],
+        "juristisch": [
+          "(1) Die Aufsichtsräte weisen eine angemessene Arbeitnehmervertretung und eine fachlich qualifizierte Eigentümerseite auf.",
+          "(2) Auf der Eigentümerseite müssen insbesondere Kompetenzen vertreten sein aus:",
+          "* Eisenbahntechnik,\n* Infrastruktur,\n* Finanzen,\n* Digitalisierung,\n* Raumplanung,\n* Nutzerinteressen,\n* Barrierefreiheit,\n* europäischer Verkehrsintegration.",
+          "(3) Amtierende Bundesminister und Parlamentarische Staatssekretäre dürfen den Aufsichtsräten nicht angehören.",
+          "(4) Eine parteipolitische Mehrheit einer einzelnen Partei auf der Eigentümerseite ist ausgeschlossen.",
+          "(5) Amtszeiten werden zeitlich versetzt."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 14",
+      "slug": "paragraf-14-vorstand",
+      "sort_order": 140,
+      "title": "Vorstand",
+      "type": "article",
+      "part": "Teil 4 – Unternehmensführung und Kontrolle",
+      "blocks": {
+        "kurzinfo": [
+          "Bindet Vorstandszielsysteme an langfristige Systemleistung statt kurzfristigen Gewinn."
+        ],
+        "juristisch": [
+          "(1) Vorstandsmitglieder werden für sechs Jahre bestellt.",
+          "(2) Eine vorzeitige Abberufung ist nur aus wichtigem Grund zulässig.",
+          "(3) Zielvereinbarungen werden veröffentlicht.",
+          "(4) Variable Vergütung darf ausschließlich an langfristige Systemziele anknüpfen, insbesondere:",
+          "* Sicherheit,\n* Zuverlässigkeit,\n* Anlagenzustand,\n* Erreichbarkeit,\n* Kapazität,\n* Nutzerqualität,\n* Projekttermine,\n* Lebenszykluskosten,\n* Personalentwicklung.",
+          "Kurzfristige Gewinne dürfen keine überwiegende Vergütungsgröße sein."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 15",
+      "slug": "paragraf-15-bundesschienenrat",
+      "sort_order": 150,
+      "title": "Bundesschienenrat",
+      "type": "article",
+      "part": "Teil 4 – Unternehmensführung und Kontrolle",
+      "blocks": {
+        "kurzinfo": [
+          "Schafft einen unabhängigen Bundesschienenrat zur öffentlichen Begleitung der langfristigen Entwicklung."
+        ],
+        "juristisch": [
+          "(1) Ein unabhängiger Bundesschienenrat begleitet die langfristige Entwicklung.",
+          "(2) Ihm gehören unabhängige Fachleute aus Technik, Betrieb, Raumplanung, Wirtschaft, Arbeitnehmervertretung, Nutzervertretung und europäischer Verkehrsintegration an.",
+          "(3) Er besitzt keine operative Weisungsbefugnis.",
+          "(4) Er bewertet insbesondere:",
+          "* Bundesschienenplan,\n* Erreichbarkeit,\n* Netzqualität,\n* Erhaltungszustand,\n* Finanzierungsbedarf,\n* europäische Integration,\n* technische Entwicklung.",
+          "(5) Seine Stellungnahmen sind öffentlich."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 16",
+      "slug": "paragraf-16-parlamentarischer-schienenbericht",
+      "sort_order": 160,
+      "title": "Parlamentarischer Schienenbericht",
+      "type": "article",
+      "part": "Teil 4 – Unternehmensführung und Kontrolle",
+      "blocks": {
+        "kurzinfo": [
+          "Verlangt einen jährlichen öffentlichen Schienenbericht samt grundsätzlich offenen nicht personenbezogenen Datengrundlagen."
+        ],
+        "juristisch": [
+          "Die Bundesregierung legt jährlich einen öffentlich zugänglichen Bericht vor über:",
+          "1. Zustand und Wert des Infrastrukturvermögens,\n2. tatsächliche und geplante Investitionen,\n3. Erhaltungsrückstände,\n4. Erreichbarkeitsentwicklung,\n5. Kapazitätsengpässe,\n6. Verkehrsleistung,\n7. Reisezeiten,\n8. Zuverlässigkeit,\n9. Sicherheitsereignisse,\n10. Personal,\n11. Finanzlage,\n12. Entwicklung europäischer Korridore.",
+          "Die zugrunde liegenden nicht personenbezogenen Daten werden grundsätzlich offen bereitgestellt."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 17",
+      "slug": "paragraf-17-schienenfonds",
+      "sort_order": 170,
+      "title": "Schienenfonds",
+      "type": "article",
+      "part": "Teil 5 – Finanzierung und Vermögensschutz",
+      "blocks": {
+        "kurzinfo": [
+          "Richtet einen zweckgebundenen Schienenfonds für langfristige Finanzierung ein."
+        ],
+        "juristisch": [
+          "(1) Zur Finanzierung wird ein Schienenfonds des Bundes eingerichtet.",
+          "(2) Dem Fonds fließen insbesondere zu:",
+          "1. Bundesmittel,\n2. Infrastrukturentgelte,\n3. EU-Mittel,\n4. Nutzungsentgelte,\n5. zweckgebundene Erlöse,\n6. sonstige gesetzlich zugewiesene Einnahmen.",
+          "(3) Mittel dürfen ausschließlich für Aufgaben dieses Gesetzes verwendet werden.",
+          "(4) Nicht verbrauchte Mittel verfallen am Jahresende nicht."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 18",
+      "slug": "paragraf-18-substanzerhaltung",
+      "sort_order": 180,
+      "title": "Substanzerhaltung",
+      "type": "article",
+      "part": "Teil 5 – Finanzierung und Vermögensschutz",
+      "blocks": {
+        "kurzinfo": [
+          "Verpflichtet zu vollständigem Anlagenregister, Restlebensdauer- und Erhaltungsrückstandsbericht."
+        ],
+        "juristisch": [
+          "(1) Die BSI führt ein vollständiges Anlagenregister.",
+          "Für wesentliche Anlagen werden mindestens erfasst:",
+          "* Zustand,\n* Alter,\n* erwartete Restlebensdauer,\n* Wiederbeschaffungswert,\n* geplanter Erneuerungszeitpunkt.",
+          "(2) Jährlich wird ein unabhängig geprüfter Erhaltungs- und Erneuerungsbedarf ermittelt.",
+          "(3) Nicht durchgeführte erforderliche Erhaltungsmaßnahmen werden als Erhaltungsrückstand vollständig ausgewiesen.",
+          "(4) Eine Verschlechterung des Infrastrukturvermögens darf nicht als wirtschaftliche Einsparung dargestellt werden."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 19",
+      "slug": "paragraf-19-mehrjaehrige-finanzierung",
+      "sort_order": 190,
+      "title": "Mehrjährige Finanzierung",
+      "type": "article",
+      "part": "Teil 5 – Finanzierung und Vermögensschutz",
+      "blocks": {
+        "kurzinfo": [
+          "Sichert eine rollierende mindestens zehnjährige Finanzierung mit verbindlicherem Fünfjahresabschnitt."
+        ],
+        "juristisch": [
+          "(1) Bund und BSI schließen auf Grundlage des Bundesschienenplans eine rollierende Finanzierungsvereinbarung über mindestens zehn Jahre.",
+          "(2) Sie umfasst:",
+          "* Erhaltung,\n* Erneuerung,\n* Ausbau,\n* Digitalisierung,\n* Stationen,\n* Energieversorgung.",
+          "(3) Für die ersten fünf Jahre werden Mindestbudgets und wesentliche Umsetzungsschritte verbindlich festgelegt.",
+          "(4) Baupreis-, Lohn- und relevante Energiepreisänderungen werden transparent fortgeschrieben."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 20",
+      "slug": "paragraf-20-finanzierung-des-verkehrsangebots",
+      "sort_order": 200,
+      "title": "Finanzierung des Verkehrsangebots",
+      "type": "article",
+      "part": "Teil 5 – Finanzierung und Vermögensschutz",
+      "blocks": {
+        "kurzinfo": [
+          "Erlaubt transparenten Ausgleich nicht kostendeckender Leistungen des öffentlichen Mobilitätsauftrags."
+        ],
+        "juristisch": [
+          "(1) Nicht kostendeckende Leistungen, die aufgrund des öffentlichen Mobilitätsauftrags erbracht werden, werden transparent aus öffentlichen Mitteln ausgeglichen.",
+          "(2) Grundlage sind die effizienten Nettokosten der Leistung.",
+          "(3) Eine Gewinnmarge ist nicht erforderlich.",
+          "(4) Verlustausgleich entbindet Unternehmen nicht von Wirtschaftlichkeits-, Benchmarking- und Effizienzanforderungen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 21",
+      "slug": "paragraf-21-verschuldung",
+      "sort_order": 210,
+      "title": "Verschuldung",
+      "type": "article",
+      "part": "Teil 5 – Finanzierung und Vermögensschutz",
+      "blocks": {
+        "kurzinfo": [
+          "Begrenzt Verschuldung auf transparente, grundgesetzkonforme Finanzierung langlebiger Investitionen und verhindert Defizitverschleierung."
+        ],
+        "juristisch": [
+          "(1) Fremdfinanzierung dient grundsätzlich langlebigen Investitionen.",
+          "(2) Strukturelle laufende Betriebsdefizite dürfen nicht dauerhaft durch zusätzliche Verschuldung verdeckt werden.",
+          "(3) Kreditaufnahme und Garantien müssen mit den Vorgaben des Grundgesetzes vereinbar und vollständig transparent sein.",
+          "(4) Konstruktionen, deren wesentlicher Zweck die Umgehung staatlicher Verschuldungsregeln ist, sind unzulässig."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 22",
+      "slug": "paragraf-22-vermoegensschutz",
+      "sort_order": 220,
+      "title": "Vermögensschutz",
+      "type": "article",
+      "part": "Teil 5 – Finanzierung und Vermögensschutz",
+      "blocks": {
+        "kurzinfo": [
+          "Schützt strategisches Infrastrukturvermögen vor kurzfristig ergebnisorientierter Veräußerung oder Verpfändung."
+        ],
+        "juristisch": [
+          "Ohne gesetzliche Zustimmung sind insbesondere unzulässig:",
+          "* Sale-and-Lease-back wesentlicher Infrastruktur,\n* Verpfändung strategischer Schienenwege,\n* Ausschüttung von Grundstückserlösen an den allgemeinen Bundeshaushalt,\n* Veräußerung betriebsnotwendiger oder langfristig strategisch erforderlicher Flächen zur kurzfristigen Ergebnisverbesserung."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 23",
+      "slug": "paragraf-23-technische-grundsaetze",
+      "sort_order": 230,
+      "title": "Technische Grundsätze",
+      "type": "article",
+      "part": "Teil 6 – Technik und Systemarchitektur",
+      "blocks": {
+        "kurzinfo": [
+          "Legt offene, standardisierte, automatisierungsfähige und lebenszyklusorientierte technische Grundprinzipien fest."
+        ],
+        "juristisch": [
+          "Das System ist nach folgenden Grundsätzen zu entwickeln:",
+          "1. europäische Standardisierung,\n2. vollständige elektrische Traktion,\n3. hoher Automatisierungsgrad,\n4. interoperable digitale Zugsteuerung,\n5. ein gemeinsamer Fahrdynamikstandard für Personen- und soweit möglich Güterverkehr,\n6. hohe Umlaufgeschwindigkeit und Frequenz vor unnötiger Fahrzeuggröße,\n7. modulare Fahrzeuge,\n8. zustandsbasierte Wartung,\n9. geringe Variantenvielfalt,\n10. offene technische Schnittstellen,\n11. einfache Austauschbarkeit von Komponenten,\n12. systematische Vorbereitung grenzüberschreitenden Betriebs,\n13. automatisierter und parallelisierter Umschlag,\n14. integrierte Planung von Traktionsenergie, Rekuperation, Speichern und geeigneter lokaler Erzeugung,\n15. lärm- und siedlungsverträgliche Trassierung."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 24",
+      "slug": "paragraf-24-technischer-referenzstandard",
+      "sort_order": 240,
+      "title": "Technischer Referenzstandard",
+      "type": "article",
+      "part": "Teil 6 – Technik und Systemarchitektur",
+      "blocks": {
+        "kurzinfo": [
+          "Definiert den technischen Referenzstandard mit U200, 25 kV/50 Hz, GoA4-Ziel, digitaler Zugortung, Überholbarkeit und Bordenergiespeichern."
+        ],
+        "juristisch": [
+          "Der Referenzstandard umfasst insbesondere:",
+          "* Regelspur 1.435 mm,\n* einen universellen Regelstandard von etwa 200 km/h für das Hauptnetz,\n* 25 kV / 50 Hz Wechselstrom,\n* grundsätzlich 760 mm Bahnsteighöhe,\n* niveaugleichen Einstieg,\n* automatisierten Zugbetrieb bis GoA4,\n* digitale Zugortung und Zugvollständigkeitsüberwachung,\n* Moving- oder Hybrid-Block,\n* bidirektionale Nutzung der Streckengleise,\n* keine neuen höhengleichen Bahnübergänge,\n* kreuzungsfreie Knoten auf Hochleistungskorridoren,\n* getrennte Halte- und Durchfahrmöglichkeiten als Regelstandard neuer Stationen,\n* begrenzte Bordenergiespeicher für Rekuperation, Überbrückung und degradierten Betrieb,\n* reversible Netzkopplung der Traktionsenergie.",
+          "Technische Einzelwerte dürfen fortentwickelt werden, sofern Sicherheit, Lebenszyklusnutzen und europäische Interoperabilität verbessert oder mindestens erhalten werden. Abweichende Geschwindigkeitsklassen sind zulässig, wenn sie als selektive Beschleunigungs- oder Sonderlastinfrastruktur einen nachgewiesenen Systemnutzen besitzen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 25",
+      "slug": "paragraf-25-vorrang-europaeischer-standards",
+      "sort_order": 250,
+      "title": "Vorrang europäischer Standards",
+      "type": "article",
+      "part": "Teil 6 – Technik und Systemarchitektur",
+      "blocks": {
+        "kurzinfo": [
+          "Gibt geeigneten europäischen Standards grundsätzlich Vorrang vor nationalen Sonderlösungen."
+        ],
+        "juristisch": [
+          "(1) Besteht ein geeigneter europäischer Standard, ist dieser grundsätzlich einem nationalen Sonderstandard vorzuziehen.",
+          "(2) Ein nationaler Sonderstandard bedarf einer veröffentlichten Begründung, die nachweist, dass sein Lebenszyklusnutzen die Nachteile für Interoperabilität überwiegt.",
+          "(3) Schnittstellen sind möglichst offen und diskriminierungsfrei zu dokumentieren."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 26",
+      "slug": "paragraf-26-standardisierung",
+      "sort_order": 260,
+      "title": "Standardisierung",
+      "type": "article",
+      "part": "Teil 6 – Technik und Systemarchitektur",
+      "blocks": {
+        "kurzinfo": [
+          "Begrenzt Variantenvielfalt und verlangt Reparierbarkeit, Diagnose, offene Schnittstellen und gemeinsame Plattformen."
+        ],
+        "juristisch": [
+          "(1) Fahrzeug-, Stations-, Energie- und Infrastrukturkomponenten sind auf möglichst wenige Plattformen zu begrenzen.",
+          "(2) Abweichungen bedürfen einer Lebenszyklusbegründung.",
+          "(3) Beschaffungen müssen insbesondere berücksichtigen:",
+          "* Reparierbarkeit,\n* Diagnosefähigkeit,\n* Austauschmodule,\n* Ersatzteilverfügbarkeit,\n* offene Schnittstellen,\n* geringe Abhängigkeit von einzelnen Herstellern,\n* gemeinsame technische Plattformen für Personen- und U200-kompatible Cargo-Fahrzeuge, soweit dies wirtschaftlich und sicher sinnvoll ist."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 27",
+      "slug": "paragraf-27-personenfahrzeuge",
+      "sort_order": 270,
+      "title": "Personenfahrzeuge",
+      "type": "article",
+      "part": "Teil 6 – Technik und Systemarchitektur",
+      "blocks": {
+        "kurzinfo": [
+          "Definiert elektrische, hochautomatisierte, modular kuppelbare Personenfahrzeuge mit funktionalen statt klassischen Wagenklassen."
+        ],
+        "juristisch": [
+          "Personenfahrzeuge sind grundsätzlich:",
+          "* elektrisch,\n* hochautomatisiert,\n* modular kuppelbar,\n* mit verteilter Traktion versehen,\n* niveaugleich zugänglich,\n* mit standardisierten Tür- und Bahnsteigschnittstellen ausgestattet.",
+          "Klassische Wagenklassen sind nicht Grundlage der Fahrzeugstruktur.",
+          "Funktionale Bereiche insbesondere für Standardnutzung, Ruhe und Arbeit, Familien, Gepäck, Fahrräder und barrierefreie Nutzung sind vorzusehen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 28",
+      "slug": "paragraf-28-sanitaerversorgung",
+      "sort_order": 280,
+      "title": "Sanitärversorgung",
+      "type": "article",
+      "part": "Teil 6 – Technik und Systemarchitektur",
+      "blocks": {
+        "kurzinfo": [
+          "Verlangt mindestens ein barrierefrei nutzbares Universal-WC je selbstständig eingesetzter Personenfahrzeugeinheit."
+        ],
+        "juristisch": [
+          "Jede selbstständig eingesetzte Personenfahrzeugeinheit ist grundsätzlich mit mindestens einem barrierefrei nutzbaren Universal-WC auszustatten.",
+          "Sanitärsysteme werden",
+          "* modular,\n* diagnosefähig,\n* leicht zu reinigen und\n* depotseitig einfach zu versorgen",
+          "ausgeführt.",
+          "Größere Knoten erhalten ergänzende stationäre Sanitäranlagen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 29",
+      "slug": "paragraf-29-gueterverkehr",
+      "sort_order": 290,
+      "title": "Güterverkehr",
+      "type": "article",
+      "part": "Teil 6 – Technik und Systemarchitektur",
+      "blocks": {
+        "kurzinfo": [
+          "Richtet standardisierten Güterverkehr möglichst auf denselben Fahrdynamik- und Sicherheitsstandard wie das universelle Hauptnetz aus."
+        ],
+        "juristisch": [
+          "(1) Standardisierter Güterverkehr ist grundsätzlich so zu entwickeln, dass er den Fahrdynamik- und Sicherheitsstandard des universellen Hauptnetzes möglichst erfüllt.",
+          "(2) Güterverkehr gilt nicht allein aufgrund seiner Funktion als langsamer oder infrastrukturell zu trennender Verkehr.",
+          "(3) Zu entwickeln sind insbesondere:",
+          "* hochautomatisierte Cargo-Trainsets mit verteilter elektrischer Traktion,\n* automatische Kupplung sowie durchgehende Energie- und Datenverbindung,\n* automatische Zugvollständigkeits- und Zustandsüberwachung,\n* standardisierte Ladeeinheiten,\n* automatisierte Identifikation, Sortierung und Umschlag,\n* aerodynamisch geeignete Fahrzeug- und Beladungsformen,\n* europäische Kompatibilität mit ISO-Containern, Wechselbehältern und bestehenden Logistikketten.",
+          "(4) Sehr lange, schwere oder langsamere Verbände sowie besondere Gefahr- und Schwertransporte erhalten nur dort eigene Korridore, Betriebsfenster oder technische Standards, wo eine Integration in das universelle Netz nicht sinnvoll möglich ist.",
+          "(5) Lange Zugverbände sind kein Selbstzweck. Maßgeblich sind Lebenszykluskosten, Fahrzeugumlauf, Umschlagzeit, Energieverbrauch und die tatsächliche Struktur der Güterströme."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 29a",
+      "slug": "paragraf-29a-umschlag-und-gepaecklogistik",
+      "sort_order": 300,
+      "title": "Umschlag und Gepäcklogistik",
+      "type": "article",
+      "part": "Teil 6 – Technik und Systemarchitektur",
+      "blocks": {
+        "kurzinfo": [
+          "Behandelt Umschlag und Gepäck als Teil der Verkehrsleistung und priorisiert Ladeeinheiten, parallele Hubs und Adresse-zu-Adresse-Logistik."
+        ],
+        "juristisch": [
+          "(1) Frachtumschlag ist als Teil der Verkehrsleistung zu optimieren. Ziel sind kurze, planbare Standzeiten und weitgehend automatisierte Durchlaufprozesse.",
+          "(2) Soweit möglich, werden Ladeeinheiten statt einzelner Wagen geroutet. Fahrzeuge sollen nur dort neu zusammengestellt werden, wo dies einen nachgewiesenen Systemvorteil besitzt.",
+          "(3) Cargo-Hubs sind so zu planen, dass Be- und Entladung parallel, vorsortiert und ohne Behinderung des Personenverkehrs erfolgen kann.",
+          "(4) Die Beförderung aufgegebenen Gepäcks kann vom Fahrgastlauf entkoppelt und als gesicherte Adresse-zu-Adresse-Logistik organisiert werden.",
+          "(5) ISO-Container bleiben vollständig interoperabel nutzbar. Für schnelle standardisierte Fracht dürfen ergänzende innere Ladeeinheiten verwendet werden, sofern sie keine europäische Insellösung erzeugen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 29b",
+      "slug": "paragraf-29b-energie-und-speichersystem",
+      "sort_order": 310,
+      "title": "Energie- und Speichersystem",
+      "type": "article",
+      "part": "Teil 6 – Technik und Systemarchitektur",
+      "blocks": {
+        "kurzinfo": [
+          "Integriert Traktionsenergie, 50-Hz-Netz, Rekuperation, Bord- und stationäre Speicher sowie geeignete erneuerbare Erzeugung."
+        ],
+        "juristisch": [
+          "(1) Die Energieversorgung der Schiene ist als integrierter Bestandteil des öffentlichen 50-Hz-Energiesystems zu planen.",
+          "(2) Traktionsunterwerke sind grundsätzlich reversibel auszulegen, damit Bremsenergie von anderen Fahrzeugen, stationären Speichern oder dem öffentlichen Netz aufgenommen werden kann.",
+          "(3) Fahrzeuge erhalten einen angemessenen Bordenergiespeicher, soweit dadurch Rekuperation, kurze spannungslose Abschnitte, Störungsbetrieb oder die Systemeffizienz verbessert werden. Die Oberleitung bleibt die primäre Energieversorgung.",
+          "(4) Stationäre Speicher sind insbesondere an Traktionsunterwerken, großen Stationen, Depots und Logistikhubs zu prüfen. Ihr Einsatz kann Rekuperationsenergie, Lastspitzen, Notversorgung und Netzdienstleistungen unterstützen.",
+          "(5) Bei Neubau und wesentlichem Ausbau sind geeignete Flächen und Bauwerke für erneuerbare Energieerzeugung zu prüfen, insbesondere Dächer, Depots, Lärmschutzbauwerke und geeignete Randflächen. Windenergie ist standortbezogen zu prüfen.",
+          "(6) Bahntrassen können für zusätzliche Energie- und Datenleitungen mitgenutzt werden, wenn dies technisch, sicherheitlich, ökologisch und wirtschaftlich vorteilhaft ist. Gemeinsame Ausfallrisiken sind ausdrücklich zu berücksichtigen.",
+          "(7) Die Optimierung des Energiebezugs darf Sicherheit, Zuverlässigkeit und zugesagte Reisezeiten nicht beeinträchtigen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 30",
+      "slug": "paragraf-30-europaeischer-systemgrundsatz",
+      "sort_order": 320,
+      "title": "Europäischer Systemgrundsatz",
+      "type": "article",
+      "part": "Teil 7 – Europäischer Mobilitätsraum",
+      "blocks": {
+        "kurzinfo": [
+          "Definiert das deutsche System ausdrücklich als Teil eines europäischen Gesamtnetzes."
+        ],
+        "juristisch": [
+          "(1) Das deutsche Schienenmobilitätssystem ist als Teil eines europäischen Gesamtnetzes zu planen und zu betreiben.",
+          "(2) Staatsgrenzen gelten weder als natürliche Endpunkte für",
+          "* Verkehrsangebote,\n* Infrastrukturplanung,\n* Fahrgastinformation,\n* Vertrieb noch\n* Fahrgastrechte.",
+          "(3) Grenzüberschreitende Verkehrsbeziehungen werden nach denselben fachlichen Maßstäben bewertet wie innerdeutsche Verbindungen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 31",
+      "slug": "paragraf-31-europaeische-korridorplanung",
+      "sort_order": 330,
+      "title": "Europäische Korridorplanung",
+      "type": "article",
+      "part": "Teil 7 – Europäischer Mobilitätsraum",
+      "blocks": {
+        "kurzinfo": [
+          "Verankert gemeinsame langfristige Korridorplanung mit Nachbarstaaten und europäischen Institutionen."
+        ],
+        "juristisch": [
+          "(1) BSI und Bundesregierung wirken mit Nachbarstaaten und europäischen Institutionen auf gemeinsame langfristige Korridorpläne hin.",
+          "(2) Abzustimmen sind insbesondere:",
+          "* Kapazitäten,\n* Ausbauziele,\n* Stationen,\n* Zugfolgen,\n* Stromsysteme,\n* Zugsteuerung,\n* Güterverkehr,\n* Bauprogramme,\n* Betriebsreserven.",
+          "(3) Grenzüberschreitende Engpässe sind bei der deutschen Ausbauplanung wie inländische Engpässe zu berücksichtigen.",
+          "(4) Der Bund kann Infrastruktur außerhalb Deutschlands mitfinanzieren, wenn dies für das deutsche oder europäische Netz einen erheblichen gesamtgesellschaftlichen Nutzen erzeugt."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 32",
+      "slug": "paragraf-32-durchgehende-reise-als-grundprinzip",
+      "sort_order": 340,
+      "title": "Durchgehende Reise als Grundprinzip",
+      "type": "article",
+      "part": "Teil 7 – Europäischer Mobilitätsraum",
+      "blocks": {
+        "kurzinfo": [
+          "Behandelt eine zusammenhängend angebotene grenzüberschreitende Verbindung aus Fahrgastsicht als eine Reise."
+        ],
+        "juristisch": [
+          "(1) Für den Fahrgast ist eine zusammenhängend angebotene Reise grundsätzlich als **eine Reise** zu behandeln.",
+          "(2) Betreiberwechsel, Staatsgrenzen, unterschiedliche Vertriebssysteme oder interne Abrechnungsverhältnisse sollen für den Fahrgast keine zusätzliche organisatorische Verantwortung begründen.",
+          "(3) Die BMS hat grenzüberschreitende Reiseketten soweit rechtlich und tatsächlich möglich",
+          "1. in einem Suchvorgang darzustellen,\n2. in einer Transaktion buchbar zu machen,\n3. mit einer einheitlichen Reisebestätigung auszugeben und\n4. mit durchgehender Anschluss- und Weiterbeförderungsgarantie anzubieten."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 33",
+      "slug": "paragraf-33-europaeischer-mobilitaetsvertrag",
+      "sort_order": 350,
+      "title": "Europäischer Mobilitätsvertrag",
+      "type": "article",
+      "part": "Teil 7 – Europäischer Mobilitätsraum",
+      "blocks": {
+        "kurzinfo": [
+          "Überträgt bei angebotenen europäischen Reiseketten das Anschluss- und Weiterbeförderungsrisiko auf das Mobilitätssystem."
+        ],
+        "juristisch": [
+          "(1) Bietet die BMS eine internationale Reisekette als zusammenhängende Reise an, übernimmt sie gegenüber dem Fahrgast die Verantwortung für die vereinbarte Gesamtreise.",
+          "(2) Dies umfasst insbesondere bei einer vom Verkehrssystem verursachten Anschlussstörung:",
+          "1. automatische Neuplanung,\n2. Weiterbeförderung zum vereinbarten Ziel,\n3. erforderlichenfalls Nutzung eines anderen geeigneten Verkehrsunternehmens,\n4. Information und Betreuung,\n5. die dem Reisenden zustehende Entschädigung.",
+          "(3) Interne Ansprüche zwischen beteiligten Verkehrsunternehmen berühren die Rechte des Fahrgastes nicht.",
+          "(4) Soweit ein ausländisches Unternehmen rechtlich nicht in einen gemeinsamen Beförderungsvertrag eingebunden werden kann, darf die BMS eine eigene vertragliche Reisegarantie übernehmen.",
+          "Damit bleibt das Anschlussrisiko gegenüber dem Fahrgast beim Mobilitätssystem und wird nicht auf ihn verlagert."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 34",
+      "slug": "paragraf-34-offene-vertriebsarchitektur",
+      "sort_order": 360,
+      "title": "Offene Vertriebsarchitektur",
+      "type": "article",
+      "part": "Teil 7 – Europäischer Mobilitätsraum",
+      "blocks": {
+        "kurzinfo": [
+          "Verlangt diskriminierungsfreie offene Vertriebs- und Echtzeitdatenschnittstellen."
+        ],
+        "juristisch": [
+          "(1) Die BMS stellt ihre öffentlich angebotenen Verkehrsleistungen über diskriminierungsfreie standardisierte digitale Schnittstellen zum Vertrieb bereit.",
+          "(2) Bereitzustellen sind insbesondere:",
+          "* Fahrplandaten,\n* Echtzeitdaten,\n* verfügbare Tarife,\n* tatsächliche Verfügbarkeit,\n* Reservierungsdaten,\n* Beförderungsbedingungen,\n* Barrierefreiheitsinformationen.",
+          "(3) Öffentlich angebotene Tarife dürfen nicht allein deshalb einem unabhängigen Vertrieb vorenthalten werden, weil die BMS einen eigenen Vertrieb betreibt.",
+          "(4) Entsprechende offene Vertriebsregelungen sind bei europäischen Partnern anzustreben."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 35",
+      "slug": "paragraf-35-europaeisches-clearing",
+      "sort_order": 370,
+      "title": "Europäisches Clearing",
+      "type": "article",
+      "part": "Teil 7 – Europäischer Mobilitätsraum",
+      "blocks": {
+        "kurzinfo": [
+          "Schafft neutrales Clearing für betreiberübergreifende Erlöse, Entgelte, Erstattungen und Entschädigungen."
+        ],
+        "juristisch": [
+          "(1) Die BMS betreibt oder beteiligt sich an einem neutralen Clearingverfahren für betreiberübergreifende Reisen.",
+          "(2) Es dient insbesondere der Verteilung von",
+          "* Fahrgelderlösen,\n* Infrastrukturentgelten,\n* Erstattungen,\n* Entschädigungen,\n* Kosten der Weiterbeförderung.",
+          "(3) Der Fahrgast ist an diesem internen Ausgleich nicht beteiligt.",
+          "(4) Entsteht auf europäischer Ebene ein gemeinsames Clearing- oder Vertriebssystem mit mindestens gleichwertiger Funktionalität, ist dieses vorzugsweise zu nutzen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 36",
+      "slug": "paragraf-36-anschlussrisiko",
+      "sort_order": 380,
+      "title": "Anschlussrisiko",
+      "type": "article",
+      "part": "Teil 7 – Europäischer Mobilitätsraum",
+      "blocks": {
+        "kurzinfo": [
+          "Ordnet das Anschlussrisiko dem System zu und erlaubt unterschiedliche Zuverlässigkeitsniveaus auf Basis realer Betriebsdaten."
+        ],
+        "juristisch": [
+          "(1) Wird eine Reisekette vom Mobilitätssystem als zulässig angeboten, trägt das System das betriebliche Anschlussrisiko.",
+          "(2) Ein Fahrgast ist nicht verpflichtet, eigenständig zusätzliche Zeitreserven für mögliche Betriebsstörungen einzuplanen.",
+          "(3) Die zugrunde gelegten Übergangszeiten werden anhand realer Betriebsdaten festgelegt.",
+          "(4) Der Nutzer kann zwischen unterschiedlichen Zuverlässigkeitsniveaus wählen, soweit entsprechende Angebote bestehen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 37",
+      "slug": "paragraf-37-europaeische-vertriebs-und-rechtsentwicklung",
+      "sort_order": 390,
+      "title": "Europäische Vertriebs- und Rechtsentwicklung",
+      "type": "article",
+      "part": "Teil 7 – Europäischer Mobilitätsraum",
+      "blocks": {
+        "kurzinfo": [
+          "Formuliert europäische Ziele für offene Buchung, Clearing, Fahrgastrechte, Echtzeitdaten und Vertriebszugang."
+        ],
+        "juristisch": [
+          "Bundesregierung, BSI und BMS wirken auf europäischer Ebene insbesondere hin auf:",
+          "1. offene Vertriebsrechte,\n2. gemeinsame technische Buchungsschnittstellen,\n3. europaweit durchgehende Fahrgastrechte,\n4. neutrales Clearing,\n5. gemeinsame Echtzeitdaten,\n6. einheitliche Anschlussregeln,\n7. diskriminierungsfreien Zugang unabhängiger Vertriebsplattformen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 38",
+      "slug": "paragraf-38-integrierte-mobilitaet",
+      "sort_order": 400,
+      "title": "Integrierte Mobilität",
+      "type": "article",
+      "part": "Teil 8 – Nutzer und Mobilitätsvertrag",
+      "blocks": {
+        "kurzinfo": [
+          "Verknüpft Schiene, öffentlichen Straßenverkehr, Fuß- und Radverkehr zu einer möglichst durchgehenden Reise."
+        ],
+        "juristisch": [
+          "(1) Das öffentliche Mobilitätssystem soll eine Reise vom tatsächlichen Ausgangspunkt zum tatsächlichen Ziel ermöglichen.",
+          "(2) Schiene, öffentlicher Straßenverkehr, Fuß- und Radverkehr und weitere öffentliche Mobilitätsangebote werden nach Möglichkeit als zusammenhängende Reise behandelt.",
+          "(3) Nutzer sollen weder Unternehmensgrenzen noch interne Tarif- oder Produktstrukturen kennen müssen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 39",
+      "slug": "paragraf-39-befoerderungsvertrag",
+      "sort_order": 410,
+      "title": "Beförderungsvertrag",
+      "type": "article",
+      "part": "Teil 8 – Nutzer und Mobilitätsvertrag",
+      "blocks": {
+        "kurzinfo": [
+          "Ordnet das Nutzerverhältnis grundsätzlich privatrechtlich und begrenzt Beförderungsbedingungen auf notwendige Regeln."
+        ],
+        "juristisch": [
+          "(1) Die Rechtsbeziehung zum Nutzer ist grundsätzlich privatrechtlich.",
+          "(2) Die Vorschriften des Bürgerlichen Gesetzbuchs bleiben anwendbar.",
+          "(3) Beförderungsbedingungen müssen",
+          "* verständlich,\n* barrierefrei zugänglich,\n* verhältnismäßig und\n* auf tatsächlich notwendige Regelungen beschränkt",
+          "sein.",
+          "(4) Gesetzliche Betreiberpflichten dürfen vertraglich nicht unangemessen eingeschränkt werden."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 40",
+      "slug": "paragraf-40-gegenseitige-ruecksichtspflichten",
+      "sort_order": 420,
+      "title": "Gegenseitige Rücksichtspflichten",
+      "type": "article",
+      "part": "Teil 8 – Nutzer und Mobilitätsvertrag",
+      "blocks": {
+        "kurzinfo": [
+          "Definiert gegenseitige Rücksichtspflichten von Betreiber und Nutzern."
+        ],
+        "juristisch": [
+          "Der Betreiber schuldet insbesondere:",
+          "* sichere Infrastruktur,\n* funktionierende Fahrzeuge,\n* angemessene Hygiene,\n* verständliche Information,\n* zumutbare Hilfe.",
+          "Nutzer sind insbesondere verpflichtet,",
+          "* andere nicht zu gefährden oder erheblich zu beeinträchtigen,\n* Anlagen nicht zu beschädigen,\n* Verkehrswege nicht unnötig zu blockieren,\n* eigenen Abfall zu entsorgen,\n* vermeidbare Verschmutzungen zu unterlassen,\n* einfache selbst verursachte Verschmutzungen soweit gefahrlos und zumutbar zu beseitigen,\n* größere Verschmutzungen oder Schäden zu melden.",
+          "Eine Verpflichtung zur Beseitigung biologischer, gefährlicher oder fremder Verschmutzungen besteht nicht."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 41",
+      "slug": "paragraf-41-servicepersonal",
+      "sort_order": 430,
+      "title": "Servicepersonal",
+      "type": "article",
+      "part": "Teil 8 – Nutzer und Mobilitätsvertrag",
+      "blocks": {
+        "kurzinfo": [
+          "Richtet Servicepersonal auf Hilfe, Barrierefreiheit, Sicherheit und Störungsunterstützung statt primär auf Fahrscheinkontrolle aus."
+        ],
+        "juristisch": [
+          "Servicepersonal dient vorrangig",
+          "* Orientierung,\n* Mobilitätshilfe,\n* Barrierefreiheit,\n* Erster Hilfe,\n* Regelüberwachung,\n* Deeskalation,\n* Störungsunterstützung,\n* Evakuierung.",
+          "Es soll nicht überwiegend mit Fahrscheinkontrollen beschäftigt werden."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 42",
+      "slug": "paragraf-42-nutzungsordnung-und-sanktionen",
+      "sort_order": 440,
+      "title": "Nutzungsordnung und Sanktionen",
+      "type": "article",
+      "part": "Teil 8 – Nutzer und Mobilitätsvertrag",
+      "blocks": {
+        "kurzinfo": [
+          "Begrenzt Nutzungsregeln und Sanktionen auf erforderliche, verhältnismäßige Maßnahmen."
+        ],
+        "juristisch": [
+          "(1) Die Nutzungsordnung enthält nur solche Regeln, die für Sicherheit, Funktionsfähigkeit und angemessene gemeinsame Nutzung erforderlich sind.",
+          "(2) Mögliche Maßnahmen sind:",
+          "1. Hinweis,\n2. verbindliche Anweisung,\n3. Verwarnung,\n4. Kostenersatz,\n5. Beendigung der konkreten Fahrt,\n6. zeitlich begrenzter Nutzungsausschluss bei schweren oder wiederholten Verstößen.",
+          "(3) Maßnahmen müssen verhältnismäßig sein.",
+          "(4) Dauerhafte Ausschlüsse von grundlegender öffentlicher Mobilität sind nur in außergewöhnlichen Fällen und unter Gewährleistung effektiven Rechtsschutzes zulässig."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 43",
+      "slug": "paragraf-43-tarifgrundsatz",
+      "sort_order": 450,
+      "title": "Tarifgrundsatz",
+      "type": "article",
+      "part": "Teil 9 – Preise",
+      "blocks": {
+        "kurzinfo": [
+          "Bindet Preise an tatsächliche Systemkosten und knappe Ressourcen statt an Zahlungsbereitschaft oder Produktbezeichnungen."
+        ],
+        "juristisch": [
+          "Preise dienen",
+          "1. einer angemessenen Beteiligung an tatsächlichen Systemkosten und\n2. einem begrenzten Signal für tatsächlich knappe Ressourcen.",
+          "Sie dienen nicht der Abschöpfung individueller Zahlungsbereitschaft. Die nominelle Geschwindigkeit oder die Bezeichnung eines Verkehrsprodukts begründet für sich keinen Aufpreis."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 44",
+      "slug": "paragraf-44-unzulaessige-preisdifferenzierung",
+      "sort_order": 460,
+      "title": "Unzulässige Preisdifferenzierung",
+      "type": "article",
+      "part": "Teil 9 – Preise",
+      "blocks": {
+        "kurzinfo": [
+          "Untersagt Preisdifferenzierung allein nach Buchungszeitpunkt, Zahlungsbereitschaft, Endgerät oder persönlichem Nutzungsprofil."
+        ],
+        "juristisch": [
+          "Eine Preisbildung allein aufgrund von",
+          "* kurzfristiger Buchung,\n* vermuteter Zahlungsbereitschaft,\n* Endgerät,\n* personenbezogener Kaufhistorie oder\n* individuellen Bewegungsprofilen",
+          "ist unzulässig."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 45",
+      "slug": "paragraf-45-tatsaechliche-systembelastung",
+      "sort_order": 470,
+      "title": "Tatsächliche Systembelastung",
+      "type": "article",
+      "part": "Teil 9 – Preise",
+      "blocks": {
+        "kurzinfo": [
+          "Koppelt variable Preise an tatsächliche Verkehrsleistung, Ressourcenbeanspruchung und Kapazitätsknappheit mit verbindlichem Höchstpreis."
+        ],
+        "juristisch": [
+          "Soweit variable Preise angewandt werden, richtet sich die endgültige Abrechnung grundsätzlich nach der tatsächlich entstandenen Verkehrsleistung, Ressourcenbeanspruchung und Kapazitätsknappheit. Zu berücksichtigen ist auch, dass höhere Geschwindigkeit Fahrzeug- und Infrastrukturzeit verkürzen und dadurch die Produktivität erhöhen kann.",
+          "Vor Fahrtbeginn werden",
+          "* ein Erwartungsbereich und\n* ein verbindlicher Höchstpreis",
+          "angezeigt.",
+          "Der Höchstpreis darf nach Beginn der Reise nicht überschritten werden."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 46",
+      "slug": "paragraf-46-preisdeckel",
+      "sort_order": 480,
+      "title": "Preisdeckel",
+      "type": "article",
+      "part": "Teil 9 – Preise",
+      "blocks": {
+        "kurzinfo": [
+          "Führt automatische Tages-, Monats- und Jahrespreisdeckel für Grundmobilität ein."
+        ],
+        "juristisch": [
+          "Für Personenverkehr werden automatische Tages-, Monats- und Jahresobergrenzen festgelegt.",
+          "Nach Erreichen einer Obergrenze entstehen innerhalb des jeweiligen Zeitraums für die Grundmobilität keine weiteren Nutzungsentgelte.",
+          "Eine vorherige Entscheidung zwischen Einzelfahrkarte und Flatrate ist nicht erforderlich."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 47",
+      "slug": "paragraf-47-datensparsamkeit",
+      "sort_order": 490,
+      "title": "Datensparsamkeit",
+      "type": "article",
+      "part": "Teil 10 – Daten und Digitalisierung",
+      "blocks": {
+        "kurzinfo": [
+          "Verankert Datensparsamkeit und lehnt personenbezogene Bewegungsprofile als Nutzungsvoraussetzung ab."
+        ],
+        "juristisch": [
+          "Das Verkehrssystem soll wissen,",
+          "> wo Mobilitätsbedarf besteht,",
+          "nicht",
+          "> welche Person sich dauerhaft wo bewegt.",
+          "Personenbezogene Bewegungsprofile dürfen nicht Voraussetzung der Nutzung sein."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 48",
+      "slug": "paragraf-48-datentrennung",
+      "sort_order": 500,
+      "title": "Datentrennung",
+      "type": "article",
+      "part": "Teil 10 – Daten und Digitalisierung",
+      "blocks": {
+        "kurzinfo": [
+          "Trennt Verkehrs-/Routingdaten, Zahlungsdaten und Statistikdaten soweit technisch möglich."
+        ],
+        "juristisch": [
+          "Soweit technisch möglich, werden getrennt geführt:",
+          "1. Verkehrs- und Routingdaten,\n2. Zahlungsdaten,\n3. Statistikdaten.",
+          "Eine Zusammenführung ist nur zulässig, soweit sie für Abrechnung, Sicherheit oder einen gesetzlich bestimmten Zweck erforderlich ist."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 49",
+      "slug": "paragraf-49-offene-mobilitaetsdaten",
+      "sort_order": 510,
+      "title": "Offene Mobilitätsdaten",
+      "type": "article",
+      "part": "Teil 10 – Daten und Digitalisierung",
+      "blocks": {
+        "kurzinfo": [
+          "Macht nicht personenbezogene Netz-, Betriebs-, Tarif-, Zustands- und Nachfragedaten grundsätzlich maschinenlesbar öffentlich."
+        ],
+        "juristisch": [
+          "Nicht personenbezogene Informationen über",
+          "* Netz,\n* Fahrzeiten,\n* Echtzeitbetrieb,\n* Kapazitäten,\n* Störungen,\n* Tarife,\n* Anlagenzustand und\n* aggregierte Nachfrage",
+          "werden grundsätzlich maschinenlesbar öffentlich bereitgestellt."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 50",
+      "slug": "paragraf-50-stationsorientierte-entwicklung",
+      "sort_order": 520,
+      "title": "Stationsorientierte Entwicklung",
+      "type": "article",
+      "part": "Teil 11 – Raum- und Quartiersentwicklung",
+      "blocks": {
+        "kurzinfo": [
+          "Verknüpft neue und auszubauende Stationen mit Wohnungsbau, Arbeitsplätzen, öffentlichen Einrichtungen und lokalen Zugängen."
+        ],
+        "juristisch": [
+          "(1) Neue und wesentlich auszubauende Stationen werden gemeinsam mit Ländern und Gemeinden als räumliche Entwicklungsprojekte betrachtet.",
+          "(2) Dabei sind insbesondere zu prüfen:",
+          "* Wohnungsbau,\n* Arbeitsplätze,\n* öffentliche Einrichtungen,\n* Nahversorgung,\n* Fuß- und Radverkehr,\n* Anschlussverkehr.",
+          "(3) Die Planung darf nicht ausschließlich aus der bestehenden Siedlungs- oder Verkehrsstruktur abgeleitet werden.",
+          "(4) In Ballungsräumen sind bestehende Bahntrassen und Bahnflächen vorrangig auf ihre Eignung für urbane Erschließung, Stationsschleifen und zusätzliche Netzwege zu prüfen. Schnelle Durchfahrten können ergänzend über Umfahrungen, Einhausungen oder Tunnel geführt werden."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 51",
+      "slug": "paragraf-51-flaechensicherung",
+      "sort_order": 530,
+      "title": "Flächensicherung",
+      "type": "article",
+      "part": "Teil 11 – Raum- und Quartiersentwicklung",
+      "blocks": {
+        "kurzinfo": [
+          "Sichert Flächen für langfristig absehbare Trassen, Stationen, Depots, Terminals und Energieanlagen."
+        ],
+        "juristisch": [
+          "Flächen für langfristig absehbare",
+          "* Trassen,\n* zusätzliche Gleise,\n* Stationen,\n* Güterterminals,\n* Depots und\n* Energieanlagen,\n* Speicher-, Erzeugungs- und gegebenenfalls zusätzliche Energie-/Kabelkorridore",
+          "sind frühzeitig zu sichern.",
+          "Zwischennutzungen bleiben zulässig, sofern sie die spätere Verkehrsnutzung nicht wesentlich erschweren."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 52",
+      "slug": "paragraf-52-grundstueckserwerb-und-enteignung",
+      "sort_order": 540,
+      "title": "Grundstückserwerb und Enteignung",
+      "type": "article",
+      "part": "Teil 11 – Raum- und Quartiersentwicklung",
+      "blocks": {
+        "kurzinfo": [
+          "Begrenzt Enteignung auf erforderliche gemeinwohlorientierte Fälle mit angemessener Entschädigung."
+        ],
+        "juristisch": [
+          "Grundstücke sind grundsätzlich freihändig zu erwerben.",
+          "Eine Enteignung ist nur zulässig, wenn",
+          "1. das Vorhaben dem Wohl der Allgemeinheit dient,\n2. die Fläche erforderlich ist,\n3. mildere Mittel nicht zur Verfügung stehen und\n4. eine angemessene Entschädigung gewährleistet wird."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 53",
+      "slug": "paragraf-53-bundesrechnungshof",
+      "sort_order": 550,
+      "title": "Bundesrechnungshof",
+      "type": "article",
+      "part": "Teil 12 – Prüfung und Aufsicht",
+      "blocks": {
+        "kurzinfo": [
+          "Unterstellt BSI, BMS und Schienenfonds der Prüfung durch den Bundesrechnungshof."
+        ],
+        "juristisch": [
+          "BSI, BMS und Schienenfonds unterliegen der Prüfung durch den Bundesrechnungshof.",
+          "Die Prüfung umfasst insbesondere:",
+          "* Wirtschaftlichkeit,\n* Lebenszykluskosten,\n* Erhaltungszustand,\n* Vermögensentwicklung,\n* Projektsteuerung,\n* Beschaffung."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 54",
+      "slug": "paragraf-54-unabhaengige-regulierung",
+      "sort_order": 560,
+      "title": "Unabhängige Regulierung",
+      "type": "article",
+      "part": "Teil 12 – Prüfung und Aufsicht",
+      "blocks": {
+        "kurzinfo": [
+          "Schafft eine unabhängige Regulierung für Netzzugang, Trassen, Entgelte, Vertrieb und Transparenz."
+        ],
+        "juristisch": [
+          "Eine organisatorisch unabhängige Regulierungsstelle überwacht insbesondere",
+          "* diskriminierungsfreien Netzzugang,\n* Trassenvergabe,\n* Infrastrukturentgelte,\n* Vertriebszugang und\n* Einhaltung gesetzlicher Transparenzpflichten.",
+          "Sie ist weder BSI noch BMS unterstellt."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 55",
+      "slug": "paragraf-55-sicherheitsaufsicht",
+      "sort_order": 570,
+      "title": "Sicherheitsaufsicht",
+      "type": "article",
+      "part": "Teil 12 – Prüfung und Aufsicht",
+      "blocks": {
+        "kurzinfo": [
+          "Trennt Sicherheitsaufsicht institutionell von Infrastruktur, Verkehr und wirtschaftlicher Projektsteuerung."
+        ],
+        "juristisch": [
+          "Genehmigung und Überwachung sicherheitskritischer Systeme erfolgen institutionell getrennt von Infrastrukturunternehmen, Verkehrsunternehmen und wirtschaftlicher Projektsteuerung.",
+          "Sicherheitsentscheidungen dürfen nicht von Gewinn- oder Terminzielen abhängig gemacht werden."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 56",
+      "slug": "paragraf-56-betriebsreserve",
+      "sort_order": 580,
+      "title": "Betriebsreserve",
+      "type": "article",
+      "part": "Teil 13 – Resilienz",
+      "blocks": {
+        "kurzinfo": [
+          "Schreibt angemessene topologische, kapazitive, Fahrzeug-, Energie- und Personalreserven fest."
+        ],
+        "juristisch": [
+          "Infrastruktur, Fahrzeuge, Energieversorgung und Personal werden mit angemessener Reserve geplant. Hierzu gehören insbesondere topologische Alternativwege, freie Betriebskapazität, Fahrzeugreserve sowie redundante Energie- und Kommunikationspfade.",
+          "Die dauerhafte Auslastung praktisch der gesamten technisch verfügbaren Kapazität entspricht nicht ordnungsgemäßem Regelbetrieb."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 57",
+      "slug": "paragraf-57-krisenbetrieb",
+      "sort_order": 590,
+      "title": "Krisenbetrieb",
+      "type": "article",
+      "part": "Teil 13 – Resilienz",
+      "blocks": {
+        "kurzinfo": [
+          "Erlaubt zeitweise Abweichungen im Krisenbetrieb, nicht aber deren Nutzung für dauerhafte strukturelle Kürzungen."
+        ],
+        "juristisch": [
+          "Bei Naturkatastrophen, erheblichen Sicherheitslagen oder großflächigen technischen Störungen darf die Betriebsführung zeitweilig von Regelstandards abweichen.",
+          "Dauerhafte strukturelle Angebots- oder Infrastrukturkürzungen dürfen hierauf nicht gestützt werden."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 58",
+      "slug": "paragraf-58-verbot-substanzzehrender-eigentuemersteuerung",
+      "sort_order": 600,
+      "title": "Verbot substanzzehrender Eigentümersteuerung",
+      "type": "article",
+      "part": "Teil 14 – Schutz vor substanzzehrender politischer Steuerung",
+      "blocks": {
+        "kurzinfo": [
+          "Verbietet substanzzehrende Eigentümersteuerung ohne Änderung von Gesetz oder Bundesschienenplan."
+        ],
+        "juristisch": [
+          "Der Bund darf als Eigentümer keine Maßnahme verlangen, die voraussichtlich",
+          "1. notwendigen Erhalt unterfinanziert,\n2. gesetzliche Verkehrsstandards dauerhaft unterschreitet,\n3. das Infrastrukturvermögen systematisch vermindert oder\n4. den gesetzlichen Mobilitätsauftrag verletzt,",
+          "ohne zuvor eine entsprechende Änderung der gesetzlichen Grundlage oder des Bundesschienenplans herbeizuführen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 59",
+      "slug": "paragraf-59-transparenz-von-eigentuemerentscheidungen",
+      "sort_order": 610,
+      "title": "Transparenz von Eigentümerentscheidungen",
+      "type": "article",
+      "part": "Teil 14 – Schutz vor substanzzehrender politischer Steuerung",
+      "blocks": {
+        "kurzinfo": [
+          "Verlangt grundsätzlich öffentliche Dokumentation strategischer Eigentümerentscheidungen."
+        ],
+        "juristisch": [
+          "Grundsätzliche Eigentümerentscheidungen des Bundes sind öffentlich zu dokumentieren.",
+          "Ausnahmen bestehen nur für",
+          "* personenbezogene Daten,\n* Sicherheitsbelange,\n* geschützte Geschäftsgeheimnisse und\n* laufende Vergabeverfahren."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 60",
+      "slug": "paragraf-60-vorrang-demokratischer-steuerung",
+      "sort_order": 620,
+      "title": "Vorrang demokratischer Steuerung",
+      "type": "article",
+      "part": "Teil 14 – Schutz vor substanzzehrender politischer Steuerung",
+      "blocks": {
+        "kurzinfo": [
+          "Ordnet strategische Entwicklung Gesetz und Bundesschienenplan zu und schützt operative sowie regulatorische Unabhängigkeit."
+        ],
+        "juristisch": [
+          "Die strategische Entwicklung des Systems wird durch Gesetz und demokratisch beschlossenen Bundesschienenplan bestimmt.",
+          "Das Management verantwortet die fachliche Umsetzung.",
+          "Ein Bundesministerium darf weder an die Stelle des Gesetzgebers noch an die Stelle der operativen Unternehmensführung oder der unabhängigen Kapazitätsvergabe treten."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 61",
+      "slug": "paragraf-61-regelmaessige-systempruefung",
+      "sort_order": 630,
+      "title": "Regelmäßige Systemprüfung",
+      "type": "article",
+      "part": "Teil 15 – Evaluation",
+      "blocks": {
+        "kurzinfo": [
+          "Verlangt alle fünf Jahre eine unabhängige Systemprüfung vor dem nächsten Bundesschienenplan."
+        ],
+        "juristisch": [
+          "Alle fünf Jahre wird unabhängig geprüft,",
+          "1. ob die Mobilitäts- und Erreichbarkeitsziele erreicht werden,\n2. ob das Netz ausreichend dicht und vermascht ist,\n3. wie sich die gesellschaftlichen Gesamtkosten entwickeln,\n4. ob technische Standards noch zweckmäßig sind,\n5. ob die Unternehmensstruktur funktioniert,\n6. ob Nutzerpreise angemessen sind,\n7. ob ausreichende Reserve besteht,\n8. wie sich die europäische Integration entwickelt,\n9. welche Räume weiterhin strukturell unzureichend erschlossen sind.",
+          "Die Evaluation wird vor Beschluss des nächsten Bundesschienenplans veröffentlicht."
+        ]
+      }
+    }
+  ],
+  "appendices": {
+    "anlage-1": {
+      "title": "Gesetzliche Leistungskennzahlen",
+      "markdown": "Der Bundesschienenplan legt mindestens Zielwerte fest für:\n\n## Erreichbarkeit\n\n* Anteil der Bevölkerung mit Zugang zum Schienennetz,\n* Zugangszeit,\n* erreichbare Bevölkerung und Arbeitsplätze nach Zeitklassen,\n* Erreichbarkeit zentraler öffentlicher Einrichtungen,\n* grenzüberschreitende Erreichbarkeit.\n\n## Mobilität\n\n* Tür-zu-Tür-Reisezeit,\n* Wartezeit,\n* Umsteigezeit,\n* Reisegeschwindigkeit,\n* Zahl notwendiger Umstiege,\n* tatsächliche Umsteigezeit,\n* Abhol-/Zugangswartezeit.\n\n## Netz\n\n* Redundanz,\n* Engpässe,\n* Vernetzung,\n* nicht erschlossene Räume,\n* Entwicklungspotenzial neuer Stationen und Korridore,\n* Anteil der Stationen mit unabhängiger Durchfahr-/Überholmöglichkeit,\n* Verfügbarkeit alternativer Netzwege bei Baustellen und Streckenausfällen.\n\n**Die Zahl der Streckenkilometer allein ist keine Leistungskennzahl.**\n\n## Verfügbarkeit und Zuverlässigkeit\n\n* Verkehrsfrequenz,\n* Ausfallquote,\n* tatsächliche Zielankunft,\n* Wahrscheinlichkeit der zugesagten Ankunft,\n* alternative Erreichbarkeit bei Störungen.\n\n## Infrastruktur\n\n* Anlagenzustand,\n* Restlebensdauer,\n* Erhaltungsrückstand,\n* Ersatzinvestitionsbedarf,\n* Umschlagkapazität und Cargo-Hub-Durchsatz,\n* Anteil reaktivierter bzw. weitergenutzter urbaner Bahntrassen.\n\n## Sicherheit\n\n* Personenschäden,\n* Betriebsereignisse,\n* Arbeitsunfälle.\n\n## Nutzer\n\n* Barrierefreiheit,\n* Sauberkeit,\n* Sicherheitsgefühl,\n* Beschwerdebearbeitung,\n* Nutzerzufriedenheit.\n\n## Europa\n\n* Anteil grenzüberschreitender Reisen, die in einer Transaktion buchbar sind,\n* Anteil der Reiseketten mit durchgehender Reisegarantie,\n* grenzüberschreitende Kapazitätsengpässe,\n* technische Interoperabilität,\n* Zahl nationaler Sonderstandards.\n\n## Wirtschaftlichkeit\n\n* Lebenszykluskosten,\n* Kosten je Personen- und Güterverkehrsleistung,\n* Energieverbrauch,\n* Personalproduktivität,\n* Fahrzeugumlauf und Standzeiten,\n* Cargo-Umschlagzeiten,\n* Rekuperationsquote,\n* Speicher- und Netzintegrationswirkung.\n\n**Der Unternehmensgewinn ist ausdrücklich keine Leistungskennzahl.**"
+    },
+    "anlage-2": {
+      "title": "Grundsatz der Managementbewertung",
+      "markdown": "Ein ordnungsgemäß geführtes Unternehmen im Sinne dieses Gesetzes erfüllt den politisch festgelegten Mobilitätsauftrag\n\n> sicher, zuverlässig, langfristig substanzwahrend und mit möglichst geringem gesellschaftlichem Ressourcenaufwand.\n\nEin Unternehmen ist nicht deshalb besser geführt, weil es durch\n\n* höhere Fahrpreise,\n* geringere Wartung,\n* niedrigere Betriebsreserve,\n* unterlassene Investitionen,\n* Netzabbau oder\n* schlechteres Verkehrsangebot\n\nein besseres kurzfristiges finanzielles Ergebnis erzielt."
+    },
+    "anlage-3": {
+      "title": "Grundsatz der europäischen Reise",
+      "markdown": "Für eine vom öffentlichen Mobilitätssystem angebotene Reisekette gilt:\n\n> **Eine Reise bleibt für den Fahrgast eine Reise, unabhängig davon, wie viele Unternehmen, Verkehrsmittel oder Staaten intern an ihrer Durchführung beteiligt sind.**\n\nVertrags-, Clearing-, Erlös- und Haftungsfragen zwischen beteiligten Unternehmen sind grundsätzlich interne Angelegenheiten des Mobilitätssystems und sollen nicht auf den Fahrgast übertragen werden."
+    }
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "schema_version": "2.0.0",
+  "data_notice": {
+    "synthetic_user_activity": true,
+    "historical_changes": "Die historischen Textänderungen sind aus den Fassungen v1.2 und v1.3 rekonstruiert."
+  },
+  "users": [
+    {
+      "key": "demo_reader",
+      "email": "wohnen-reader@example.invalid",
+      "pseudonym": "Demo-Leser",
+      "trust_level": 5,
+      "is_admin": false
+    },
+    {
+      "key": "demo_author",
+      "email": "wohnen-author@example.invalid",
+      "pseudonym": "Demo-Änderung",
+      "trust_level": 10,
+      "is_admin": false
+    },
+    {
+      "key": "demo_reviewer",
+      "email": "wohnen-review@example.invalid",
+      "pseudonym": "Demo-Review",
+      "trust_level": 15,
+      "is_admin": false
+    },
+    {
+      "key": "demo_admin",
+      "email": "wohnen-admin@example.invalid",
+      "pseudonym": "Demo-Admin",
+      "trust_level": 25,
+      "is_admin": true
+    }
+  ],
+  "article_votes": [
+    {
+      "user": "demo_reader",
+      "article": "paragraf-20-oeffentliche-wohnungsplattform",
+      "vote": 1
+    },
+    {
+      "user": "demo_author",
+      "article": "paragraf-23-mieterseitige-vergabe",
+      "vote": 1
+    },
+    {
+      "user": "demo_reviewer",
+      "article": "paragraf-10-grundsatz",
+      "vote": 0
+    },
+    {
+      "user": "demo_reader",
+      "article": "paragraf-32-verpflichtende-nachsteuerung",
+      "vote": 1
+    }
+  ],
+  "article_reactions": [
+    {
+      "user": "demo_reader",
+      "article": "paragraf-24-wohnungstausch",
+      "emoji": "💡"
+    },
+    {
+      "user": "demo_author",
+      "article": "paragraf-20-oeffentliche-wohnungsplattform",
+      "emoji": "🛠️"
+    }
+  ],
+  "historical_proposals": [
+    {
+      "key": "v13-regionalplanung-temporaerer-bedarf",
+      "article": "paragraf-4-versorgungspflicht",
+      "source_version": "1.2",
+      "target_version": "1.3",
+      "change": {
+        "block": "juristisch",
+        "find": "Einrichtungen und Vorhaben, die in erheblichem Umfang zusätzlichen strukturellen Wohnbedarf erzeugen, sollen gemeinsam mit Land, Kommune und geeigneten Wohnträgern einen angemessenen Versorgungspfad entwickeln.",
+        "replace": "Einrichtungen und Vorhaben, die in erheblichem Umfang zusätzlichen strukturellen Wohnbedarf erzeugen, sind in die regionale Wohnraumplanung einzubeziehen.\n\nDie verantwortlichen öffentlichen Stellen, Einrichtungen und geeigneten Wohnträger wirken an einem angemessenen Versorgungspfad mit."
+      },
+      "explanation": "Die Fassung v1.3 trennt die Einbeziehung in die regionale Planung von der anschließenden Mitwirkung an einem Versorgungspfad und formuliert die Planungspflicht verbindlicher.",
+      "state": {
+        "accepted": true,
+        "published_in": "1.3"
+      }
+    },
+    {
+      "key": "v13-schutz-wohnfunktion",
+      "article": "paragraf-5a-schutz-der-wohnfunktion-bei-unterversorgung",
+      "source_version": "1.2",
+      "target_version": "1.3",
+      "change": {
+        "block": "juristisch",
+        "find": "In Gebieten mit struktureller Wohnraumunterversorgung darf bestehender Wohnraum grundsätzlich nicht dauerhaft oder überwiegend zugunsten touristischer Beherbergung, reiner Freizeitnutzung, unbegründeten Leerstands oder vergleichbarer Nutzungen der Wohnraumversorgung entzogen werden.",
+        "replace": "In Gebieten mit struktureller Wohnraumunterversorgung oder soweit eine Nutzungsänderung eine solche Unterversorgung voraussichtlich verursacht oder wesentlich verschärft, darf bestehender Wohnraum grundsätzlich nicht dauerhaft oder überwiegend zugunsten touristischer Beherbergung, reiner Freizeitnutzung, unbegründeten Leerstands oder vergleichbarer Nutzungen der Wohnraumversorgung entzogen werden."
+      },
+      "explanation": "v1.3 erfasst zusätzlich Nutzungsänderungen, die Unterversorgung erst verursachen oder wesentlich verschärfen würden.",
+      "state": {
+        "accepted": true,
+        "published_in": "1.3"
+      }
+    },
+    {
+      "key": "v13-kostenmiete-temporaeres-wohnen",
+      "article": "paragraf-10-grundsatz",
+      "source_version": "1.2",
+      "target_version": "1.3",
+      "change": {
+        "block": "juristisch",
+        "find": "Dauerhaft vermieteter Wohnraum darf höchstens zu einer Miete überlassen werden, die seinen wirtschaftlich erforderlichen Lebenszykluskosten zuzüglich angemessener Kapitalvergütung entspricht.",
+        "replace": "Wohnraum, der dauerhaft oder für einen tatsächlichen zeitlich begrenzten Wohnbedarf vermietet wird, darf höchstens zu einer Miete überlassen werden, die seinen wirtschaftlich erforderlichen Lebenszykluskosten zuzüglich angemessener Kapitalvergütung entspricht."
+      },
+      "explanation": "Die Lebenszyklus-Kostenmiete wird in v1.3 ausdrücklich auch auf tatsächlichen zeitlich begrenzten Wohnbedarf erstreckt.",
+      "state": {
+        "accepted": true,
+        "published_in": "1.3"
+      }
+    },
+    {
+      "key": "v13-wohnungskennung-temporaer",
+      "article": "paragraf-21-registrierung",
+      "source_version": "1.2",
+      "target_version": "1.3",
+      "change": {
+        "block": "juristisch",
+        "find": "Jede öffentlich angebotene dauerhafte Mietwohnung erhält eine eindeutige Wohnungskennung.",
+        "replace": "(1) Jede öffentlich angebotene Wohnung, die dem dauerhaften oder temporären Wohnen im Sinne dieses Gesetzes dient, erhält eine eindeutige Wohnungskennung."
+      },
+      "explanation": "Die Registrierung wird von dauerhaft angebotenen Mietwohnungen auf dauerhaftes und temporäres Wohnen erweitert.",
+      "state": {
+        "accepted": true,
+        "published_in": "1.3"
+      }
+    },
+    {
+      "key": "v13-nutzungsstatus-register",
+      "article": "paragraf-28-wohnungsregister",
+      "source_version": "1.2",
+      "target_version": "1.3",
+      "change": {
+        "block": "juristisch",
+        "find": "Jede dauerhaft genutzte Wohnung erhält eine eindeutige Kennung.",
+        "replace": "(1) Jede Wohnung erhält eine eindeutige Kennung und einen dokumentierten Nutzungsstatus.\n\nDer Nutzungsstatus unterscheidet insbesondere\n\n- dauerhaftes Wohnen,\n- temporäres Wohnen,\n- Leerstand\n- und zulässige sonstige Nutzungen."
+      },
+      "explanation": "v1.3 macht den Nutzungsstatus selbst zu einem Bestandteil des Registers und unterscheidet Wohnen, temporäres Wohnen, Leerstand und sonstige Nutzungen.",
+      "state": {
+        "accepted": true,
+        "published_in": "1.3"
+      }
+    },
+    {
+      "key": "v13-monitoring-temporaer-und-entzug",
+      "article": "paragraf-31-wohnversorgungsmonitoring",
+      "source_version": "1.2",
+      "target_version": "1.3",
+      "change": {
+        "block": "juristisch",
+        "find": "19. Quartiersqualität\n20. und Bewohnerzufriedenheit.",
+        "replace": "19. Quartiersqualität,\n20. Bewohnerzufriedenheit,\n21. strukturell wiederkehrender temporärer Wohnbedarf,\n22. hierfür verfügbare Wohnkapazität\n23. und der Entzug von Wohnraum durch Leerstand, Freizeit- und Beherbergungsnutzung."
+      },
+      "explanation": "Das Monitoring wird um temporären Wohnbedarf, verfügbare Kapazität und den Entzug von Wohnraum erweitert.",
+      "state": {
+        "accepted": true,
+        "published_in": "1.3"
+      }
+    },
+    {
+      "key": "v13-einfuehrung-sondernutzungen",
+      "article": "paragraf-38-einfuehrungsgesetz",
+      "source_version": "1.2",
+      "target_version": "1.3",
+      "change": {
+        "block": "juristisch",
+        "find": "9. die Überführung alter Förderbindungen\n10. und die Rechtsbereinigung.",
+        "replace": "9. die Überführung alter Förderbindungen,\n10. die Rechtsbereinigung\n11. und die Behandlung bereits bestehender Leerstands-, Freizeit-, Zweitwohnungs- und Beherbergungsnutzungen normalen Wohnraums."
+      },
+      "explanation": "Die Übergangsregeln sollen in v1.3 auch bereits bestehende Leerstands-, Freizeit-, Zweitwohnungs- und Beherbergungsnutzungen berücksichtigen.",
+      "state": {
+        "accepted": true,
+        "published_in": "1.3"
+      }
+    }
+  ],
+  "historical_reviews": [
+    {
+      "proposal": "v13-regionalplanung-temporaerer-bedarf",
+      "reviewer": "demo_reviewer",
+      "recommendation": "accept",
+      "note": "Die Änderung trennt Planungspflicht und Mitwirkung sprachlich klarer und bildet den dokumentierten Versionswechsel ab."
+    },
+    {
+      "proposal": "v13-kostenmiete-temporaeres-wohnen",
+      "reviewer": "demo_reviewer",
+      "recommendation": "accept",
+      "note": "Die Änderung nimmt den temporären Wohnbedarf bereits in den Grundsatz der Kostenmiete auf."
+    },
+    {
+      "proposal": "v13-nutzungsstatus-register",
+      "reviewer": "demo_reviewer",
+      "recommendation": "accept",
+      "note": "Der neue Nutzungsstatus passt zu den gleichzeitig erweiterten Regeln zu temporärem Wohnen und Wohnraumentzug."
+    }
+  ],
+  "version_history": {
+    "source_version": "1.2",
+    "target_version": "1.3",
+    "status": "already_published",
+    "accepted_historical_proposals": [
+      "v13-regionalplanung-temporaerer-bedarf",
+      "v13-schutz-wohnfunktion",
+      "v13-kostenmiete-temporaeres-wohnen",
+      "v13-wohnungskennung-temporaer",
+      "v13-nutzungsstatus-register",
+      "v13-monitoring-temporaer-und-entzug",
+      "v13-einfuehrung-sondernutzungen"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": "2.0.0",
+  "profile": "wohnen",
+  "project": {
+    "name": "Wohnen ist Infrastruktur",
+    "short_name": "Wohnen",
+    "platform_name": "klimagg-web",
+    "subtitle": "Wohnraum für Generationen.",
+    "language": "de",
+    "status": "Entwurf / Demonstrationsprojekt"
+  },
+  "demo_notice": {
+    "title": "Eigenständiger Entwurf, gemeinsame Plattform",
+    "text": "Der Wohnungsentwurf ist ein eigenständiger Arbeitsstand. Nutzerkonten, Votes, Reaktionen und Reviews dieser Demo sind synthetisch.",
+    "show_on_home": true
+  },
+  "home": {
+    "kicker": "Offener Gesetzentwurf · Wohnen",
+    "title": "Wohnen ist Infrastruktur.",
+    "claim": "Ein Entwurf für ein Wohnsystem, das reale Wohnleistung finanziert, Wohnraum dauerhaft erhält und Knappheit nicht zur notwendigen Renditequelle macht.",
+    "primary_action": {
+      "label": "Gesetzentwurf lesen",
+      "href": "#entwurf"
+    },
+    "secondary_actions": [
+      {
+        "label": "Mitmachen",
+        "href": "/mitmachen"
+      },
+      {
+        "label": "Versionen",
+        "href": "/versionen"
+      }
+    ]
+  },
+  "introduction": [
+    "Wohnen bestimmt nicht nur die Miete. Es beeinflusst, welche Arbeitsplätze erreichbar sind, wie weit Wege zu Schule, Betreuung und Pflege sind, wie viel Einkommen nach den Fixkosten bleibt und ob ein Umzug überhaupt möglich ist.",
+    "Der Entwurf behandelt Wohnraum deshalb als langlebige Infrastruktur. Gebäude, Boden, Finanzierung, Verwaltung, Instandhaltung und Sanierung haben reale Kosten. Diese sollen zuverlässig finanziert werden. Gleichzeitig soll die Wohnraumversorgung nicht davon abhängen, dass Knappheit, steigende Mieten oder steigende Bodenwerte dauerhaft zusätzliche Renditen erzeugen.",
+    "Der Gesetzentwurf verbindet dafür Wohnraumanspruch, Lebenszyklus-Kostenmiete, Bodenregeln, gemeinwirtschaftliches und öffentliches Wohnvermögen, digitale Wohnungsinfrastruktur, transparente Vergabe sowie verbindliches Monitoring und Nachsteuerung."
+  ],
+  "system": [
+    {
+      "title": "Versorgung",
+      "text": "Ein Recht auf angemessenen Wohnraum wird mit messbarer regionaler Versorgungspflicht und verpflichtender Nachsteuerung verbunden."
+    },
+    {
+      "title": "Kosten",
+      "text": "Die Lebenszyklus-Kostenmiete soll Bau, Finanzierung, Betrieb, Erhaltung und angemessene Kapitalvergütung tragen, aber Knappheits- und Spekulationsaufschläge nicht automatisch in die Miete übernehmen."
+    },
+    {
+      "title": "Boden und Vermögen",
+      "text": "Öffentlich geschaffene Werte und öffentliches Wohnvermögen sollen langfristig stärker an die Wohnfunktion gebunden bleiben."
+    },
+    {
+      "title": "Zugang",
+      "text": "Bedürftigkeit soll über finanzielle Unterstützung entscheiden, nicht grundsätzlich darüber, wer Zugang zu gutem Wohnraum erhält."
+    },
+    {
+      "title": "Digitale Infrastruktur",
+      "text": "Wohnungskennungen, transparente Angebotsdaten, öffentliche Schnittstellen, nachvollziehbares Matching und Wohnungstausch werden als öffentliche Infrastruktur gedacht."
+    },
+    {
+      "title": "Selbstkorrektur",
+      "text": "Versorgung, Kosten, Qualität und Nebenwirkungen werden gemessen. Bei struktureller Zielverfehlung entsteht eine Pflicht zur Ursachenanalyse und Nachsteuerung."
+    }
+  ],
+  "participation": {
+    "title": "Der Entwurf ist ein Arbeitsstand",
+    "text": "Artikel und Paragraphen können einzeln bewertet, kommentiert und mit konkreten Textänderungen versehen werden. Reviews und Versionsvergleiche machen die Entwicklung des Entwurfs nachvollziehbar."
+  },
+  "features": {
+    "analytics": false,
+    "votes": true,
+    "reactions": true,
+    "comments": true,
+    "reviews": true,
+    "next_draft": true,
+    "releases": true,
+    "llm_context": true
+  }
+}

@@ -1,0 +1,366 @@
+{
+  "schema_version": "2.0.0",
+  "users": [
+    {
+      "key": "reader",
+      "email": "reader@example.invalid",
+      "pseudonym": "Demo-Leser",
+      "trust_level": 5,
+      "is_admin": false
+    },
+    {
+      "key": "author",
+      "email": "author@example.invalid",
+      "pseudonym": "Demo-Autor",
+      "trust_level": 2,
+      "is_admin": false
+    },
+    {
+      "key": "reviewer",
+      "email": "reviewer@example.invalid",
+      "pseudonym": "Demo-Review",
+      "trust_level": 10,
+      "is_admin": false
+    },
+    {
+      "key": "admin",
+      "email": "admin@example.invalid",
+      "pseudonym": "Demo-Admin",
+      "trust_level": 25,
+      "is_admin": true
+    }
+  ],
+  "article_votes": [
+    {
+      "user": "reader",
+      "article": "zweck",
+      "vote": 1
+    },
+    {
+      "user": "reader",
+      "article": "mindestangebot",
+      "vote": 0
+    },
+    {
+      "user": "author",
+      "article": "mindestangebot",
+      "vote": 1
+    },
+    {
+      "user": "reviewer",
+      "article": "oeffentliche-informationen",
+      "vote": 1
+    }
+  ],
+  "article_reactions": [
+    {
+      "user": "reader",
+      "article": "zweck",
+      "emoji": "👍"
+    },
+    {
+      "user": "author",
+      "article": "oeffentliche-informationen",
+      "emoji": "💡"
+    }
+  ],
+  "proposals": [
+    {
+      "key": "minimum-15000",
+      "article": "mindestangebot",
+      "author": "author",
+      "mode": "change",
+      "category": "content",
+      "change": {
+        "block": "juristisch",
+        "find": "Gemeinden mit mindestens 20.000 Einwohnerinnen und Einwohnern stellen mindestens eine öffentliche Trinkwasserstelle bereit.",
+        "replace": "Gemeinden mit mindestens 15.000 Einwohnerinnen und Einwohnern stellen mindestens eine öffentliche Trinkwasserstelle bereit."
+      },
+      "explanation": "Eine Grenze von 15.000 Einwohnerinnen und Einwohnern führt bei mittelgroßen Gemeinden zu einem dichteren Mindestangebot.",
+      "sources": [],
+      "state": {
+        "status": "published"
+      },
+      "impact_scores": {
+        "goal": 3,
+        "clarity": 2,
+        "practical": 3,
+        "legal": 3
+      }
+    },
+    {
+      "key": "minimum-10000",
+      "article": "mindestangebot",
+      "author": "reader",
+      "mode": "change",
+      "category": "content",
+      "change": {
+        "block": "juristisch",
+        "find": "Gemeinden mit mindestens 20.000 Einwohnerinnen und Einwohnern stellen mindestens eine öffentliche Trinkwasserstelle bereit.",
+        "replace": "Gemeinden mit mindestens 10.000 Einwohnerinnen und Einwohnern stellen mindestens eine öffentliche Trinkwasserstelle bereit."
+      },
+      "explanation": "Auch kleinere Städte sollten vom Mindestangebot erfasst werden.",
+      "sources": [],
+      "state": {
+        "status": "published"
+      },
+      "expected_conflict_with": [
+        "minimum-15000"
+      ],
+      "impact_scores": {
+        "goal": 3,
+        "clarity": 2,
+        "practical": 2,
+        "legal": 3
+      }
+    },
+    {
+      "key": "year-round",
+      "article": "betrieb-und-qualitaet",
+      "author": "author",
+      "mode": "change",
+      "category": "content",
+      "change": {
+        "block": "juristisch",
+        "find": "Öffentliche Trinkwasserstellen sind mindestens vom 1. April bis zum 31. Oktober betriebsbereit zu halten.",
+        "replace": "Öffentliche Trinkwasserstellen sind ganzjährig betriebsbereit zu halten, soweit technische Gründe, insbesondere fehlender Frostschutz, dem nicht entgegenstehen."
+      },
+      "explanation": "Trinkwasser kann auch außerhalb des Sommerhalbjahres benötigt werden. Technische Ausnahmen bleiben möglich.",
+      "sources": [],
+      "state": {
+        "status": "published"
+      },
+      "impact_scores": {
+        "goal": 2,
+        "clarity": 3,
+        "practical": 3,
+        "legal": 3
+      }
+    },
+    {
+      "key": "data-standard",
+      "article": "oeffentliche-informationen",
+      "author": "author",
+      "mode": "change",
+      "category": "content",
+      "change": {
+        "block": "juristisch",
+        "find": "Die Informationen sind in maschinenlesbarer Form bereitzustellen und regelmäßig zu aktualisieren.",
+        "replace": "Die Informationen sind nach einem einheitlichen, öffentlich dokumentierten Datenstandard in maschinenlesbarer Form bereitzustellen. Jede Trinkwasserstelle erhält eine dauerhaft eindeutige Kennung."
+      },
+      "explanation": "Maschinenlesbarkeit allein stellt noch keine Interoperabilität her. Einheitliche Felder und dauerhafte IDs erleichtern Karten, Anwendungen und Datenaustausch.",
+      "sources": [],
+      "state": {
+        "status": "published"
+      },
+      "impact_scores": {
+        "goal": 3,
+        "clarity": 3,
+        "practical": 4,
+        "legal": 4
+      }
+    },
+    {
+      "key": "solar-only",
+      "article": "betrieb-und-qualitaet",
+      "author": "reader",
+      "mode": "change",
+      "category": "content",
+      "change": {
+        "block": "juristisch",
+        "find": "Das bereitgestellte Wasser muss den geltenden Anforderungen an Trinkwasser entsprechen.",
+        "replace": "Das bereitgestellte Wasser muss den geltenden Anforderungen an Trinkwasser entsprechen. Jede öffentliche Trinkwasserstelle muss vollständig durch lokal erzeugte Solarenergie betrieben werden."
+      },
+      "explanation": "Erneuerbare Energien sind wichtig.",
+      "sources": [],
+      "state": {
+        "status": "published"
+      },
+      "impact_scores": {
+        "goal": 1,
+        "clarity": 2,
+        "practical": 0,
+        "legal": 1
+      }
+    }
+  ],
+  "comment_votes": [
+    {
+      "user": "reader",
+      "proposal": "minimum-15000",
+      "vote": 1
+    },
+    {
+      "user": "reviewer",
+      "proposal": "minimum-15000",
+      "vote": 1
+    },
+    {
+      "user": "author",
+      "proposal": "minimum-10000",
+      "vote": 1
+    },
+    {
+      "user": "reviewer",
+      "proposal": "minimum-10000",
+      "vote": 1
+    },
+    {
+      "user": "reader",
+      "proposal": "year-round",
+      "vote": 1
+    },
+    {
+      "user": "reviewer",
+      "proposal": "year-round",
+      "vote": 1
+    },
+    {
+      "user": "reader",
+      "proposal": "data-standard",
+      "vote": 1
+    },
+    {
+      "user": "reviewer",
+      "proposal": "data-standard",
+      "vote": 1
+    },
+    {
+      "user": "reviewer",
+      "proposal": "solar-only",
+      "vote": -1
+    }
+  ],
+  "comment_reactions": [
+    {
+      "user": "reader",
+      "proposal": "data-standard",
+      "emoji": "💡"
+    },
+    {
+      "user": "reviewer",
+      "proposal": "minimum-15000",
+      "emoji": "👍"
+    }
+  ],
+  "reviews": [
+    {
+      "proposal": "minimum-15000",
+      "reviewer": "reviewer",
+      "recommendation": "accept",
+      "note": "Die Änderung ist klar formuliert und innerhalb des Artikels konsistent. Die konkrete Schwelle bleibt eine politische oder fachliche Setzung.",
+      "sliders": {
+        "slider_goal": 4,
+        "slider_style": 4,
+        "slider_practical": 4,
+        "slider_legal": 4
+      },
+      "compliance": {
+        "compliance_no_personal_data": true,
+        "compliance_copyright_ok": true,
+        "compliance_no_illegal_content": true
+      },
+      "feedback_tags": [],
+      "visible_to_public": false
+    },
+    {
+      "proposal": "minimum-10000",
+      "reviewer": "reviewer",
+      "recommendation": "revise",
+      "note": "Der Vorschlag ist nachvollziehbar, kollidiert aber mit einem alternativen Änderungsvorschlag für dieselbe Textstelle. Beide können nicht gleichzeitig übernommen werden.",
+      "sliders": {
+        "slider_goal": 4,
+        "slider_style": 4,
+        "slider_practical": 3,
+        "slider_legal": 4
+      },
+      "compliance": {
+        "compliance_no_personal_data": true,
+        "compliance_copyright_ok": true,
+        "compliance_no_illegal_content": true
+      },
+      "feedback_tags": [],
+      "visible_to_public": false
+    },
+    {
+      "proposal": "year-round",
+      "reviewer": "reviewer",
+      "recommendation": "accept",
+      "note": "Die technische Ausnahme verhindert eine starre Pflicht für Anlagen ohne ausreichenden Frostschutz.",
+      "sliders": {
+        "slider_goal": 3,
+        "slider_style": 4,
+        "slider_practical": 4,
+        "slider_legal": 4
+      },
+      "compliance": {
+        "compliance_no_personal_data": true,
+        "compliance_copyright_ok": true,
+        "compliance_no_illegal_content": true
+      },
+      "feedback_tags": [],
+      "visible_to_public": false
+    },
+    {
+      "proposal": "data-standard",
+      "reviewer": "reviewer",
+      "recommendation": "accept",
+      "note": "Die Ergänzung präzisiert die Interoperabilität, ohne den konkreten Datenstandard bereits im Gesetz festzuschreiben.",
+      "sliders": {
+        "slider_goal": 4,
+        "slider_style": 4,
+        "slider_practical": 5,
+        "slider_legal": 4
+      },
+      "compliance": {
+        "compliance_no_personal_data": true,
+        "compliance_copyright_ok": true,
+        "compliance_no_illegal_content": true
+      },
+      "feedback_tags": [],
+      "visible_to_public": false
+    },
+    {
+      "proposal": "solar-only",
+      "reviewer": "reviewer",
+      "recommendation": "reject",
+      "note": "Die zusätzliche Technikvorgabe ist für Zweck und Funktion des Artikels nicht erforderlich.",
+      "sliders": {
+        "slider_goal": 1,
+        "slider_style": 3,
+        "slider_practical": 0,
+        "slider_legal": 1
+      },
+      "compliance": {
+        "compliance_no_personal_data": true,
+        "compliance_copyright_ok": true,
+        "compliance_no_illegal_content": true
+      },
+      "feedback_tags": [
+        "practicality_unclear"
+      ],
+      "visible_to_public": false
+    }
+  ],
+  "release_expectation": {
+    "source_version": "1.0",
+    "target_version": "1.1",
+    "expected_qualified": [
+      "minimum-15000",
+      "minimum-10000",
+      "year-round",
+      "data-standard"
+    ],
+    "expected_selected": [
+      "minimum-15000",
+      "year-round",
+      "data-standard"
+    ],
+    "expected_excluded_by_conflict": [
+      "minimum-10000"
+    ],
+    "expected_not_qualified": [
+      "solar-only"
+    ]
+  }
+}

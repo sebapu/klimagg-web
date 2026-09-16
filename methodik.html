@@ -1,0 +1,109 @@
+{# ======================================================================
+  KlimaGG-Web — methodik.html
+  ----------------------------------------------------------------------
+  Role: Static methodology and terminology reference.
+====================================================================== #}
+{% extends "base.html" %}
+
+{% block title %}{{ settings.PROJECT_NAME }} · Methodik{% endblock %}
+{% block meta_description %}Prinzipien und Begriffe für Voting, Änderungsvorschläge, Reviews und Releases.{% endblock %}
+{% block page_kind %}static{% endblock %}
+{% block klimagg_app %}false{% endblock %}
+{% block header_subtitle %}Methodik · Beteiligung · Review · Release{% endblock %}
+
+{% block main %}
+<main id="hauptinhalt">
+  <section class="hero" aria-label="Methodik">
+    <div class="shell">
+      <div class="law-surface">
+        <h1 id="methodik-ueberblick">Methodik</h1>
+
+        <div class="einleitung">
+          <p>
+            Die Plattform trennt schnelle Rückmeldung, konkrete Textänderungen, Review und Veröffentlichung.
+            Dadurch bleibt nachvollziehbar, welcher Vorschlag sich auf welche Textfassung bezieht und wie daraus ein neuer Stand entsteht.
+          </p>
+        </div>
+
+        <h2 id="methodik-prinzipien">Prinzipien</h2>
+        <div class="juristisch">
+          <ul>
+            <li><strong>Versionsbezug:</strong> Stimmen und Änderungsvorschläge beziehen sich auf eine konkrete Fassung.</li>
+            <li><strong>Nachvollziehbarkeit:</strong> Textänderung, Begründung und Quellen bleiben getrennt sichtbar.</li>
+            <li><strong>Review vor Veröffentlichung:</strong> eingereichte Vorschläge werden strukturiert geprüft.</li>
+            <li><strong>Konflikte sichtbar machen:</strong> überlappende Änderungen werden nicht still zusammengeführt.</li>
+            <li><strong>Datensparsamkeit:</strong> keine Tracking-Cookies; personenbezogene Daten bleiben außerhalb öffentlicher Exporte.</li>
+          </ul>
+        </div>
+
+        <h2 id="methodik-begriffe">Begriffe</h2>
+        <div class="juristisch">
+          <p><strong>Artikelversion:</strong> eine konkrete gespeicherte Fassung eines Artikels.</p>
+          <p><strong>Änderungsvorschlag:</strong> strukturierter Patch mit Zielstelle, bisherigem Text, neuem Text und optionaler Begründung/Quelle.</p>
+          <p><strong>Review:</strong> strukturierte Prüfung eines eingereichten Vorschlags.</p>
+          <p><strong>Next Draft:</strong> Vorschau auf qualifizierte Änderungen für den nächsten möglichen Dokumentstand.</p>
+          <p><strong>Release:</strong> administrativ geprüfter neuer veröffentlichter Dokumentstand einschließlich Pre-Release-Snapshot.</p>
+        </div>
+
+        <h2 id="methodik-voting">Voting &amp; Reaktionen</h2>
+        <div class="einleitung">
+          <p>
+            Votes sind eine inhaltliche Rückmeldung zur jeweiligen Artikel- oder Kommentarfassung.
+            Emoji-Reaktionen sind davon getrennte Marker. Öffentliche Rohzahlen und interne Schutz-/Trust-Signale bleiben getrennt.
+          </p>
+        </div>
+
+        <h2 id="methodik-review">Review</h2>
+        <div class="einleitung">
+          <p>
+            Reviews prüfen Zielbeitrag, Stil/Verständlichkeit, Umsetzbarkeit und Rechtssicherheit sowie grundlegende
+            Compliance-Punkte. Sie liefern ein Qualitätssignal; die eigentliche Release-Entscheidung bleibt ein eigener Schritt.
+          </p>
+        </div>
+
+        <h2 id="methodik-release">Release</h2>
+        <div class="einleitung">
+          <p>
+            Vor einem Release werden Kandidaten und Konflikte erneut geprüft. Der veröffentlichte Stand und die aggregierte
+            Transparenz werden als personenbezugsfreier HTML-Snapshot archiviert.
+          </p>
+        </div>
+
+        <p style="margin-top:1.2rem;">
+          <a class="btn btn-ghost" href="/mitmachen">← Mitmachen</a>
+          <a class="btn btn-ghost" href="/#entwurf">Zum Gesetzentwurf</a>
+          <a class="btn btn-ghost" href="/versionen">Versionen</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
+
+{% block overlays %}
+<nav class="toc app-sidebar app-left" aria-label="Orientierung">
+  <div class="app-panel">
+    <div class="app-panel-header"><h3>Orientierung</h3><small>Sitemap · Methodik</small></div>
+    <details class="app-details" open>
+      <summary>Inhalt</summary>
+      <div class="app-details-body">
+        <div class="toc-sitemap">
+          <a class="toc-static-link" href="/">Startseite</a>
+          <a class="toc-static-link" href="/#entwurf">Gesetzentwurf</a>
+          <a class="toc-static-link" href="/mitmachen">Mitmachen</a>
+          <a class="toc-static-link" href="/kontakt">Kontakt</a>
+          <a class="toc-static-link" href="/versionen">Versionen</a>
+          <a class="toc-static-link" href="/rechtliches">Rechtliches</a>
+          <div class="toc-static-divider" aria-hidden="true"></div>
+          <a class="toc-static-link is-current" href="#methodik-ueberblick">Überblick</a>
+          <a class="toc-static-link" href="#methodik-prinzipien">Prinzipien</a>
+          <a class="toc-static-link" href="#methodik-begriffe">Begriffe</a>
+          <a class="toc-static-link" href="#methodik-voting">Voting</a>
+          <a class="toc-static-link" href="#methodik-review">Review</a>
+          <a class="toc-static-link" href="#methodik-release">Release</a>
+        </div>
+      </div>
+    </details>
+  </div>
+</nav>
+{% endblock %}

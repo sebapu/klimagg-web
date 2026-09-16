@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+/secrets/
+
+# SQLite runtime files
+*.db
+*.sqlite
+*.sqlite3
+*.db-wal
+*.db-shm
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Runtime state and generated snapshots/exports
+/.demo/
+/versions/
+/exports/
+/backups/
+
+# Generated LLM context/download files.
+# Keep the static instruction files in llm-api/ versioned.
+/llm-api/20??-??-??_*.md
+/llm-api/*.html
+
+# Local analysis/test output
+/tools/output/
+/tools/test_outputs/
+klimagg_repo_inventory_v2.txt
+klimagg_repo_inventory_v2.json
+
+# Logs / editor / OS noise
+*.log
+.DS_Store
+.idea/
+.vscode/

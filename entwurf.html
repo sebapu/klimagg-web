@@ -1,0 +1,114 @@
+{# ======================================================================
+  KlimaGG-Web — entwurf.html
+  ----------------------------------------------------------------------
+  Version:        v2.0.0
+  Route:          GET /entwurf
+  Role:           Server-rendered law draft for search engines and direct links.
+====================================================================== #}
+{% extends "base.html" %}
+
+{% block title %}{{ settings.PROJECT_NAME }} – Entwurf{% endblock %}
+{% block meta_description %}{{ settings.PROJECT_NAME }}: Entwurf serverseitig lesen, verlinken, bewerten und verbessern.{% endblock %}
+{% block page_kind %}entwurf{% endblock %}
+{% block klimagg_app %}true{% endblock %}
+
+{% block main %}
+<main id="hauptinhalt">
+  <section id="entwurf" style="padding-top: 2rem;">
+    <div class="shell">
+      <div class="section-header">
+        <div>
+          <h1 class="section-title" style="margin:0;">Gesetzentwurf</h1>
+          <p class="section-sub">Diese Seite liefert den Text serverseitig aus (gut für Suchmaschinen & Direktlinks).</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="shell-wide shell-draft">
+      <div id="kgg-merge-output"></div>
+      <div id="draft-layout">
+        <section id="articles-section" class="law-surface law-surface-flat">
+          <div id="articles-container">
+            {% if ssr_articles and (ssr_articles|length) > 0 %}
+              {% for a in ssr_articles %}
+                <article class="artikel" id="artikel-{{ a.id }}" data-article-id="{{ a.id }}" data-article-slug="{{ a.slug }}" data-current-version-id="{{ a.current_version_id }}" data-version-id="{{ a.current_version_id }}">
+                  <header>
+                    <h2>{{ a.display_label }}</h2>
+                  </header>
+                  <div class="content-blocks">
+                   {{ a.content_blocks.kurzinfo | safe }}
+                   {{ a.content_blocks.story | safe }}
+                   {{ a.content_blocks.einleitung | safe }}
+                   {{ a.content_blocks.juristisch | safe }}
+                   {{ a.content_blocks.juristisch2 | safe }}
+                   {{ a.content_blocks.anmerkung | safe }}
+                  </div>
+                </article>
+              {% endfor %}
+            {% else %}
+              <p>Keine Artikel vorhanden.</p>
+            {% endif %}
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
+
+{% block overlays %}
+<nav class="toc app-sidebar app-left" aria-label="Orientierung">
+  <div class="app-panel">
+    <div class="app-panel-header">
+      <h3>Orientierung</h3>
+      <small class="panel-subtitle">Inhalt &amp; Links</small>
+    </div>
+
+    
+    <button class="panel-collapse-hook panel-collapse-hook-left" id="collapse-left-panel" type="button" aria-label="Orientierung einklappen">‹</button>
+
+    <details class="app-details" data-collapsible="nav-content" open>
+      <summary>Inhalt</summary>
+      <div class="app-details-body">
+
+        <div class="nav-block">
+          
+          <details class="app-subdetails app-subdetails-sitemap" data-collapsible="nav-sitemap">
+            <summary>Sitemap</summary>
+            <div class="app-subdetails-body">
+              <div class="toc-sitemap">
+                <details class="sitemap-details" open>
+                  <summary><span class="toc-static-link is-current">Gesetzentwurf</span></summary>
+                  <div class="sitemap-sub">
+                    <a class="toc-static-link" href="#entwurf">Anfang</a>
+                  </div>
+                </details>
+
+                <div class="toc-static-divider" aria-hidden="true"></div>
+
+                <a class="toc-static-link" href="/">Startseite</a>
+                <a class="toc-static-link" href="/rechtliches">Rechtliches</a>
+                <a class="toc-static-link" href="/mitmachen">Mitmachen</a>
+                <a class="toc-static-link" href="/methodik">Methodik</a>
+                <a class="toc-static-link" href="/kontakt">Kontakt</a>
+                <a class="toc-static-link" href="/versionen">Versionen</a>
+                <a class="toc-static-link" href="/versionen">Versionen</a>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <div class="nav-block">
+          <div class="nav-block-title klein">Inhaltsverzeichnis</div>
+          <ul id="toc-list" class="app-toc"></ul>
+        </div>
+
+      </div>
+    </details>
+
+  </div>
+
+  <div id="left-resize-handle" class="resize-handle resize-handle-left"></div>
+</nav>
+
+{% endblock %}

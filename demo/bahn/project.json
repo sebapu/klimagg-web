@@ -1,0 +1,125 @@
+{
+  "schema_version": "2.0.0",
+  "profile": "bahn",
+  "project": {
+    "name": "Neues Schienenmobilitätssystem Deutschland",
+    "short_name": "Schienenmobilität",
+    "platform_name": "klimagg-web",
+    "subtitle": "Öffentliche Mobilität von Adresse zu Adresse.",
+    "language": "de",
+    "status": "Zielarchitektur / Gesetzentwurf / Demonstrationsprojekt"
+  },
+  "demo_notice": {
+    "title": "Eigenständiger Entwurf, gemeinsame Plattform",
+    "text": "Das BSchMG ist ein eigenständiger Arbeitsstand. Nutzerkonten, Votes, Reaktionen und Reviews dieser Demo sind synthetisch.",
+    "show_on_home": true
+  },
+  "home": {
+    "kicker": "Offener Gesetzentwurf · Schienenmobilität",
+    "title": "Mobilität als öffentliches System.",
+    "claim": "Ein dichtes europäisches Schienennetz soll Menschen und Waren weitgehend automatisiert, schnell und ressourceneffizient bewegen – optimiert von tatsächlichem Ausgangspunkt bis tatsächlichem Ziel.",
+    "primary_action": {
+      "label": "BSchMG lesen",
+      "href": "#entwurf"
+    },
+    "secondary_actions": [
+      {
+        "label": "Systemarchitektur",
+        "href": "#system"
+      },
+      {
+        "label": "Mitmachen",
+        "href": "/mitmachen"
+      },
+      {
+        "label": "Versionen",
+        "href": "/versionen"
+      }
+    ]
+  },
+  "introduction": [
+    "Der Entwurf optimiert nicht den Bahnbetrieb als isolierten Verkehrsträger. Maßstab sind Tür-zu-Tür-Reisezeit, Wartezeit, Zuverlässigkeit, Erreichbarkeit, Sicherheit, Ressourcenverbrauch und Lebenszykluskosten.",
+    "Kern des Zielsystems ist ein dichtes, vermaschtes U200-Netz mit einem gemeinsamen Infrastruktur- und Fahrdynamikstandard für Personenverkehr und möglichst große Teile der Fracht. Halte, Knoten, Cargo-Umschlag, Energie, Automatisierung und lokale Erschließung werden als zusammenhängende Systemarchitektur behandelt.",
+    "Das Bundesschienenmobilitätsgesetz übersetzt diese Architektur in einen öffentlichen Auftrag, Organisations- und Finanzierungsregeln, technische Grundsätze, europäische Integration, Nutzerrechte, Preislogik, Datenregeln und verpflichtende Evaluation."
+  ],
+  "system": [
+    {
+      "title": "U200-Mesh",
+      "text": "Etwa 200 km/h bilden den universellen Referenzstandard eines dichten, vermaschten Netzes. Höhere Geschwindigkeiten und langsamere Schwerverkehre bleiben begründete Sonderfälle."
+    },
+    {
+      "title": "Adresse zu Adresse",
+      "text": "Das Nutzerprodukt ist eine verlässliche Reise vom tatsächlichen Ausgangspunkt bis zum tatsächlichen Ziel; interne Betreiber-, Tarif- und Produktgrenzen sollen dafür möglichst irrelevant sein."
+    },
+    {
+      "title": "Durchfahrt und Halt",
+      "text": "Neue Stationen werden grundsätzlich so gedacht, dass haltende Fahrzeuge den schnellen Hauptstrom nicht blockieren. Ortsumfahrung und Stationsschleife sind dafür ein wichtiges Referenzmuster."
+    },
+    {
+      "title": "Personen und Cargo",
+      "text": "Standardisierte Fracht soll soweit sinnvoll dieselbe U200-Fahrdynamik nutzen. Geroutet wird bevorzugt die Ladeeinheit, nicht der einzelne Güterwagen."
+    },
+    {
+      "title": "Automatisierung und Safety",
+      "text": "GoA4 ist Zielarchitektur. Nachfrage- und Betriebsoptimierung bleiben strikt von einem deterministischen, zertifizierbaren Safety-Kern getrennt."
+    },
+    {
+      "title": "Energie als Subsystem",
+      "text": "25 kV/50 Hz, Rekuperation, Bordpuffer, stationäre Speicher und geeignete lokale Erzeugung werden gemeinsam mit Strecke und Fahrzeug geplant."
+    },
+    {
+      "title": "Öffentliche Systemhoheit",
+      "text": "Netz, zentrale Standards, Systemarchitektur und kritische Daten bleiben öffentlich kontrolliert; Wettbewerb findet bei sinnvoll trennbaren Bau-, Fertigungs-, Software- und Serviceleistungen statt."
+    },
+    {
+      "title": "Transformation statt Parallelwelt",
+      "text": "Die Zielorganisation wird auf dem Zielsystem aufgebaut. Legacy wird korridor- und regionsweise migriert und soll die neue Architektur nicht dauerhaft definieren."
+    }
+  ],
+  "architecture_status": {
+    "fixed_principles": [
+      "U200 als universeller Hauptstandard",
+      "europäischer Systemraum",
+      "weitgehende Automatisierung",
+      "öffentliche Systemhoheit",
+      "gemeinsame Fahrdynamik für Personen und standardisierte Fracht",
+      "Durchfahrt und Halt möglichst getrennt",
+      "vermaschte Netzstruktur",
+      "integrierte Energiearchitektur",
+      "offene Schnittstellen und geringe Variantenvielfalt"
+    ],
+    "reference_values": [
+      "Referenz-vmax etwa 200 km/h",
+      "Umstieg Ziel unter 10 Minuten",
+      "lokale Abholung/Zubringer Ziel etwa 20 Minuten",
+      "25 kV / 50 Hz als Ziel-Traktionssystem",
+      "GoA4 als Automatisierungsziel"
+    ],
+    "open_optimization": [
+      "optimale Universalgeschwindigkeit 180/200/220 km/h",
+      "Geometrie der Stationsschleife",
+      "Cargo-Ladeeinheiten und Hub-Durchsatz",
+      "Bordbatteriegröße",
+      "stationäre Speicher und Unterwerksstruktur",
+      "erneuerbare Eigenversorgung",
+      "Energie-/Leitungskorridore",
+      "verbindliche Resilienzgrenzwerte",
+      "urbane Netzvarianten",
+      "Gefahrgut- und Schwerlastintegration",
+      "Personal- und Kostenmodell"
+    ]
+  },
+  "participation": {
+    "title": "Nicht alles ist festgelegt",
+    "text": "Die Referenzarchitektur trennt feste Systemprinzipien von Referenzwerten und offenen Optimierungsfragen. Kommentare und Reviews machen sichtbar, welche Annahmen noch gerechnet, simuliert, demonstriert oder abgestimmt werden müssen."
+  },
+  "features": {
+    "votes": true,
+    "reactions": true,
+    "comments": true,
+    "reviews": true,
+    "next_draft": true,
+    "releases": true,
+    "llm_context": true
+  }
+}

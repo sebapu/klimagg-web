@@ -1,0 +1,50 @@
+{# ======================================================================
+  KlimaGG-Web — artikel.html
+  ----------------------------------------------------------------------
+  Version:        v2.0.0
+  Route:          GET /a/{slug}
+  Role:           Indexable server-rendered page for a single article.
+====================================================================== #}
+{% extends "base.html" %}
+
+{% block title %}{{ settings.PROJECT_NAME }} – {{ article.display_label }}{% endblock %}
+{% block meta_description %}{{ (article.display_label ~ " – Artikel im aktuellen Entwurf von " ~ settings.PROJECT_NAME ~ ".") }}{% endblock %}
+{% block page_kind %}artikel{% endblock %}
+{% block klimagg_app %}true{% endblock %}
+
+{% block main %}
+<main id="hauptinhalt">
+  <section id="artikel" style="padding-top: 2rem;">
+    <div class="shell-wide shell-draft">
+      <div id="draft-layout">
+        <section class="law-surface law-surface-flat">
+          <div id="articles-container">
+            <p class="klein" style="margin-top:0;">
+              <a href="/#entwurf">← Zum Entwurf</a>
+            </p>
+
+            <article class="artikel"
+                     id="artikel-{{ article.id }}"
+                     data-article-id="{{ article.id }}"
+                     data-article-slug="{{ article.slug }}"
+                     data-current-version-id="{{ article.current_version_id }}"
+                     data-version-id="{{ article.current_version_id }}">
+              <header>
+                <h1 style="margin:0;">{{ article.display_label }}</h1>
+              </header>
+              <div class="content-blocks">
+              {{ article.content_blocks.kurzinfo | safe }}
+              {{ article.content_blocks.story | safe }}
+              {{ article.content_blocks.einleitung | safe }}
+              {{ article.content_blocks.juristisch | safe }}
+              {{ article.content_blocks.juristisch2 | safe }}
+              {{ article.content_blocks.anmerkung | safe }}
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}

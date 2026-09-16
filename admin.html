@@ -1,0 +1,272 @@
+{# ======================================================================
+  KlimaGG-Web — admin.html
+  ----------------------------------------------------------------------
+  Version:        v2.0.1
+  Route:          GET /admin
+  Template:       extends base.html
+  Sicherheit:     Keine separate Admin-Basic-Auth. Zugriff läuft über bestehendes JWT + is_admin in den Admin-APIs.
+  ====================================================================== #}
+{% extends "base.html" %}
+
+{% block title %}{{ settings.PROJECT_NAME }} · Admin{% endblock %}
+{% block page_kind %}admin{% endblock %}
+{% block klimagg_app %}false{% endblock %}
+{% block header_subtitle %}Beteiligung · Artikel · Release · Betrieb{% endblock %}
+
+{% block main %}
+<main id="hauptinhalt" class="admin-page-main" data-admin-worktab="{{ settings.ADMIN_WORKTAB_NAME }}">
+  <section class="admin-cockpit-section" aria-label="Admin-Cockpit">
+    <div class="admin-cockpit-shell">
+      <header class="admin-cockpit-header">
+        <div>
+          <p class="hero-kicker">{{ settings.PROJECT_NAME }} · Administration</p>
+          <h1 class="section-title">Admin-Cockpit</h1>
+          <p class="section-sub">Arbeitsfläche für Beteiligung, Artikel, Releases, Nutzer und Betrieb.</p>
+        </div>
+        <div id="admin-auth-status" class="admin-auth-status klein">
+          <b>Status:</b> Initialisiere…
+        </div>
+      </header>
+
+      <div id="admin-cockpit-grid" class="admin-cockpit-grid" hidden>
+        <aside class="admin-sidebar" aria-label="Status und Schnellzugriff">
+          <div class="admin-sidebar-head">
+            <div>
+              <div class="admin-sidebar-title">Übersicht</div>
+              <div class="admin-sidebar-sub">Status · Aktionen · Aktivität</div>
+            </div>
+            <button id="btn-admin-overview-refresh" class="btn btn-primary btn-sm" type="button">Aktualisieren</button>
+          </div>
+          <section class="admin-sidebar-card" aria-label="Webseite">
+            <div class="admin-card-title">Webseite</div>
+            <div class="admin-mini-row"><span>Aktiv</span><b id="admin-web-current">—</b></div>
+            <div class="admin-mini-row"><span>Status</span><span id="admin-web-badge" class="variant-pill admin-inline-pill">Lade…</span></div>
+            <div class="admin-sidebar-actions">
+              <button id="btn-web-refresh" class="btn btn-ghost btn-sm" type="button">Versionen prüfen</button>
+            </div>
+          </section>
+          <section class="admin-sidebar-card" aria-label="Release">
+            <div class="admin-card-title">Release</div>
+            <div class="admin-mini-row"><span>Status</span><b id="admin-release-status">normal</b></div>
+            <div class="admin-mini-row"><span>Kandidaten</span><span id="admin-release-candidates">—</span></div>
+            <button class="btn btn-ghost btn-sm admin-tab-jump" type="button" data-admin-tab-jump="release">Release prüfen</button>
+          </section>
+          <section class="admin-sidebar-card" aria-label="Exporte">
+            <div class="admin-card-title">Exporte</div>
+            <div class="admin-mini-row"><span>Letzter Export</span><span id="admin-sidebar-export-last">—</span></div>
+            <div class="admin-sidebar-actions">
+              <button id="btn-export-monthly" class="btn btn-ghost btn-sm" type="button">Monatsexport</button>
+              <button id="btn-export-release" class="btn btn-primary btn-sm" type="button">Release-Snapshot</button>
+            </div>
+            <div id="admin-export-status" class="admin-sidebar-note klein"></div>
+          </section>
+          <section class="admin-sidebar-card" aria-label="Aktivität">
+            <div class="admin-card-title">Aktivität</div>
+            <div class="admin-mini-row"><span>Kommentare</span><span id="admin-activity-comments">—</span></div>
+            <div class="admin-mini-row"><span>Votes</span><span id="admin-activity-votes">—</span></div>
+            <div class="admin-mini-row"><span>Reviews</span><span id="admin-activity-reviews">—</span></div>
+          </section>
+          <section class="admin-sidebar-card" aria-label="Aktuelle Themen">
+            <div class="admin-card-title">Aktuelle Themen</div>
+            <div class="admin-mini-row"><span>Einträge</span><span id="admin-sidebar-topics-count">—</span></div>
+            <button class="btn btn-ghost btn-sm admin-tab-jump" type="button" data-admin-tab-jump="betrieb">Themen öffnen</button>
+          </section>
+          <section class="admin-sidebar-card" aria-label="Kritische Fälle">
+            <div class="admin-card-title">Kritische Fälle</div>
+            <div class="admin-mini-row"><span>Reports</span><span id="admin-critical-reports">0</span></div>
+          </section>
+        </aside>
+        <section class="admin-main-panel" aria-label="Admin Hauptbereich">
+          <nav class="admin-tabs" aria-label="Admin-Bereiche">
+            <button class="admin-tab-btn is-active" type="button" data-admin-tab="beteiligung">Beteiligung <span id="admin-tab-badge-comments" class="admin-tab-badge">—</span></button>
+            <button class="admin-tab-btn" type="button" data-admin-tab="artikel">Artikel <span id="admin-tab-badge-articles" class="admin-tab-badge">—</span></button>
+            <button class="admin-tab-btn" type="button" data-admin-tab="release">Release <span id="admin-tab-badge-release" class="admin-tab-badge">—</span></button>
+            <button class="admin-tab-btn" type="button" data-admin-tab="nutzer">Nutzer <span id="admin-tab-badge-users" class="admin-tab-badge">—</span></button>
+            <button class="admin-tab-btn" type="button" data-admin-tab="betrieb">Betrieb <span id="admin-tab-badge-ops" class="admin-tab-badge">ok</span></button>
+          </nav>
+          <div class="admin-status-strip" aria-label="Übersicht">
+            <span id="admin-overview-meta">—</span>
+            <span>Review: <b id="admin-strip-reviews">—</b></span>
+            <span>Kommentare: <b id="admin-strip-comments">—</b></span>
+            <span>Artikel: <b id="admin-strip-articles">—</b></span>
+            <span>Nutzer: <b id="admin-strip-users">—</b></span>
+          </div>
+          <section class="admin-tab-panel is-active" data-admin-panel="beteiligung" aria-label="Beteiligung">
+            <div class="admin-panel-head">
+              <div>
+                <h2>Beteiligung</h2>
+                <p class="klein">Kommentare, Reviews, Konflikte und Moderationssignale.</p>
+              </div>
+              <div class="admin-toolbar">
+                <button class="btn btn-ghost btn-sm admin-view-chip is-active" type="button">Alle</button>
+                <button class="btn btn-ghost btn-sm admin-view-chip" type="button">Review</button>
+                <button class="btn btn-ghost btn-sm admin-view-chip" type="button">Reif</button>
+                <button class="btn btn-ghost btn-sm admin-view-chip" type="button">Konflikte</button>
+                <button class="btn btn-ghost btn-sm admin-view-chip" type="button">Gold</button>
+                <button class="btn btn-ghost btn-sm admin-view-chip" type="button">Release</button>
+                <button class="btn btn-ghost btn-sm admin-view-chip" type="button">Reports</button>
+              </div>
+            </div>
+            <div class="admin-filter-row">
+              <label class="klein">Sortierung
+                <select id="admin-comments-sort" class="input-sm">
+                  <option value="newest">neueste</option>
+                  <option value="oldest">älteste</option>
+                  <option value="rating">Zustimmung</option>
+                </select>
+              </label>
+              <label class="klein admin-inline-check">
+                <input id="admin-comments-hide-done" type="checkbox" checked />
+                <span>veröffentlicht/archiviert ausblenden</span>
+              </label>
+              <span id="admin-comments-meta" class="klein admin-muted">Lade…</span>
+            </div>
+            <div class="admin-table-box admin-table-box-main">
+              <table class="admin-table" id="admin-comments-table"></table>
+            </div>
+            <div class="admin-subgrid">
+              <section class="admin-subpanel">
+                <h3>Review-Queue <span id="admin-reviews-meta" class="klein admin-muted">Lade…</span></h3>
+                <div class="admin-table-box admin-table-box-small">
+                  <table class="admin-table" id="admin-reviews-table"></table>
+                </div>
+              </section>
+              <section class="admin-subpanel">
+                <h3>Kommentar-Änderungen <span id="admin-comment-changes-meta" class="klein admin-muted">Lade…</span></h3>
+                <div class="admin-table-box admin-table-box-small">
+                  <table class="admin-table" id="admin-comment-changes-table"></table>
+                </div>
+              </section>
+            </div>
+          </section>
+          <section class="admin-tab-panel" data-admin-panel="artikel" aria-label="Artikel">
+            <div class="admin-panel-head">
+              <div>
+                <h2>Artikel</h2>
+                <p class="klein">Interaktion, Stimmung und Release-Relevanz je Artikel.</p>
+              </div>
+              <span id="admin-articles-meta" class="klein admin-muted">Lade…</span>
+            </div>
+            <div class="admin-table-box admin-table-box-main">
+              <table class="admin-table" id="admin-articles-table"></table>
+            </div>
+            <section class="admin-subpanel admin-subpanel-wide">
+              <h3>Vote-Verteilung <span id="admin-votesdist-meta" class="klein admin-muted">Lade…</span></h3>
+              <div class="admin-table-box admin-table-box-small">
+                <table class="admin-table" id="admin-votesdist-table"></table>
+              </div>
+            </section>
+          </section>
+          <section class="admin-tab-panel" data-admin-panel="release" aria-label="Release">
+            <div class="admin-panel-head">
+              <div>
+                <h2>Release</h2>
+                <p class="klein">Qualifizierte Änderungen prüfen, Konflikte kontrollieren und einen neuen Dokumentstand veröffentlichen.</p>
+              </div>
+            </div>
+            <div class="admin-ops-grid admin-ops-grid-release">
+              <section class="admin-ops-card" id="admin-release-box">
+                <h3>Dokument-Release</h3>
+                <div class="admin-mini-row"><span>Status</span><b id="admin-release-status-detail">Lade…</b></div>
+                <div class="admin-mini-row"><span>Betroffene Artikel</span><span id="admin-release-articles">—</span></div>
+                <div class="admin-mini-row"><span>Qualifiziert / ausgewählt</span><span id="admin-release-selection">—</span></div>
+                <div class="admin-mini-row"><span>Konflikte</span><span id="admin-release-conflicts">—</span></div>
+                <div class="admin-mini-row"><span>Rebase / Archiv</span><span id="admin-release-rebase">—</span></div>
+                <div class="admin-sidebar-actions">
+                  <button id="btn-release-prepare" class="btn btn-primary btn-sm" type="button">Release vorbereiten</button>
+                  <button id="btn-release-refresh" class="btn btn-ghost btn-sm" type="button">Neu prüfen</button>
+                  <button id="btn-release-cancel" class="btn btn-ghost btn-sm" type="button" disabled>Vorbereitung abbrechen</button>
+                  <button id="btn-release-execute" class="btn btn-primary btn-sm" type="button" disabled>Release durchführen</button>
+                </div>
+                <div id="admin-release-action" class="klein admin-muted">Lade Release-Status…</div>
+                <p class="klein admin-muted">Während der Vorbereitung bleiben Votes, Entwürfe und bestehende Reviews offen. Nur neue Einreichungen zur Review sind gesperrt. Vor der Integration wird automatisch der Pre-Release-Snapshot erzeugt.</p>
+              </section>
+            </div>
+            <section class="admin-subpanel admin-subpanel-wide">
+              <h3>Release-Kandidaten</h3>
+              <div class="admin-table-box admin-table-box-main">
+                <table class="admin-table" id="admin-release-candidates-table"></table>
+              </div>
+            </section>
+          </section>
+          <section class="admin-tab-panel" data-admin-panel="nutzer" aria-label="Nutzer">
+            <div class="admin-panel-head">
+              <div>
+                <h2>Nutzer</h2>
+                <p class="klein">Trust, Adminstatus und Aktivität.</p>
+              </div>
+              <label class="klein admin-inline-check">
+                <input id="admin-overview-personal" type="checkbox" />
+                <span>Personendaten anzeigen (E-Mail/PLZ)</span>
+              </label>
+            </div>
+            <p class="klein admin-muted">DSGVO-Hinweis: Standard ist maskiert. Unmaskiert bitte nur, wenn es für Admin-Zwecke erforderlich ist.</p>
+            <div class="admin-table-box admin-table-box-main">
+              <table class="admin-table" id="admin-users-table"></table>
+            </div>
+            <div id="admin-users-meta" class="klein admin-muted admin-panel-foot">Lade…</div>
+          </section>
+          <section class="admin-tab-panel" data-admin-panel="betrieb" aria-label="Betrieb">
+            <div class="admin-panel-head">
+              <div>
+                <h2>Betrieb</h2>
+                <p class="klein">Website-Update, Exporte und Startseiten-Inhalte.</p>
+              </div>
+            </div>
+            <div class="admin-ops-grid">
+              <section class="admin-ops-card">
+                <h3>System</h3>
+                <div class="admin-mini-row"><span>Backend</span><span id="admin-health">Lade…</span></div>
+                <div class="admin-mini-row"><span>Datenbank</span><span id="admin-stats">Lade…</span></div>
+              </section>
+              <section class="admin-ops-card" id="admin-webrelease-box">
+                <h3>Webseite</h3>
+                <div class="admin-mini-row"><span>Aktuelle Version</span><b id="admin-web-current-detail">—</b></div>
+                <div class="admin-mini-row"><span>Update auf</span><select id="admin-web-target" class="input-sm"></select></div>
+                <label class="klein admin-inline-check"><input id="admin-web-stable" type="checkbox" /> <span>als stabil markieren</span></label>
+                <div class="admin-sidebar-actions">
+                  <button id="btn-web-upgrade" class="btn btn-primary btn-sm" type="button">Update</button>
+                  <button id="btn-web-refresh-detail" class="btn btn-ghost btn-sm" type="button">Neu prüfen</button>
+                </div>
+                <div id="admin-web-action" class="klein admin-muted"></div>
+              </section>
+
+
+              <section class="admin-ops-card">
+                <h3>Exporte</h3>
+                <div class="admin-sidebar-actions">
+                  <button id="btn-export-release-detail" class="btn btn-primary btn-sm" type="button">Release-Snapshot</button>
+                  <button id="btn-export-monthly-detail" class="btn btn-ghost btn-sm" type="button">Monatsexport</button>
+                </div>
+                <p class="klein admin-muted">Erzeugt ausschließlich Inhalts- und Archivexporte.</p>
+              </section>
+            </div>
+            <section class="admin-subpanel admin-subpanel-wide">
+              <h3>Exporte</h3>
+              <div id="admin-exports-list" class="juristisch"><p class="klein">Lade Exporte…</p></div>
+            </section>
+            <section class="admin-subpanel admin-subpanel-wide" id="admin-current-topics">
+              <div class="admin-panel-head">
+                <div>
+                  <h3>Aktuelle Themen</h3>
+                  <p class="klein admin-muted">Pflegt ausschließlich das Themen-Tab der Startseite. Roadmap und andere Seiteninhalte bleiben dateibasiert.</p>
+                </div>
+                <div class="admin-toolbar admin-toolbar-compact">
+                  <button id="btn-topics-add" class="btn btn-ghost btn-sm" type="button">Thema hinzufügen</button>
+                  <button id="btn-topics-save" class="btn btn-primary btn-sm" type="button">Speichern</button>
+                </div>
+              </div>
+              <div id="admin-topics-status" class="klein admin-muted"></div>
+              <div id="admin-topics-list" class="admin-topics-list" aria-live="polite"></div>
+            </section>
+          </section>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
+
+{% block extra_scripts %}
+<script defer src="/static/admin.js"></script>
+{% endblock %}

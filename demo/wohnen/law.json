@@ -1,0 +1,962 @@
+{
+  "schema_version": "2.0.0",
+  "law": {
+    "slug": "gesetz-fuer-gutes-wohnen",
+    "title": "Gesetz für gutes Wohnen",
+    "short_title": "GfgW",
+    "version": "1.3",
+    "status": "published",
+    "version_label": "Entwurf v1.3 – stabilisierte Lesefassung",
+    "alternative_name": "Wohninfrastrukturgesetz",
+    "alternative_long_title": "Gesetz für eine verlässliche Wohninfrastruktur"
+  },
+  "default_note": [
+    "Dieses Dokument ist ein verständlicher Gesetzesentwurf, kein ausformulierter Gesetzgebungsvorschlag.",
+    "Werte in Klammern mit der Kennzeichnung **„Default 2026“** zeigen, wie die Regel zum Zeitpunkt des Entwurfs konkret angewendet werden soll.",
+    "Sie können durch Rechtsverordnung angepasst werden, wenn Daten, Wissenschaft, Kostenentwicklung oder gesellschaftliche Verhältnisse dies begründen.",
+    "Dabei gelten drei Grundsätze:",
+    "1. Eine Verordnung darf die Grundprinzipien dieses Gesetzes nicht abschwächen.\n2. Änderungen müssen anhand veröffentlichter Daten und Methoden begründet werden.\n3. Besteht keine wirksame abweichende Regelung, gilt der im Gesetz genannte Default.",
+    "Damit bleibt das Gesetz verständlich und unmittelbar funktionsfähig, ohne technische oder wirtschaftliche Werte für Jahrzehnte festzuschreiben."
+  ],
+  "preamble": [
+    "Wohnen ist Voraussetzung für ein selbstbestimmtes Leben, gesellschaftliche Teilhabe, Gesundheit und persönliche Sicherheit.",
+    "Jeder Mensch soll Zugang zu angemessenem Wohnraum haben.",
+    "Wohnraum soll dauerhaft erhalten, sinnvoll genutzt und zu nachvollziehbaren Kosten bereitgestellt werden.",
+    "Boden- und Wohnungsknappheit, öffentlich geschaffenes Baurecht und die Erwartung zukünftiger Mietsteigerungen sollen keine Grundlage dauerhafter leistungsloser Renditen bilden.",
+    "Wohnraumversorgung ist öffentliche Daseinsvorsorge.",
+    "Sie kann durch öffentliche, gemeinwirtschaftliche, genossenschaftliche und private Träger erfüllt werden.",
+    "Privates Kapital und privatwirtschaftliche Leistungen sind ausdrücklich möglich und erwünscht, soweit ihre Vergütung auf tatsächlicher Leistung, Risiko und langfristiger Kapitalbereitstellung beruht."
+  ],
+  "articles": [
+    {
+      "public_code": "Artikel 1",
+      "slug": "artikel-1-recht-auf-angemessenen-wohnraum",
+      "sort_order": 10,
+      "title": "Recht auf angemessenen Wohnraum",
+      "type": "article",
+      "part": "Teil I – Verfassungsrechtliche Grundlage",
+      "blocks": {
+        "kurzinfo": [
+          "Verankert ein Recht auf angemessenen Wohnraum und eine staatliche Gewährleistung ausreichender Versorgung."
+        ],
+        "juristisch": [
+          "Das Grundgesetz wird um folgenden Artikel ergänzt:",
+          "### Artikel 13a – Wohnen",
+          "(1) Jeder Mensch hat das Recht auf angemessenen Wohnraum.",
+          "(2) Bund und Länder gewährleisten nach Maßgabe ihrer Zuständigkeiten eine dauerhaft ausreichende Versorgung mit sicherem, gesundem, für die jeweilige Lebenssituation geeignetem und zu tragbaren Kosten verfügbarem Wohnraum.",
+          "(3) Niemand darf wegen fehlender eigener finanzieller Mittel dauerhaft ohne angemessenen Wohnraum bleiben.",
+          "(4) Not- und Gemeinschaftsunterkünfte dienen ausschließlich der kurzfristigen Gefahrenabwehr. Sie sind kein dauerhafter Ersatz für angemessenen Wohnraum.",
+          "(5) Das Nähere regelt ein Bundesgesetz."
+        ]
+      }
+    },
+    {
+      "public_code": "Artikel 2",
+      "slug": "artikel-2-besondere-sozialbindung-von-wohnraum-und-boden",
+      "sort_order": 20,
+      "title": "Besondere Sozialbindung von Wohnraum und Boden",
+      "type": "article",
+      "part": "Teil I – Verfassungsrechtliche Grundlage",
+      "blocks": {
+        "kurzinfo": [
+          "Ordnet vermietetem Wohnraum und Wohnboden wegen ihrer Versorgungsfunktion eine besondere Sozialbindung zu."
+        ],
+        "juristisch": [
+          "Artikel 14 des Grundgesetzes wird ergänzt:",
+          "> Vermieteter Wohnraum und für Wohnzwecke nutzbarer Grund und Boden unterliegen wegen ihrer Bedeutung für die Daseinsvorsorge einer besonderen Sozialbindung. Das Gesetz kann insbesondere die zulässige Preisbildung, Nutzung, Erhaltung, Transparenz und Vergabe sowie die Beteiligung der Allgemeinheit an planungs- und knappheitsbedingten Bodenwertsteigerungen bestimmen.",
+          "Artikel 14 Absatz 3 und Artikel 15 bleiben unberührt."
+        ]
+      }
+    },
+    {
+      "public_code": "Artikel 3",
+      "slug": "artikel-3-gesetzgebungskompetenz",
+      "sort_order": 30,
+      "title": "Gesetzgebungskompetenz",
+      "type": "article",
+      "part": "Teil I – Verfassungsrechtliche Grundlage",
+      "blocks": {
+        "kurzinfo": [
+          "Schafft eine Bundeskompetenz für zentrale Regeln der Wohnraumversorgung und lässt die konkrete Durchführung bei den Ländern."
+        ],
+        "juristisch": [
+          "Artikel 74 Absatz 1 des Grundgesetzes wird ergänzt um:",
+          "> die grundlegende Gewährleistung der Wohnraumversorgung, das gemeinwirtschaftliche Wohnungswesen, bundesweite Grundsätze der Wohnkostenbestimmung sowie Mindestanforderungen an Wohnraum und Wohnqualität.",
+          "Die Länder organisieren die konkrete Durchführung und bestimmen die zuständigen regionalen und kommunalen Stellen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 1",
+      "slug": "paragraf-1-zweck",
+      "sort_order": 40,
+      "title": "Zweck",
+      "type": "article",
+      "part": "Teil II – Grundprinzipien",
+      "blocks": {
+        "kurzinfo": [
+          "Legt die Grundprinzipien des Systems fest: universeller Zugang, tragbare Kosten, guter Bestand, Transparenz und Nachsteuerung."
+        ],
+        "juristisch": [
+          "Dieses Gesetz gewährleistet eine dauerhaft ausreichende Versorgung mit gutem Wohnraum.",
+          "Dabei gelten insbesondere:",
+          "1. universeller Zugang,\n2. keine Bedürftigkeitsprüfung für die Wohnungsvergabe,\n3. tragbare und nachvollziehbare Wohnkosten,\n4. dauerhafte Erhaltung des Wohnungsbestands,\n5. ausreichendes regionales Angebot,\n6. effiziente Nutzung von Wohnraum und Boden,\n7. gute Wohn- und Quartiersqualität,\n8. diskriminierungsfreier Zugang,\n9. dauerhafte Bindung öffentlichen Wohnvermögens,\n10. transparente Daten und Entscheidungen,\n11. wissenschaftliche Überprüfung,\n12. verpflichtende Nachsteuerung bei Zielverfehlungen.",
+          "Erhalt, Sanierung, Umbau, Teilung, Aufstockung, Umnutzung und bessere Nutzung vorhandenen Wohnraums sind gegenüber zusätzlichem Neubau zu berücksichtigen.",
+          "Neubau erfolgt, soweit der Wohnraumbedarf durch den Bestand nicht sinnvoll gedeckt werden kann."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 2",
+      "slug": "paragraf-2-universeller-zugang",
+      "sort_order": 50,
+      "title": "Universeller Zugang",
+      "type": "article",
+      "part": "Teil II – Grundprinzipien",
+      "blocks": {
+        "kurzinfo": [
+          "Trennt den Zugang zu gutem Wohnraum von der Frage, wer finanzielle Unterstützung benötigt."
+        ],
+        "juristisch": [
+          "(1) Der Zugang zu öffentlichem, gemeinwirtschaftlichem und öffentlich gefördertem Mietwohnraum darf grundsätzlich nicht von Einkommen, Vermögen, Erwerbsstatus oder dem Bezug öffentlicher Leistungen abhängig gemacht werden.",
+          "(2) Eine Bedürftigkeitsprüfung findet für die Wohnungsvergabe nicht statt.",
+          "(3) Einkommen und Vermögen dürfen berücksichtigt werden, soweit die Höhe individueller Geldleistungen, Zuschüsse oder anderer personenbezogener Förderungen bestimmt wird.",
+          "(4) Eigene Zahlung, Wohngeld, Sozialleistungen, öffentliche Garantien oder andere sichere Zahlungswege sind hinsichtlich der Wohnungsvergabe gleichwertig.",
+          "**Grundsatz:**  \nBedürftigkeit entscheidet darüber, wer finanzielle Hilfe benötigt – nicht darüber, wer in einer guten Wohnung wohnen darf."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 3",
+      "slug": "paragraf-3-anspruch-auf-wohnraumversorgung",
+      "sort_order": 60,
+      "title": "Anspruch auf Wohnraumversorgung",
+      "type": "article",
+      "part": "Teil III – Anspruch und tatsächliche Versorgung",
+      "blocks": {
+        "kurzinfo": [
+          "Begründet einen Anspruch auf ein zumutbares Wohnangebot innerhalb angemessener Zeit und erfasst auch tatsächlichen befristeten Lebensmittelpunkt."
+        ],
+        "juristisch": [
+          "(1) Personen mit gewöhnlichem Aufenthalt im Bundesgebiet haben Anspruch darauf, innerhalb angemessener Zeit Zugang zu einem zumutbaren angemessenen Wohnangebot zu erhalten.",
+          "**Default 2026: reguläres Wohnangebot innerhalb von höchstens sechs Monaten.**",
+          "(1a) Ein gewöhnlicher Aufenthalt kann auch bei von vornherein befristeter Dauer vorliegen, wenn der Ort für die Dauer des Aufenthalts den tatsächlichen Lebensmittelpunkt bildet. Maßgeblich sind die tatsächliche Lebensführung und der Aufenthaltszweck, nicht eine bestimmte Mindestaufenthaltsdauer.",
+          "(2) Der Anspruch richtet sich gegen das zuständige Land. Die Länder bestimmen die ausführenden Stellen.",
+          "(3) Bei akuter unfreiwilliger Wohnungslosigkeit muss unverzüglich eine sichere Unterbringung bereitgestellt werden.",
+          "(4) Eine Notunterkunft erfüllt den dauerhaften Wohnraumanspruch nicht.",
+          "(5) Wird innerhalb der regulären Versorgungsfrist keine angemessene Wohnung angeboten,",
+          "- steigt die Priorität des Haushalts automatisch,\n- die zuständige Stelle muss einen konkreten Versorgungsweg festlegen,\n- und die Nichterfüllung wird statistisch als Versorgungsdefizit erfasst.",
+          "(6) Ein Anspruch auf eine bestimmte Wohnung, Eigentumsform oder Wunschlage besteht nicht.",
+          "(7) Die Ablehnung eines Wohnungsangebots beseitigt den grundsätzlichen Wohnraumanspruch nicht.",
+          "Wiederholte Ablehnung objektiv zumutbarer Wohnungen darf bei der weiteren zeitlichen Priorisierung berücksichtigt werden."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 4",
+      "slug": "paragraf-4-versorgungspflicht",
+      "sort_order": 70,
+      "title": "Versorgungspflicht",
+      "type": "article",
+      "part": "Teil III – Anspruch und tatsächliche Versorgung",
+      "blocks": {
+        "kurzinfo": [
+          "Verpflichtet die Länder zu bedarfsgerechter Versorgung und stellt Bestandsnutzung, Tausch, Sanierung und Umbau neben Neubau."
+        ],
+        "juristisch": [
+          "(1) Die Länder gewährleisten entsprechend dem langfristig festgestellten regionalen Bedarf ausreichenden Wohnraum.",
+          "(2) Zu berücksichtigen sind insbesondere:",
+          "- Bevölkerungsentwicklung,\n- Haushaltsgrößen,\n- Altersstruktur,\n- Wanderung,\n- Barrierefreiheit,\n- Leerstand,\n- Zustand des Bestands,\n- Arbeitsplatz- und Ausbildungsstandorte,\n- Verkehrsverbindungen,\n- Pflege- und Betreuungsstrukturen,\n- dauerhaft wiederkehrender temporärer Wohnbedarf insbesondere durch Hochschulen, Ausbildung, Forschung, Pflege, Kliniken und befristete Beschäftigung\n- und langfristig absehbare Veränderungen.",
+          "(2a) Individuell befristeter Wohnbedarf ist bei der regionalen Wohnraumplanung zu berücksichtigen, soweit er aufgrund dauerhaft bestehender Einrichtungen oder wirtschaftlicher und gesellschaftlicher Funktionen strukturell wiederkehrt.",
+          "Maßgeblich ist der dauerhaft bestehende Bedarf an Wohnkapazität, nicht die Aufenthaltsdauer der jeweils wohnenden Person.",
+          "Einrichtungen und Vorhaben, die in erheblichem Umfang zusätzlichen strukturellen Wohnbedarf erzeugen, sind in die regionale Wohnraumplanung einzubeziehen.",
+          "Die verantwortlichen öffentlichen Stellen, Einrichtungen und geeigneten Wohnträger wirken an einem angemessenen Versorgungspfad mit.",
+          "(3) Besteht ein Wohnungsdefizit, sind insbesondere zu prüfen:",
+          "1. bessere Nutzung bestehenden Wohnraums,\n2. Wohnungstausch,\n3. Aktivierung geeigneten Leerstands,\n4. Sanierung,\n5. Teilung großer Wohnungen oder Gebäude,\n6. Umnutzung,\n7. Aufstockung,\n8. Nachverdichtung,\n9. Verbesserung vorhandener Wohnorte,\n10. zusätzlicher Neubau.",
+          "(4) Raum- und Bauleitplanung dürfen einen nachgewiesenen erheblichen und dauerhaften Wohnraumbedarf nicht ohne überwiegenden öffentlichen Grund dauerhaft unbeantwortet lassen.",
+          "(5) In schrumpfenden Regionen ist nicht Neubau, sondern die Verbesserung und Anpassung des Bestands vorrangig."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 5",
+      "slug": "paragraf-5-strukturelle-unterversorgung",
+      "sort_order": 80,
+      "title": "Strukturelle Unterversorgung",
+      "type": "article",
+      "part": "Teil III – Anspruch und tatsächliche Versorgung",
+      "blocks": {
+        "kurzinfo": [
+          "Definiert messbare strukturelle Unterversorgung und verpflichtet bei dauerhaften Defiziten zu verstärkten Maßnahmen."
+        ],
+        "juristisch": [
+          "(1) Ein regionales strukturelles Versorgungsdefizit liegt vor, wenn der Wohnraumanspruch nach § 3 für einen erheblichen Teil der Wohnungssuchenden wiederholt nicht innerhalb der regulären Frist erfüllt werden kann.",
+          "**Default 2026:** strukturelles Defizit, wenn mehr als 5 % der registrierten anspruchsberechtigten Wohnungssuchenden länger als sechs Monate ohne zumutbares Angebot bleiben.",
+          "(2) Weitere Indikatoren sind insbesondere:",
+          "- unfreiwillige Wohnungslosigkeit,\n- Suchdauer,\n- Überbelegung,\n- erhebliche Wohnkostenüberlastung,\n- Mangel bestimmter Wohnungsgrößen,\n- Mangel barrierefreier Wohnungen\n- und dauerhaft extrem geringe verfügbare Bestände.",
+          "(3) Wird ein strukturelles Defizit festgestellt, muss das zuständige Land innerhalb von sechs Monaten einen verbindlichen Maßnahmenplan beschließen.",
+          "(4) Besteht das Defizit zwei Jahre später wesentlich fort, müssen die Maßnahmen nachweisbar verstärkt werden.",
+          "Bloße Fortschreibung derselben erkennbar unwirksamen Maßnahmen genügt nicht."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 5a",
+      "slug": "paragraf-5a-schutz-der-wohnfunktion-bei-unterversorgung",
+      "sort_order": 90,
+      "title": "Schutz der Wohnfunktion bei Unterversorgung",
+      "type": "article",
+      "part": "Teil III – Anspruch und tatsächliche Versorgung",
+      "blocks": {
+        "kurzinfo": [
+          "Schützt Wohnraum bei Unterversorgung vor dauerhaftem Entzug durch Leerstand, Freizeit- oder Beherbergungsnutzung."
+        ],
+        "juristisch": [
+          "(1) In Gebieten mit struktureller Wohnraumunterversorgung oder soweit eine Nutzungsänderung eine solche Unterversorgung voraussichtlich verursacht oder wesentlich verschärft, darf bestehender Wohnraum grundsätzlich nicht dauerhaft oder überwiegend zugunsten touristischer Beherbergung, reiner Freizeitnutzung, unbegründeten Leerstands oder vergleichbarer Nutzungen der Wohnraumversorgung entzogen werden.",
+          "(2) Eine solche Nutzungsänderung kann zugelassen werden, wenn",
+          "- die Wohnraumversorgung hierdurch nicht wesentlich beeinträchtigt wird,\n- gleichwertiger, dem betroffenen Wohnungsmarkt tatsächlich zusätzlich zur Verfügung stehender Ersatzwohnraum geschaffen wird\n- oder ein überwiegendes öffentliches Interesse besteht.",
+          "(3) Die zeitweise Überlassung tatsächlich selbst genutzten Wohnraums sowie die Aufnahme von Gästen gilt grundsätzlich nicht als Entzug der Wohnfunktion, solange die eigene Wohnnutzung prägend bleibt.",
+          "(4) Die Länder können Umfang, Genehmigungsverfahren und Nachweise nach Maßgabe der örtlichen Wohnraumsituation näher bestimmen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 6",
+      "slug": "paragraf-6-angemessener-wohnraum",
+      "sort_order": 100,
+      "title": "Angemessener Wohnraum",
+      "type": "article",
+      "part": "Teil IV – Wohn- und Quartiersqualität",
+      "blocks": {
+        "kurzinfo": [
+          "Definiert Mindestmerkmale angemessenen, sicheren und gesundheitlich geeigneten Wohnraums."
+        ],
+        "juristisch": [
+          "Wohnraum ist angemessen, wenn er insbesondere",
+          "1. baulich sicher,\n2. gesundheitlich unbedenklich,\n3. trocken,\n4. ausreichend belichtet und belüftbar,\n5. im Winter angemessen temperierbar,\n6. gegen gesundheitlich relevante sommerliche Überhitzung geschützt,\n7. mit Trinkwasser, Sanitärraum und Kochmöglichkeit ausgestattet,\n8. ausreichend gegen wesentliche äußere und innere Störungen geschützt,\n9. für Haushaltsgröße und Nutzung funktional geeignet\n10. und dauerhaft instandhaltbar",
+          "ist.",
+          "**Default 2026:** Die konkreten Grenzwerte orientieren sich am aktuellen wissenschaftlichen Stand zu Gesundheit, Überbelegung, Wärme, Hitze, Luft, Feuchte, Schadstoffen, Lärm und Barrierefreiheit und werden per WohnqualitätsVO bestimmt."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 7",
+      "slug": "paragraf-7-bestand-und-qualitaetsstufen",
+      "sort_order": 110,
+      "title": "Bestand und Qualitätsstufen",
+      "type": "article",
+      "part": "Teil IV – Wohn- und Quartiersqualität",
+      "blocks": {
+        "kurzinfo": [
+          "Unterscheidet Gesundheitsminimum, funktionale Wohnqualität und einen höheren Zukunftsstandard für Neubau und grundlegende Sanierung."
+        ],
+        "juristisch": [
+          "Anforderungen werden in drei Gruppen unterschieden:",
+          "### Stufe 1 – Gesundheit und Sicherheit",
+          "Gilt grundsätzlich für jeden bewohnten Wohnraum.",
+          "Mängel sind unverzüglich oder innerhalb angemessener Frist zu beseitigen.",
+          "### Stufe 2 – funktionale Wohnqualität",
+          "Gilt für regulär vermieteten Wohnraum und kann bei bestehendem Altbestand innerhalb angemessener Übergangsfristen hergestellt werden.",
+          "### Stufe 3 – Zukunftsstandard",
+          "Gilt insbesondere für Neubau und grundlegende Sanierung.",
+          "Hierzu können beispielsweise erhöhte Anforderungen an",
+          "- Anpassbarkeit,\n- Barrierearmut,\n- sommerlichen Wärmeschutz,\n- Reparierbarkeit\n- und Klimaresilienz",
+          "gehören.",
+          "Ein bestehendes Gebäude wird nicht allein dadurch unzulässig, dass es einen später eingeführten Neubaukomfortstandard nicht erfüllt."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 8",
+      "slug": "paragraf-8-quartiersqualitaet",
+      "sort_order": 120,
+      "title": "Quartiersqualität",
+      "type": "article",
+      "part": "Teil IV – Wohn- und Quartiersqualität",
+      "blocks": {
+        "kurzinfo": [
+          "Bezieht neben der Wohnung auch Mobilität, Grün, Lärm, Versorgung und soziale Infrastruktur in Wohnqualität ein."
+        ],
+        "juristisch": [
+          "(1) Gute Wohnqualität umfasst Wohnung und Wohnumfeld.",
+          "(2) Bei neuen oder wesentlich veränderten Wohnquartieren sind insbesondere zu berücksichtigen:",
+          "- sichere Wege zu Fuß,\n- sichere Radverbindungen,\n- öffentlicher Verkehr oder gleichwertige Mobilität,\n- Grün- und Aufenthaltsräume,\n- Bäume, Verschattung und sommerliche Kühlung,\n- Schutz vor erheblichem Lärm,\n- geringe Luftschadstoffbelastung,\n- geringer vermeidbarer Durchgangsverkehr,\n- Versorgung des täglichen Bedarfs,\n- Bildung und Kinderbetreuung,\n- gesundheitliche Grundversorgung,\n- soziale Infrastruktur,\n- lokale Dienstleistungen und Gewerbe.",
+          "(3) Die konkreten Anforderungen unterscheiden zwischen Großstadt, Stadt, Vorort und ländlichem Raum.",
+          "(4) Eigenschaften wie",
+          "- wahrgenommene Sicherheit,\n- Ruhe,\n- Aufenthaltsqualität,\n- Identifikation,\n- Nachbarschaft\n- und allgemeine Wohnzufriedenheit",
+          "werden ergänzend durch standardisierte Bewohnerbefragungen erfasst.",
+          "(5) Es wird kein verpflichtender einzelner Gesamtindex für „gutes Wohnen“ gebildet."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 9",
+      "slug": "paragraf-9-wohnqualitaetsverordnung",
+      "sort_order": 130,
+      "title": "Wohnqualitätsverordnung",
+      "type": "article",
+      "part": "Teil IV – Wohn- und Quartiersqualität",
+      "blocks": {
+        "kurzinfo": [
+          "Überträgt technische Konkretisierungen an eine Wohnqualitätsverordnung, ohne Schutzziele aufzugeben."
+        ],
+        "juristisch": [
+          "Die WohnqualitätsVO konkretisiert die funktionalen Mindestanforderungen.",
+          "Sie darf:",
+          "- technische Grenzwerte aktualisieren,\n- Messmethoden ändern,\n- wissenschaftlichen Fortschritt übernehmen\n- und Anforderungen nach Gebäude- und Siedlungstyp differenzieren.",
+          "Sie darf nicht:",
+          "- gesundheitliche Mindeststandards unterschreiten,\n- regulär gesundheitsgefährdenden Wohnraum zulassen\n- oder bestimmte technische Lösungen vorschreiben, wenn gleichwertige Lösungen das Schutzziel erreichen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 10",
+      "slug": "paragraf-10-grundsatz",
+      "sort_order": 140,
+      "title": "Grundsatz",
+      "type": "article",
+      "part": "Teil V – Lebenszyklus-Kostenmiete",
+      "blocks": {
+        "kurzinfo": [
+          "Begrenzt Mieten auf wirtschaftlich erforderliche Lebenszykluskosten plus angemessene Kapitalvergütung."
+        ],
+        "juristisch": [
+          "(1) Wohnraum, der dauerhaft oder für einen tatsächlichen zeitlich begrenzten Wohnbedarf vermietet wird, darf höchstens zu einer Miete überlassen werden, die seinen wirtschaftlich erforderlichen Lebenszykluskosten zuzüglich angemessener Kapitalvergütung entspricht.",
+          "(2) Lebenszykluskosten sind die Kosten, die ein ordentlich und wirtschaftlich betriebenes Gebäude langfristig benötigt, um seine Wohnfunktion dauerhaft zu erfüllen.",
+          "Sie umfassen insbesondere:",
+          "1. wirtschaftlich angemessene Herstellung,\n2. zulässige Finanzierung,\n3. Verwaltung,\n4. Betrieb,\n5. Wartung,\n6. laufende Instandhaltung,\n7. Instandsetzung,\n8. vorhersehbare Erneuerung wesentlicher Bauteile,\n9. notwendige Modernisierung,\n10. Ersatz- und Risikorücklagen\n11. und angemessene Kapitalvergütung.",
+          "(3) Die Kalkulation erfolgt nicht allein für die Laufzeit eines aktuellen Kredits, sondern über den langfristigen Lebenszyklus des Wohngebäudes.",
+          "**Default 2026:** rollierender Erhaltungs- und Investitionsplan von mindestens 30 Jahren; Bauteile werden nach ihrer jeweiligen technischen und wirtschaftlichen Nutzungsdauer berücksichtigt.",
+          "(3a) Bei befristetem oder möbliertem Wohnraum dürfen nachweisbare zusätzliche Kosten insbesondere für Möblierung, häufigeren Nutzerwechsel, zusätzliche Verwaltung oder zusätzlich vereinbarte Leistungen angemessen berücksichtigt werden.",
+          "Eine Befristung oder Möblierung rechtfertigt für sich allein keinen von den Lebenszykluskosten losgelösten Mietaufschlag.",
+          "(4) Die Tilgung eines Kredits führt deshalb nicht dazu, dass die Miete anschließend auf reine Betriebskosten sinkt.",
+          "Notwendige Mittel für zukünftige Erneuerungen bleiben Bestandteil der Kosten."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 11",
+      "slug": "paragraf-11-wirtschaftlich-erforderliche-kosten",
+      "sort_order": 150,
+      "title": "Wirtschaftlich erforderliche Kosten",
+      "type": "article",
+      "part": "Teil V – Lebenszyklus-Kostenmiete",
+      "blocks": {
+        "kurzinfo": [
+          "Erkennt nur effiziente und erforderliche Kosten an und schließt insbesondere Knappheits- und Spekulationsaufschläge aus."
+        ],
+        "juristisch": [
+          "(1) Anerkannt werden nur Kosten, die bei ordentlicher, effizienter und langfristiger Bewirtschaftung erforderlich sind.",
+          "(2) Kosten werden soweit sinnvoll mit vergleichbaren Gebäuden und Leistungen abgeglichen.",
+          "(3) Nicht anerkennungsfähig sind insbesondere:",
+          "- unangemessen teure Beschaffung,\n- überhöhte konzerninterne Leistungen,\n- unangemessen hohe Management- oder Verwaltungskosten,\n- Finanzierungskosten deutlich oberhalb vergleichbarer marktüblicher Finanzierung ohne sachlichen Grund,\n- Schäden aufgrund vorsätzlich oder grob fahrlässig unterlassener Instandhaltung,\n- Knappheitsaufschläge,\n- erwartete zukünftige Mietsteigerungen\n- und spekulative Immobilienwertsteigerungen.",
+          "(4) Höhere Kosten aufgrund besonderer Qualität, schwieriger baulicher Bedingungen oder notwendiger Spezialmaßnahmen bleiben zulässig, wenn sie nachvollziehbar erforderlich sind.",
+          "**Grundsatz:**  \nKostenmiete bedeutet nicht „jede Ausgabe des Vermieters wird bezahlt“, sondern „eine effizient bereitgestellte Wohnleistung wird bezahlt“."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 12",
+      "slug": "paragraf-12-erwerb-bestehender-wohnungen",
+      "sort_order": 160,
+      "title": "Erwerb bestehender Wohnungen",
+      "type": "article",
+      "part": "Teil V – Lebenszyklus-Kostenmiete",
+      "blocks": {
+        "kurzinfo": [
+          "Verhindert, dass ein hoher Kaufpreis beim Eigentümerwechsel automatisch eine neue höhere Mietbasis erzeugt."
+        ],
+        "juristisch": [
+          "(1) Ein Eigentümerwechsel begründet keine neue höhere Mietbasis.",
+          "(2) Zahlt ein Erwerber für ein bestehendes Gebäude mehr als dessen gebundener Wohnwert, trägt er dieses zusätzliche Investitionsrisiko selbst.",
+          "(3) Ein spekulativer Kaufpreis darf nicht durch spätere Mietsteigerungen auf die Bewohner übertragen werden.",
+          "(4) Anerkannt werden können tatsächliche Investitionen, die",
+          "- die Wohnqualität verbessern,\n- die Nutzungsdauer verlängern,\n- Betriebskosten verringern\n- oder zusätzlichen Wohnraum schaffen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 13",
+      "slug": "paragraf-13-kapitalverguetung",
+      "sort_order": 170,
+      "title": "Kapitalvergütung",
+      "type": "article",
+      "part": "Teil V – Lebenszyklus-Kostenmiete",
+      "blocks": {
+        "kurzinfo": [
+          "Erlaubt eine begrenzte, an langfristigen Kapitalmarktdaten orientierte Vergütung von Eigen- und Fremdkapital."
+        ],
+        "juristisch": [
+          "(1) Langfristig eingesetztes Kapital darf angemessen vergütet werden.",
+          "(2) Die Kapitalvergütung orientiert sich an einem langfristigen sicheren Kapitalmarktzins zuzüglich eines begrenzten Risikozuschlags.",
+          "Der Risikozuschlag darf nur tatsächliche wohnungswirtschaftliche Risiken abbilden und keine Knappheitsrendite enthalten.",
+          "**Default 2026: Eigenkapitalvergütung 3,5 % jährlich.**",
+          "(3) Die Berechnungsmethode wird durch WohnkostenVO festgelegt.",
+          "**Defaultmethodik 2026:** langfristiger sicherer Referenzzins zuzüglich höchstens etwa 2 Prozentpunkten wohnungswirtschaftlichem Risikozuschlag.",
+          "(4) Fremdfinanzierungskosten werden bis zur Höhe wirtschaftlich vergleichbarer Finanzierung anerkannt.",
+          "(5) Die WohnkostenVO überprüft den Wert regelmäßig anhand langfristiger Kapitalmarktdaten.",
+          "Kurzfristige Zinsspitzen oder Spekulationsphasen sollen nicht unmittelbar vollständig auf Mieten übertragen werden."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 14",
+      "slug": "paragraf-14-gebundener-wohnbodenwert",
+      "sort_order": 180,
+      "title": "Gebundener Wohnbodenwert",
+      "type": "article",
+      "part": "Teil VI – Boden",
+      "blocks": {
+        "kurzinfo": [
+          "Trennt Gebäude- und Bodenwert und führt einen gebundenen Wohnbodenwert als Kostenbasis ein."
+        ],
+        "juristisch": [
+          "(1) Gebäude und Boden werden bei der Wohnkostenberechnung getrennt betrachtet.",
+          "(2) Privater Boden kann eine angemessene Vergütung für seine dauerhafte Nutzung erhalten.",
+          "(3) Grundlage ist der **gebundene Wohnbodenwert**.",
+          "Er beschreibt den langfristigen wirtschaftlichen Wert des Grundstücks für die Bereitstellung von Wohnraum unter den Bedingungen dieses Gesetzes.",
+          "(4) In diesen Wert dürfen insbesondere nicht automatisch einfließen:",
+          "- lokale Wohnungsknappheit,\n- kurzfristige Transaktionspreise,\n- Erwartungen zukünftiger Mietsteigerungen,\n- rein spekulative Wertsteigerungen\n- und der vollständige Wertzuwachs aufgrund neu geschaffenen öffentlichen Baurechts.",
+          "(5) Aktuelle Marktpreise dürfen als Informationsquelle verwendet werden, aber nicht allein oder überwiegend die zulässige Mietbelastung bestimmen.",
+          "(6) Die konkrete Bewertungsmethode wird durch WohnkostenVO transparent festgelegt.",
+          "Sie muss gewährleisten, dass Boden eine wirtschaftliche Nutzung ermöglicht, aber keine unbegrenzte Rückkopplung",
+          "> höhere Miete → höherer Bodenwert → höhere Miete",
+          "entsteht."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 15",
+      "slug": "paragraf-15-planungsbedingter-bodenwertzuwachs",
+      "sort_order": 190,
+      "title": "Planungsbedingter Bodenwertzuwachs",
+      "type": "article",
+      "part": "Teil VI – Boden",
+      "blocks": {
+        "kurzinfo": [
+          "Sichert einen überwiegenden Anteil planungsbedingter Bodenwertsteigerungen für Wohnraum, Infrastruktur und Quartier."
+        ],
+        "juristisch": [
+          "(1) Wertsteigerungen, die wesentlich durch die öffentliche Schaffung oder Erweiterung von Baurecht entstehen, stehen überwiegend der Allgemeinheit zu.",
+          "(2) Mindestens die Hälfte des planungsbedingten Mehrwerts ist für",
+          "- Wohnraum,\n- öffentliche Infrastruktur,\n- Grün- und Freiräume\n- oder Quartiersentwicklung",
+          "zu sichern.",
+          "**Default 2026: zwei Drittel des planungsbedingten Mehrwerts.**",
+          "(3) Die Beteiligung kann insbesondere erfolgen durch",
+          "- Grundstücksübertragung,\n- Erbbaurechte,\n- dauerhaft gebundenen Wohnraum,\n- Infrastrukturleistungen,\n- Belegungsrechte\n- oder finanzielle Abschöpfung.",
+          "(4) Die verbleibende private Beteiligung muss eine wirtschaftlich sinnvolle Entwicklung weiterhin ermöglichen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 16",
+      "slug": "paragraf-16-gemeinwirtschaftliche-wohnungsunternehmen",
+      "sort_order": 200,
+      "title": "Gemeinwirtschaftliche Wohnungsunternehmen",
+      "type": "article",
+      "part": "Teil VII – Gemeinwirtschaftliches und öffentliches Wohnvermögen",
+      "blocks": {
+        "kurzinfo": [
+          "Definiert Gemeinwirtschaftlichkeit über Kostenprinzip, Vermögensbindung, begrenzte Kapitalvergütung und Reinvestition statt über eine bestimmte Rechtsform."
+        ],
+        "juristisch": [
+          "(1) Jede geeignete Rechtsform kann als gemeinwirtschaftliches Wohnungsunternehmen anerkannt werden.",
+          "(2) Voraussetzung sind:",
+          "1. Bewirtschaftung nach der Lebenszyklus-Kostenmiete,\n2. dauerhafte Vermögensbindung,\n3. begrenzte Kapitalvergütung,\n4. überwiegende Reinvestition von Überschüssen in Wohnraum,\n5. unabhängige Prüfung,\n6. transparente Rechnungslegung.",
+          "(3) Zulässig sind insbesondere:",
+          "- Genossenschaften,\n- kommunale Unternehmen,\n- Stiftungen,\n- GmbHs,\n- Aktiengesellschaften\n- und vergleichbare Rechtsformen.",
+          "(4) Die Rechtsform ist unerheblich.",
+          "Entscheidend ist, wem Wertsteigerung, Überschüsse und Vermögen langfristig zugutekommen.",
+          "(5) Gemeinwirtschaftlichkeit schützt nicht vor Effizienzkontrolle."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 17",
+      "slug": "paragraf-17-oeffentlicher-wohnboden",
+      "sort_order": 210,
+      "title": "Öffentlicher Wohnboden",
+      "type": "article",
+      "part": "Teil VII – Gemeinwirtschaftliches und öffentliches Wohnvermögen",
+      "blocks": {
+        "kurzinfo": [
+          "Bindet öffentlichen Wohnboden langfristig und setzt Erbbaurecht sowie gemeinwirtschaftliche Nutzung vor Verkauf."
+        ],
+        "juristisch": [
+          "(1) Für Wohnzwecke geeigneter Boden im Eigentum von Bund, Ländern oder ihren Unternehmen darf nur ausnahmsweise dauerhaft veräußert werden.",
+          "(2) Vorrang haben:",
+          "- eigene öffentliche Nutzung,\n- gemeinwirtschaftliche Nutzung,\n- Genossenschaften\n- und langfristige Erbbaurechte.",
+          "(3) Eine Veräußerung ist nur zulässig, wenn",
+          "- das Grundstück dauerhaft ungeeignet ist,\n- ein mindestens gleichwertiger öffentlicher Vermögenswert entsteht\n- oder ein anderes überwiegendes öffentliches Interesse besteht.",
+          "(4) Ein höherer kurzfristiger Verkaufserlös ist für sich kein überwiegendes öffentliches Interesse.",
+          "(5) Nettoerlöse aus zulässigen Verkäufen fließen vollständig in öffentliches oder gemeinwirtschaftliches Wohnvermögen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 18",
+      "slug": "paragraf-18-fiskalerbschaften-und-zuwendungen",
+      "sort_order": 220,
+      "title": "Fiskalerbschaften und Zuwendungen",
+      "type": "article",
+      "part": "Teil VII – Gemeinwirtschaftliches und öffentliches Wohnvermögen",
+      "blocks": {
+        "kurzinfo": [
+          "Führt wohngeeignete Fiskalerbschaften und Zuwendungen grundsätzlich dem öffentlichen oder gemeinwirtschaftlichen Wohnvermögen zu."
+        ],
+        "juristisch": [
+          "(1) Wohngeeignete Grundstücke und Gebäude, die Bund oder Ländern durch gesetzliches Erbrecht zufallen, sind dem öffentlichen oder gemeinwirtschaftlichen Wohnvermögen zuzuführen.",
+          "(2) Dasselbe gilt grundsätzlich für ungebundene Schenkungen und testamentarische Zuwendungen an die öffentliche Hand.",
+          "(3) Ist eine Wohnnutzung",
+          "- dauerhaft ungeeignet,\n- wirtschaftlich offensichtlich unsinnig\n- oder mit einem überwiegenden anderen öffentlichen Interesse unvereinbar,",
+          "kann das Vermögen veräußert werden.",
+          "(4) Der Nettoerlös fließt vollständig in öffentliches oder gemeinwirtschaftliches Wohnvermögen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 19",
+      "slug": "paragraf-19-wohnvermoegensfonds",
+      "sort_order": 230,
+      "title": "Wohnvermögensfonds",
+      "type": "article",
+      "part": "Teil VII – Gemeinwirtschaftliches und öffentliches Wohnvermögen",
+      "blocks": {
+        "kurzinfo": [
+          "Schafft revolvierende Finanzierungsinstrumente für Erwerb, Bestand, Neubau, Sanierung und gemeinwirtschaftliche Überführung."
+        ],
+        "juristisch": [
+          "(1) Bund und Länder stellen dauerhafte Finanzierungsinstrumente für gemeinwirtschaftlichen Wohnraum bereit.",
+          "Hierzu sollen insbesondere revolvierende Wohnvermögensfonds dienen.",
+          "(2) Sie finanzieren insbesondere:",
+          "- Grundstückserwerb,\n- Bestandsankauf,\n- Neubau,\n- Sanierung,\n- Umbau,\n- Teilung,\n- Aufstockung,\n- Umnutzung,\n- Quartiersverbesserung\n- und die Überführung vorhandener Bestände in dauerhafte Gemeinwirtschaftlichkeit.",
+          "(3) Rückzahlungen, Erbbauzinsen und sonstige Rückflüsse verbleiben im Wohnsystem.",
+          "(4) Bürger, Genossenschaften, Versicherungen, Altersvorsorgeeinrichtungen und andere Kapitalgeber können investieren.",
+          "(5) Das Kapital erhält eine angemessene begrenzte Vergütung.",
+          "Ein Anspruch auf Bodenwert-, Knappheits- oder spekulative Immobiliengewinne entsteht nicht."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 20",
+      "slug": "paragraf-20-oeffentliche-wohnungsplattform",
+      "sort_order": 240,
+      "title": "Öffentliche Wohnungsplattform",
+      "type": "article",
+      "part": "Teil VIII – Öffentliche Wohnungsinfrastruktur",
+      "blocks": {
+        "kurzinfo": [
+          "Sieht eine kostenlose öffentliche digitale Infrastruktur für Angebote, Mietberechnung, Matching, Tausch und Wohnungsdaten vor."
+        ],
+        "juristisch": [
+          "Bund und Länder gewährleisten eine kostenlose öffentliche digitale Infrastruktur für",
+          "- dauerhafte und temporäre Wohnungsangebote,\n- amtliche Mietberechnung,\n- Bewerbung,\n- Matching,\n- Zwischenmiete,\n- Wohnungstausch,\n- Qualitätsinformationen\n- und Wohnungsdaten.",
+          "Sie ist öffentliche Infrastruktur und nicht auf Gewinnerzielung angewiesen.",
+          "Die öffentliche Infrastruktur soll insbesondere die zeitweise Nutzung vorübergehend verfügbarer Wohnungen und Zimmer erleichtern."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 21",
+      "slug": "paragraf-21-registrierung",
+      "sort_order": 250,
+      "title": "Registrierung",
+      "type": "article",
+      "part": "Teil VIII – Öffentliche Wohnungsinfrastruktur",
+      "blocks": {
+        "kurzinfo": [
+          "Verlangt eindeutige Wohnungskennungen und vergleichbare Angaben zu Qualität, Nutzung sowie zulässiger und verlangter Miete."
+        ],
+        "juristisch": [
+          "(1) Jede öffentlich angebotene Wohnung, die dem dauerhaften oder temporären Wohnen im Sinne dieses Gesetzes dient, erhält eine eindeutige Wohnungskennung.",
+          "(2) Das Angebot enthält mindestens:",
+          "- Wohnfläche,\n- Raumzahl,\n- wesentliche Qualität,\n- Barrierefreiheit,\n- Energie- und Zustandsinformationen,\n- Nebenkosten,\n- Bezugsdatum,\n- Nutzungsart,\n- amtlich zulässige Miete\n- und verlangte Miete.",
+          "Amtliche und verlangte Miete werden unmittelbar vergleichbar dargestellt.",
+          "Eine oberhalb der zulässigen Miete liegende Forderung ist als unzulässig zu kennzeichnen und kann nicht wirksam vereinbart werden."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 22",
+      "slug": "paragraf-22-private-immobilienportale",
+      "sort_order": 260,
+      "title": "Private Immobilienportale",
+      "type": "article",
+      "part": "Teil VIII – Öffentliche Wohnungsinfrastruktur",
+      "blocks": {
+        "kurzinfo": [
+          "Lässt private Portale zu, verlangt aber offene amtliche Daten und verhindert exklusive Kontrolle über öffentliche Wohnungsinformationen."
+        ],
+        "juristisch": [
+          "Private Vermittlungsplattformen bleiben zulässig.",
+          "Sie können insbesondere",
+          "- bessere Suchfunktionen,\n- Karten,\n- Benachrichtigungen,\n- Visualisierungen\n- und Beratungsleistungen",
+          "anbieten.",
+          "Sie dürfen jedoch",
+          "- keine exklusiven Rechte an öffentlich registrierten Wohnungsangeboten begründen,\n- amtliche Mietinformationen nicht verbergen,\n- unzulässige Mieten nicht als reguläre Preise darstellen\n- und gegen Entgelt keine bessere Position im gesetzlichen Vergabeverfahren verkaufen.",
+          "Die wesentlichen öffentlichen Daten stehen über offene Schnittstellen diskriminierungsfrei bereit."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 23",
+      "slug": "paragraf-23-mieterseitige-vergabe",
+      "sort_order": 270,
+      "title": "Mieterseitige Vergabe",
+      "type": "article",
+      "part": "Teil IX – Wohnungsvergabe und Tausch",
+      "blocks": {
+        "kurzinfo": [
+          "Kehrt die Vergabelogik um: Wohnungssuchende priorisieren Wohnungen; die Zuteilung erfolgt nach transparenten Kriterien und bei Gleichstand per Los."
+        ],
+        "juristisch": [
+          "(1) Professionell und gemeinwirtschaftlich angebotener Mietwohnraum wird anhand transparenter sachlicher Kriterien vergeben.",
+          "(2) Ausgangspunkt sind die Präferenzen der Wohnungssuchenden:",
+          "> Der Wohnungssuchende priorisiert Wohnungen – nicht der Vermieter Menschen.",
+          "(3) Zulässige Kriterien sind insbesondere:",
+          "- passende Haushaltsgröße,\n- notwendige Barrierefreiheit,\n- Beendigung einer unangemessenen Wohnsituation,\n- drohende Wohnungslosigkeit,\n- Pflege-, Betreuungs- und Sorgeverpflichtungen,\n- notwendige örtliche Bindungen,\n- sinnvoller Wohnungstausch\n- und Wartezeit.",
+          "(4) Einkommen, Vermögen, Beruf, Arbeitgeber, Herkunft, Geschlecht oder ein allgemeiner Bonitätsscore begründen keine eigenständige Präferenz des Vermieters.",
+          "Die gesicherte Zahlung der zulässigen Miete darf überprüft werden.",
+          "(5) Bei Gleichrangigkeit entscheidet das Los.",
+          "(6) Die Matchinglogik ist",
+          "- öffentlich,\n- versioniert,\n- reproduzierbar,\n- unabhängig auditierbar\n- und rechtlich anfechtbar.",
+          "(7) Eine geheime Bewertung von Wohnungssuchenden ist unzulässig."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 24",
+      "slug": "paragraf-24-wohnungstausch",
+      "sort_order": 280,
+      "title": "Wohnungstausch",
+      "type": "article",
+      "part": "Teil IX – Wohnungsvergabe und Tausch",
+      "blocks": {
+        "kurzinfo": [
+          "Macht direkten, Ring- und Mehrfachtausch zu einem systematisch unterstützten Instrument besserer Wohnraumnutzung."
+        ],
+        "juristisch": [
+          "Das öffentliche System unterstützt",
+          "- direkten Tausch,\n- Ringtausch\n- und Mehrfachtausch.",
+          "Öffentliche und gemeinwirtschaftliche Vermieter nehmen verpflichtend teil.",
+          "Ein geeigneter Tausch darf nur aus sachlichem Grund abgelehnt werden.",
+          "Der Tausch selbst rechtfertigt keine höhere Miete.",
+          "Umzugskosten, Anpassungsmaßnahmen und andere Wechselkosten können übernommen werden, wenn hierdurch Wohnraum wesentlich sinnvoller genutzt wird."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 25",
+      "slug": "paragraf-25-wohnrecht-und-konkrete-wohnung",
+      "sort_order": 290,
+      "title": "Wohnrecht und konkrete Wohnung",
+      "type": "article",
+      "part": "Teil X – Rechte und Pflichten der Bewohner",
+      "blocks": {
+        "kurzinfo": [
+          "Unterscheidet das grundsätzliche Recht auf Wohnraum vom Recht auf eine konkrete Wohnung und schützt zugleich Nachbarrechte."
+        ],
+        "juristisch": [
+          "Das Recht auf Wohnraum ist grundsätzlich unverlierbar.",
+          "Es begründet jedoch kein unverlierbares Recht auf die Nutzung einer bestimmten Wohnung.",
+          "Die Rechte anderer Bewohner auf",
+          "- Gesundheit,\n- Sicherheit,\n- Ruhe\n- und angemessene Nutzung ihrer Wohnung",
+          "sind gleichwertig zu schützen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 26",
+      "slug": "paragraf-26-pflichtverletzungen",
+      "sort_order": 300,
+      "title": "Pflichtverletzungen",
+      "type": "article",
+      "part": "Teil X – Rechte und Pflichten der Bewohner",
+      "blocks": {
+        "kurzinfo": [
+          "Regelt erhebliche Pflichtverletzungen und verlangt vor einer Beendigung grundsätzlich Feststellung, Abhilfechance und geeignete Unterstützung."
+        ],
+        "juristisch": [
+          "Erhebliche schuldhafte",
+          "- Beschädigungen,\n- Gefährdungen,\n- nachhaltige massive Störungen,\n- erhebliche Vernachlässigung fremden Eigentums\n- oder wiederholte schwerwiegende Vertragsverletzungen",
+          "können zur Beendigung des konkreten Mietverhältnisses führen.",
+          "Soweit keine unmittelbare Gefahr besteht, sind vorher grundsätzlich",
+          "1. die Tatsachen objektiv festzustellen,\n2. konkrete Abhilfe zu verlangen,\n3. eine angemessene Frist zu setzen\n4. und geeignete Hilfe anzubieten.",
+          "Liegt die Ursache wesentlich in",
+          "- Krankheit,\n- Behinderung,\n- Pflegebedarf,\n- Sucht,\n- psychischer Erkrankung\n- oder mangelnder Fähigkeit zur selbstständigen Haushaltsführung,",
+          "sind geeignete Unterstützungs- oder Wohnformen besonders zu prüfen.",
+          "Schadensersatz und strafrechtliche Verantwortung bleiben unberührt."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 27",
+      "slug": "paragraf-27-keine-raeumung-in-wohnungslosigkeit",
+      "sort_order": 310,
+      "title": "Keine Räumung in Wohnungslosigkeit",
+      "type": "article",
+      "part": "Teil X – Rechte und Pflichten der Bewohner",
+      "blocks": {
+        "kurzinfo": [
+          "Verhindert, dass der Verlust einer konkreten Wohnung regulär in Wohnungslosigkeit führt."
+        ],
+        "juristisch": [
+          "(1) Der Verlust einer konkreten Wohnung beendet nicht den Wohnraumanspruch.",
+          "(2) Eine Räumung regulären Wohnraums darf grundsätzlich nur vollzogen werden, wenn",
+          "- geeigneter anderer Wohnraum,\n- eine geeignete betreute Wohnform\n- oder bei unmittelbarer Gefahr zumindest eine sichere vorübergehende Unterbringung mit verbindlichem Anschlussplan",
+          "bereitsteht.",
+          "(3) Lehnt der Betroffene ein objektiv zumutbares Anschlussangebot ab, gilt die Versorgungspflicht insoweit als erfüllt.",
+          "(4) Bei wiederholt erheblichen Problemen kann der angebotene Wohnraum",
+          "- robuster,\n- intensiver betreut\n- oder räumlich konfliktärmer",
+          "gestaltet sein.",
+          "Er muss weiterhin die Mindestanforderungen angemessenen Wohnens erfüllen.",
+          "Wohnungslosigkeit ist keine Sanktion."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 28",
+      "slug": "paragraf-28-wohnungsregister",
+      "sort_order": 320,
+      "title": "Wohnungsregister",
+      "type": "article",
+      "part": "Teil XI – Transparenz, Daten und Vollzug",
+      "blocks": {
+        "kurzinfo": [
+          "Schafft ein Wohnungsregister mit eindeutiger Kennung, Nutzungsstatus und getrenntem Schutz personenbezogener Bewohnerdaten."
+        ],
+        "juristisch": [
+          "(1) Jede Wohnung erhält eine eindeutige Kennung und einen dokumentierten Nutzungsstatus.",
+          "Der Nutzungsstatus unterscheidet insbesondere",
+          "- dauerhaftes Wohnen,\n- temporäres Wohnen,\n- Leerstand\n- und zulässige sonstige Nutzungen.",
+          "(2) Das Register enthält soweit erforderlich:",
+          "- Größe,\n- Räume,\n- Baujahr,\n- wesentliche Sanierungen,\n- Zustand,\n- Barrierefreiheit,\n- Nutzungsstatus,\n- Leerstand,\n- Bindungen,\n- zulässige Miete,\n- tatsächliche Miete\n- und erhebliche festgestellte Mängel.",
+          "Personenbezogene Bewohnerdaten sind hiervon getrennt und nur zweckgebunden zugänglich.",
+          "Öffentlich bereitgestellt werden nur erforderliche Angebotsdaten und ausreichend anonymisierte Statistiken."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 29",
+      "slug": "paragraf-29-transparenz-professioneller-wohnungswirtschaft",
+      "sort_order": 330,
+      "title": "Transparenz professioneller Wohnungswirtschaft",
+      "type": "article",
+      "part": "Teil XI – Transparenz, Daten und Vollzug",
+      "blocks": {
+        "kurzinfo": [
+          "Verlangt standardisierte Transparenz professioneller Anbieter über Bestand, Kosten, Finanzierung, Mieten, Investitionen und Förderung."
+        ],
+        "juristisch": [
+          "Professionelle Wohnungsanbieter legen standardisiert Informationen offen über:",
+          "- Bestand,\n- Käufe und Verkäufe,\n- zulässige und tatsächliche Mieten,\n- Betriebskosten,\n- Verwaltungskosten,\n- Instandhaltung,\n- Modernisierung,\n- Leerstand,\n- erhebliche Mängel,\n- Finanzierung,\n- Kapitalvergütung,\n- Ausschüttungen\n- und öffentliche Förderung.",
+          "Umgehung durch Aufteilung auf verbundene Unternehmen ist unzulässig."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 30",
+      "slug": "paragraf-30-wohnraumstellen",
+      "sort_order": 340,
+      "title": "Wohnraumstellen",
+      "type": "article",
+      "part": "Teil XI – Transparenz, Daten und Vollzug",
+      "blocks": {
+        "kurzinfo": [
+          "Schafft unabhängige Wohnraumstellen für niedrigschwellige Entscheidungen über Mieten, Daten, Qualität, Vergabe und Ansprüche."
+        ],
+        "juristisch": [
+          "Die Länder bestimmen unabhängige Wohnraumstellen.",
+          "Sie entscheiden niedrigschwellig insbesondere über:",
+          "- zulässige Miete,\n- Wohnungsdaten,\n- erhebliche Qualitätsmängel,\n- Vergabeverfahren,\n- Wohnraumansprüche\n- und Streit über die Anwendung dieses Gesetzes.",
+          "**Default 2026:** erste behördliche Entscheidung grundsätzlich innerhalb von drei Monaten, bei drohender Wohnungslosigkeit unverzüglich.",
+          "Gerichtlicher Rechtsschutz bleibt erhalten."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 31",
+      "slug": "paragraf-31-wohnversorgungsmonitoring",
+      "sort_order": 350,
+      "title": "Wohnversorgungsmonitoring",
+      "type": "article",
+      "part": "Teil XII – Wissenschaft und Selbstkorrektur",
+      "blocks": {
+        "kurzinfo": [
+          "Macht Wohnraumversorgung anhand vieler getrennter Kennzahlen jährlich beobachtbar, einschließlich temporärem Bedarf und Wohnraumentzug."
+        ],
+        "juristisch": [
+          "Mindestens jährlich werden insbesondere erhoben:",
+          "1. Wohnungslosigkeit,\n2. Zahl nicht rechtzeitig erfüllter Wohnraumansprüche,\n3. Suchdauer,\n4. Wohnkostenbelastung,\n5. Überbelegung,\n6. regional verfügbare Wohnungen,\n7. Leerstand,\n8. Wohnungsgrößen und Haushaltsgrößen,\n9. Tausche und Umzüge,\n10. Wohnqualität,\n11. Barrierefreiheit,\n12. Neubau,\n13. Sanierung,\n14. Umbau,\n15. Abriss,\n16. Bau- und Bodenpreise,\n17. Lebenszykluskosten,\n18. gemeinwirtschaftlicher Bestand,\n19. Quartiersqualität,\n20. Bewohnerzufriedenheit,\n21. strukturell wiederkehrender temporärer Wohnbedarf,\n22. hierfür verfügbare Wohnkapazität\n23. und der Entzug von Wohnraum durch Leerstand, Freizeit- und Beherbergungsnutzung.",
+          "Diese Werte werden grundsätzlich getrennt ausgewiesen.",
+          "Ein politisch attraktiver Gesamtindex darf erkennbare Einzelprobleme nicht verdecken."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 32",
+      "slug": "paragraf-32-verpflichtende-nachsteuerung",
+      "sort_order": 360,
+      "title": "Verpflichtende Nachsteuerung",
+      "type": "article",
+      "part": "Teil XII – Wissenschaft und Selbstkorrektur",
+      "blocks": {
+        "kurzinfo": [
+          "Verankert einen verbindlichen Regelkreis aus Messen, Ursachenanalyse, Handeln, Wirkungsprüfung und Nachsteuerung."
+        ],
+        "juristisch": [
+          "(1) Dieses Gesetz folgt dem Regelkreis:",
+          "> **Messen → Abweichung feststellen → Ursache untersuchen → handeln → Wirkung prüfen → nachsteuern.**",
+          "(2) Zeigt das Monitoring, dass ein gesetzliches Ziel strukturell verfehlt wird, muss die zuständige staatliche Ebene die Ursache untersuchen.",
+          "(3) Innerhalb von sechs Monaten nach Feststellung einer erheblichen strukturellen Zielverfehlung ist",
+          "- eine geeignete Verordnung anzupassen,\n- eine konkrete Verwaltungsmaßnahme einzuleiten,\n- ein Investitions- oder Versorgungsprogramm zu beschließen\n- oder eine erforderliche Gesetzesänderung vorzuschlagen.",
+          "(4) Wird bewusst nicht gehandelt, muss öffentlich begründet werden, warum eine Maßnahme ungeeignet, unverhältnismäßig oder nicht erforderlich wäre.",
+          "(5) Bleibt die Zielverfehlung trotz Maßnahmen über zwei weitere Jahresberichte wesentlich bestehen, ist eine verschärfte Maßnahme oder gesetzliche Änderung zu prüfen und öffentlich vorzulegen.",
+          "(6) Eine bloße Wiederholung nachweislich unwirksamer Maßnahmen erfüllt die Nachsteuerungspflicht nicht."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 33",
+      "slug": "paragraf-33-regelmaessige-unabhaengige-evaluation",
+      "sort_order": 370,
+      "title": "Regelmäßige unabhängige Evaluation",
+      "type": "article",
+      "part": "Teil XII – Wissenschaft und Selbstkorrektur",
+      "blocks": {
+        "kurzinfo": [
+          "Verlangt mindestens alle vier Jahre eine unabhängige, reproduzierbare Gesamtevaluation des Systems."
+        ],
+        "juristisch": [
+          "Mindestens alle vier Jahre wird das Gesamtsystem unabhängig wissenschaftlich bewertet.",
+          "Untersucht werden insbesondere:",
+          "- tatsächliche Wohnraumversorgung,\n- Bezahlbarkeit,\n- Bau- und Sanierungstätigkeit,\n- Gebäudezustand,\n- Kapitalversorgung,\n- Bodenpreise,\n- Investitionen,\n- Effizienz öffentlicher und privater Träger,\n- Wohnraummobilität,\n- Vergabegerechtigkeit,\n- regionale Unterschiede\n- und unbeabsichtigte Wirkungen.",
+          "Methoden und soweit möglich Ausgangsdaten sind öffentlich und reproduzierbar."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 34",
+      "slug": "paragraf-34-wirtschaftliche-betrachtungsweise",
+      "sort_order": 380,
+      "title": "Wirtschaftliche Betrachtungsweise",
+      "type": "article",
+      "part": "Teil XIII – Missbrauchsschutz",
+      "blocks": {
+        "kurzinfo": [
+          "Richtet die Anwendung nach der tatsächlichen wirtschaftlichen Funktion aus und soll formale Umgehungskonstruktionen erfassen."
+        ],
+        "juristisch": [
+          "Dieses Gesetz darf nicht durch formale Gestaltung umgangen werden.",
+          "Entscheidend ist die tatsächliche wirtschaftliche Funktion.",
+          "Insbesondere können als dauerhafte Wohnraumüberlassung behandelt werden:",
+          "- nur formal befristete Dauermietverhältnisse,\n- künstliche Möblierungszuschläge,\n- gekoppelte Dienstleistungsverträge,\n- Umgehung über Untergesellschaften,\n- Share-Deal-Strukturen,\n- künstliche Aufteilung professioneller Wohnungsbestände\n- und wirtschaftlich vergleichbare Konstruktionen.",
+          "Echte",
+          "- kurzfristige Beherbergung,\n- Feriennutzung,\n- Pflegeeinrichtungen\n- und sachlich besondere Wohnformen",
+          "können eigenständig geregelt werden."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 35",
+      "slug": "paragraf-35-verordnungsermaechtigung",
+      "sort_order": 390,
+      "title": "Verordnungsermächtigung",
+      "type": "article",
+      "part": "Teil XIV – Rechtsverordnungen und Defaultschutz",
+      "blocks": {
+        "kurzinfo": [
+          "Bündelt technische Details in Wohnqualitäts-, Wohnkosten- sowie Wohnungsvergabe- und Datenverordnungen."
+        ],
+        "juristisch": [
+          "Zur technischen Konkretisierung dieses Gesetzes werden insbesondere erlassen:",
+          "### 1. WohnqualitätsVO",
+          "für Gesundheits-, Sicherheits-, Funktions- und Quartiersstandards.",
+          "### 2. WohnkostenVO",
+          "für",
+          "- Lebenszykluskosten,\n- Bauteillebensdauern,\n- Rücklagen,\n- Benchmarkkosten,\n- Kapitalvergütung,\n- Finanzierungsbenchmarks\n- und gebundenen Wohnbodenwert.",
+          "### 3. Wohnungsvergabe- und DatenVO",
+          "für",
+          "- Wohnungsregister,\n- Datenstandards,\n- Matching,\n- Priorisierung,\n- Losverfahren,\n- Wohnungstausch,\n- technische Schnittstellen\n- und Datenschutz."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 36",
+      "slug": "paragraf-36-grenzen-der-verordnungen",
+      "sort_order": 400,
+      "title": "Grenzen der Verordnungen",
+      "type": "article",
+      "part": "Teil XIV – Rechtsverordnungen und Defaultschutz",
+      "blocks": {
+        "kurzinfo": [
+          "Setzt materielle Grenzen für Verordnungen, damit Grundprinzipien nicht auf technischem Weg ausgehöhlt werden."
+        ],
+        "juristisch": [
+          "Eine Rechtsverordnung darf die Grundprinzipien dieses Gesetzes nur konkretisieren, nicht verändern.",
+          "Insbesondere darf sie nicht:",
+          "1. das Recht auf angemessenen Wohnraum von einer allgemeinen Bedürftigkeitsprüfung abhängig machen,\n2. Knappheitsrenditen als Wohnkosten anerkennen,\n3. spekulative Kaufpreise nachträglich zu anerkennungsfähigen Wohnkosten erklären,\n4. öffentlich erzeugte Bodenwertsteigerungen vollständig privatisieren,\n5. die langfristige Erhaltungsfähigkeit von Wohnraum gefährden,\n6. gesundheitliche Mindeststandards unterschreiten,\n7. subjektive Vermieterpräferenzen wieder zum bestimmenden Vergabekriterium machen,\n8. öffentliche Wohnungsdaten monopolartig privatisieren,\n9. die Transparenz der Mietberechnung beseitigen\n10. oder die gesetzliche Nachsteuerungspflicht außer Kraft setzen."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 37",
+      "slug": "paragraf-37-defaultschutz",
+      "sort_order": 410,
+      "title": "Defaultschutz",
+      "type": "article",
+      "part": "Teil XIV – Rechtsverordnungen und Defaultschutz",
+      "blocks": {
+        "kurzinfo": [
+          "Lässt gesetzliche Defaultwerte gelten, solange keine transparent begründete und wirksame abweichende Verordnung besteht."
+        ],
+        "juristisch": [
+          "(1) Defaultwerte dieses Gesetzes gelten, solange keine wirksame abweichende Rechtsverordnung besteht.",
+          "(2) Eine Abweichung ist nur zulässig, wenn sie",
+          "- auf aktuellen Daten beruht,\n- wissenschaftlich oder wirtschaftlich nachvollziehbar begründet wird,\n- öffentlich dokumentiert ist\n- und den Grenzen des § 36 entspricht.",
+          "(3) Jede wesentliche Änderung muss ihre voraussichtlichen Auswirkungen auf",
+          "- Wohnkosten,\n- Versorgung,\n- Investitionen,\n- Gebäudeerhalt\n- und öffentliche Haushalte",
+          "darlegen.",
+          "(4) Parameter werden regelmäßig überprüft.",
+          "Eine unterlassene Überprüfung setzt den gesetzlichen Default nicht außer Kraft."
+        ]
+      }
+    },
+    {
+      "public_code": "§ 38",
+      "slug": "paragraf-38-einfuehrungsgesetz",
+      "sort_order": 420,
+      "title": "Einführungsgesetz",
+      "type": "article",
+      "part": "Teil XV – Übergang in das neue System",
+      "blocks": {
+        "kurzinfo": [
+          "Verweist die einmalige Überleitung von Mietverträgen, Finanzierungen, Register, Vermögenswerten und Rechtsbereinigung in ein gesondertes Einführungsgesetz."
+        ],
+        "juristisch": [
+          "Die einmalige Überleitung des bestehenden Wohnungsmarkts wird in einem getrennten Einführungsgesetz geregelt.",
+          "Dieses bestimmt insbesondere:",
+          "1. den Stichtag,\n2. die Einführung der Kostenmiete,\n3. die Behandlung bestehender Mietverträge,\n4. die Behandlung bestehender Finanzierungen,\n5. den Schutz privater Selbstnutzer,\n6. den Umgang mit Wertverlusten,\n7. die Finanzstabilität,\n8. den Aufbau von Register und Portal,\n9. die Überführung alter Förderbindungen,\n10. die Rechtsbereinigung\n11. und die Behandlung bereits bestehender Leerstands-, Freizeit-, Zweitwohnungs- und Beherbergungsnutzungen normalen Wohnraums."
+        ]
+      }
+    }
+  ],
+  "appendices": {
+    "grundsaetze-des-einfuehrungsgesetzes": {
+      "title": "Grundsätze des Einführungsgesetzes",
+      "markdown": "## Bestandsschutz ohne Bestandsgarantie für Spekulation\n\nRechtmäßig eingegangene Verträge und Finanzierungen werden geordnet überführt.\n\nEin Anspruch auf dauerhafte Erhaltung spekulativer Immobilienwerte besteht nicht.\n\n---\n\n## Stichtag\n\nAb Veröffentlichung der neuen Ordnung kann ein neuer überhöhter Kaufpreis nicht mehr damit gerechtfertigt werden, dass zukünftige Mieter diesen refinanzieren müssten.\n\n---\n\n## Geordnete Konvergenz\n\nBestehende Mieten und Finanzierungen werden über einen angemessenen Zeitraum überführt.\n\n**Default 2026: vollständige Überleitung innerhalb von zehn Jahren.**\n\n---\n\n## Finanzstabilität\n\nDer Staat kann\n\n- Kreditinstitute,\n- laufende Bauprojekte,\n- notwendige Refinanzierungen\n- und private Selbstnutzer\n\nvor ungeordneten Verwerfungen schützen.\n\nEr garantiert dabei nicht die bisherigen Eigenkapitalwerte spekulativer Immobilieninvestitionen.\n\n---\n\n## Gemeinwirtschaftliche Übernahme\n\nWirtschaftlich nicht mehr tragfähige Bestände können von\n\n- Kommunen,\n- Ländern,\n- Genossenschaften,\n- gemeinwirtschaftlichen Unternehmen\n- oder Wohnvermögensfonds\n\nzu ihrem langfristig tragfähigen gebundenen Wohnwert übernommen werden."
+    },
+    "rechtsbereinigung": {
+      "title": "Rechtsbereinigung",
+      "markdown": "Nach vollständiger Einführung des Systems soll das Wohnrecht insgesamt einfacher werden.\n\n## Grundgesetz\n\nErgänzung um\n\n- Recht auf Wohnen,\n- besondere Sozialbindung\n- und Bundeskompetenz.\n\n---\n\n## Bürgerliches Gesetzbuch\n\nDas allgemeine Mietvertragsrecht bleibt bestehen.\n\nLangfristig entbehrlich oder grundlegend neu zu ordnen sind insbesondere:\n\n- ortsübliche Vergleichsmiete als Preisbildungsmechanismus,\n- Mietpreisbremse,\n- Kappungsgrenzen,\n- Indexmiete,\n- Staffelmiete\n- und separate Modernisierungsmieterhöhungen.\n\nKündigungs-, Schadensersatz- und Schutzregeln bleiben erhalten und werden mit diesem Gesetz abgestimmt.\n\n---\n\n## Wohnungsbindungsgesetz\n\nDie bestehende Kostenmietenlogik wird modernisiert und in die allgemeine Lebenszyklus-Kostenmiete überführt.\n\n---\n\n## Wohnraumförderungsgesetz\n\nDie bedürftigkeitsbezogene Förderlogik wird von der allgemeinen Wohnraumversorgung getrennt.\n\nPersonenbezogene finanzielle Hilfe kann bestehen bleiben.\n\n---\n\n## Abgabenordnung\n\nWohngemeinnützigkeit richtet sich künftig vorrangig nach\n\n- Vermögensbindung,\n- Kostenprinzip,\n- begrenzter Kapitalvergütung\n- und Reinvestition\n\nstatt nach der Bedürftigkeit einzelner Bewohner.\n\n---\n\n## Allgemeines Gleichbehandlungsgesetz\n\nBestehende Sonderregeln des Wohnungsmarkts werden an ein diskriminierungsfreies transparentes Vergabesystem angepasst.\n\n---\n\n## Baugesetzbuch\n\nZu ergänzen oder zu stärken sind insbesondere:\n\n- bedarfsgerechte Baulandbereitstellung,\n- planungsbedingte Bodenwertbeteiligung,\n- dauerhafte Wohnbindungen,\n- öffentliche Erwerbs- und Vorkaufsrechte,\n- Erbbaurechte,\n- Nachverdichtung\n- und gemeinwirtschaftliche Konzeptvergabe.\n\n---\n\n## Haushaltsrecht\n\nÖffentlicher Wohnboden und wohngeeignete Fiskalerbschaften werden als strategisches öffentliches Vermögen behandelt.\n\n---\n\n## Wohngeld und Sozialrecht\n\nEinkommensabhängige Hilfen bleiben bestehen.\n\nSie beantworten:\n\n> Wer benötigt Unterstützung bei den Wohnkosten?\n\nSie beantworten nicht:\n\n> Wer darf eine gute Wohnung erhalten?\n\n---\n\n## Genossenschafts- und Gesellschaftsrecht\n\nKeine grundlegende Änderung erforderlich.\n\nGemeinwirtschaftlichkeit wird durch wirtschaftliche Regeln bestimmt, nicht durch eine vorgeschriebene Rechtsform."
+    },
+    "systemkern": {
+      "title": "Systemkern",
+      "markdown": "Das Wohnrecht beantwortet damit neun einfache Fragen.\n\n## 1. Hat jeder ein Recht auf Wohnen?\n\nJa.\n\nAuf angemessenen und zumutbaren Wohnraum, nicht auf eine bestimmte Wohnung.\n\nAuch ein individuell befristeter Aufenthalt kann Wohnen sein, wenn dort für diese Zeit der tatsächliche Lebensmittelpunkt liegt.\n\n---\n\n## 2. Wer bekommt Hilfe?\n\nWer finanzielle Unterstützung benötigt, bekommt sie nach Einkommen und wirtschaftlicher Situation.\n\nEine Bedürftigkeitsprüfung entscheidet nicht über den Zugang zur Wohnung.\n\n---\n\n## 3. Was ist guter Wohnraum?\n\nGesund, sicher, funktional, dauerhaft und eingebettet in ein angemessenes Wohnumfeld.\n\n---\n\n## 4. Was darf eine Wohnung kosten?\n\nDie wirtschaftlich erforderlichen Kosten ihrer dauerhaften Bereitstellung und Erhaltung zuzüglich einer angemessenen Kapitalvergütung.\n\nDas gilt auch für befristetes oder möbliertes Wohnen; reale Zusatzkosten dürfen berücksichtigt werden, Knappheitsaufschläge nicht.\n\n---\n\n## 5. Was darf nicht über die Miete finanziert werden?\n\nKnappheit, Spekulation und die Erwartung immer höherer zukünftiger Mieten.\n\n---\n\n## 6. Wer bekommt eine knappe Wohnung?\n\nDie Wohnungssuchenden bestimmen ihre Präferenzen.\n\nDie Zuteilung erfolgt nach transparenten sachlichen Kriterien und bei Gleichstand per Los.\n\n---\n\n## 7. Wem gehört öffentlich geschaffenes Wohnvermögen?\n\nEs bleibt grundsätzlich dauerhaft öffentlich oder gemeinwirtschaftlich gebunden.\n\n---\n\n## 8. Was passiert bei Fehlverhalten eines Mieters?\n\nDas konkrete Mietverhältnis kann enden.\n\nDas grundsätzliche Recht auf Wohnen endet nicht.\n\nDie Rechte der Nachbarn werden gleichrangig geschützt.\n\n---\n\n## 9. Was passiert, wenn das System nicht funktioniert?\n\nDie Abweichung wird gemessen.\n\nDie Ursache wird untersucht.\n\nDer zuständige Staat muss handeln.\n\nDie Wirkung wird erneut gemessen.\n\nBleibt das Problem bestehen, muss nachgesteuert werden."
+    },
+    "leitbild": {
+      "title": "Leitbild",
+      "markdown": "Eine Wohnung ist kein kostenloses Gut.\n\nBoden, Planung, Bau, Kapital, Verwaltung, Instandhaltung, Sanierung und Erneuerung haben reale Kosten.\n\nDiese Kosten müssen zuverlässig finanziert werden.\n\nMenschen und Unternehmen, die Kapital, Arbeit, Planung, Bau- oder Verwaltungsleistungen bereitstellen, dürfen angemessen daran verdienen.\n\nNicht erforderlich sind dagegen dauerhafte Gewinne daraus, dass\n\n- Wohnraum absichtlich oder strukturell knapp ist,\n- öffentliches Baurecht private Bodenwerte vervielfacht,\n- Mieter mangels Alternativen mehr bezahlen müssen\n- oder der nächste Käufer auf noch höhere zukünftige Mieten spekuliert.\n\nAuch temporärer Wohnbedarf ist Teil der Wohninfrastruktur, wenn Menschen für einen begrenzten Lebensabschnitt tatsächlich an einem Ort wohnen und dieser Bedarf strukturell wiederkehrt.\n\nTouristische Beherbergung und private Freizeitnutzung bleiben möglich. In Gebieten mit Wohnraummangel dürfen sie jedoch nicht dauerhaft den benötigten Wohnungsbestand verdrängen.\n\nEchte gemeinsame oder zeitweise Nutzung selbst bewohnten Wohnraums bleibt ausdrücklich möglich und soll nicht mit kommerziellem Wohnraumentzug gleichgesetzt werden.\n\nDas Gesetz trennt deshalb:\n\n> **Investition in Wohnleistung von Spekulation auf Wohnknappheit.**\n\nSein Ziel ist kein staatlicher Einheitswohnungsmarkt.\n\nSein Ziel ist ein dauerhaft funktionierendes Wohnsystem, in dem öffentliche, genossenschaftliche und private Akteure Wohnraum schaffen und erhalten können, ohne dass die Grundversorgung der Bevölkerung von Knappheitsrenditen abhängt.\n\nDer Erfolg des Systems zeigt sich nicht daran, ob Immobilienpreise steigen.\n\nEr zeigt sich daran, ob Menschen in jeder Lebensphase angemessenen Wohnraum finden, Gebäude dauerhaft erhalten werden, Quartiere lebenswert bleiben und die dafür notwendigen realen Kosten langfristig finanziert werden können."
+    }
+  }
+}

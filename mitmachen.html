@@ -1,0 +1,141 @@
+{# ======================================================================
+  KlimaGG-Web — mitmachen.html
+  ----------------------------------------------------------------------
+  Role: Participation guide and MiniMD help.
+====================================================================== #}
+{% extends "base.html" %}
+
+{% block title %}{{ settings.PROJECT_NAME }} · Mitmachen{% endblock %}
+{% block meta_description %}So funktioniert Beteiligung: lesen, abstimmen, Änderungsvorschläge erstellen, Reviews durchführen und Versionen nachvollziehen.{% endblock %}
+{% block page_kind %}static{% endblock %}
+{% block klimagg_app %}false{% endblock %}
+{% block header_subtitle %}Mitmachen · Bewerten · Vorschlagen · Reviewen{% endblock %}
+
+{% block main %}
+<main id="hauptinhalt">
+  <section class="hero">
+    <div class="shell">
+      <div class="section-header">
+        <div>
+          <h1 class="section-title">Mitmachen</h1>
+          <p class="section-sub">Lesen · bewerten · konkrete Änderungen vorschlagen · Vorschläge anderer prüfen</p>
+        </div>
+      </div>
+
+      <div class="law-surface">
+        <section class="legal-article" id="ablauf">
+          <h2>Der Beteiligungsablauf</h2>
+          <div class="juristisch">
+            <ol>
+              <li><strong>Lesen:</strong> Wähle auf der Startseite Artikelumfang und Texttiefe.</li>
+              <li><strong>Bewerten:</strong> Votes geben eine schnelle Rückmeldung zur aktuellen Artikel- oder Kommentarfassung.</li>
+              <li><strong>Änderung vorschlagen:</strong> Ein Kommentar beschreibt eine konkrete Textänderung und kann Begründung und Quellen enthalten.</li>
+              <li><strong>Reviewen:</strong> Andere angemeldete Nutzer prüfen eingereichte Vorschläge strukturiert.</li>
+              <li><strong>Release nachvollziehen:</strong> Qualifizierte Vorschläge können in den nächsten Dokumentstand übernommen werden; Konflikte werden vorher geprüft.</li>
+            </ol>
+          </div>
+          <p>
+            <a class="btn btn-primary" href="/#entwurf">Zum Gesetzentwurf</a>
+            <a class="btn btn-ghost" href="/methodik">Methodik</a>
+          </p>
+        </section>
+
+        <section class="legal-article" id="stimmen">
+          <h2>Votes und Reaktionen</h2>
+          <div class="einleitung">
+            <p>
+              Votes und Emoji-Reaktionen sind getrennte Signale. Votes beschreiben die inhaltliche Bewertung;
+              Reaktionen markieren zusätzliche Aspekte wie Orientierung, Sprache, Umsetzbarkeit, Recht oder Lesezeichen.
+            </p>
+          </div>
+        </section>
+
+        <section class="legal-article" id="aenderung">
+          <h2>Gute Änderungsvorschläge</h2>
+          <div class="juristisch">
+            <p>Ein brauchbarer Vorschlag sollte möglichst:</p>
+            <ul>
+              <li>eine konkrete Textstelle betreffen,</li>
+              <li>den gewünschten neuen Text klar formulieren,</li>
+              <li>das Problem oder Ziel knapp begründen,</li>
+              <li>Quellen nur dort ergänzen, wo sie zur Prüfung helfen,</li>
+              <li>keine unnötigen Nebenänderungen im selben Patch erzeugen.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="legal-article" id="review">
+          <h2>Review</h2>
+          <div class="einleitung">
+            <p>
+              Im Review werden Vorschläge unter anderem nach Zielbeitrag, Stil/Verständlichkeit,
+              Praxis/Umsetzbarkeit und Rechtssicherheit eingeschätzt. Zusätzlich werden grundlegende
+              Compliance-Punkte geprüft. Review und Release sind getrennte Schritte.
+            </p>
+          </div>
+        </section>
+
+        <section class="legal-article" id="minimd-hilfe">
+          <h2>MiniMD-Hilfe</h2>
+          <div class="juristisch">
+            <p>Kommentar-Entwürfe verwenden ein bewusst kleines Markdown-ähnliches Format:</p>
+            <ul>
+              <li><b>Fett:</b> <code>**wichtiger Begriff**</code></li>
+              <li><b>Kursiv:</b> <code>*kurzer Hinweis*</code></li>
+              <li><b>Code/Begriff:</b> <code>`Begriff`</code></li>
+              <li><b>Link:</b> <code>[Quelle](https://example.org)</code></li>
+              <li><b>Aufzählung:</b> <code>- Listenpunkt</code></li>
+              <li><b>Nummerierte Liste:</b> <code>1. erster Schritt</code></li>
+              <li><b>Zweite Ebene:</b> zwei Leerzeichen einrücken.</li>
+              <li><b>Storybox:</b> <code>::: story</code> … <code>:::</code></li>
+            </ul>
+            <p class="klein">
+              Erhalte bestehende Listenarten und Einrückungen, wenn du nur Text ändern willst.
+              So bleiben Diffs klein und verständlich.
+            </p>
+          </div>
+        </section>
+
+        <section class="legal-article" id="llm">
+          <h2>LLM-Unterstützung</h2>
+          <div class="einleitung">
+            <p>
+              Die Plattform bindet kein externes Sprachmodell in den Kommentarfluss ein.
+              Für eigene externe Chats können öffentliche Dokument- und Artikelkontexte sowie
+              Anweisungsdateien heruntergeladen werden. Das Ergebnis wird anschließend manuell in den Entwurf übernommen.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
+
+{% block overlays %}
+<nav class="toc app-sidebar app-left" aria-label="Orientierung">
+  <div class="app-panel">
+    <div class="app-panel-header"><h3>Orientierung</h3><small>Sitemap · Mitmachen</small></div>
+    <details class="app-details" open>
+      <summary>Inhalt</summary>
+      <div class="app-details-body">
+        <div class="toc-sitemap">
+          <a class="toc-static-link" href="/">Startseite</a>
+          <a class="toc-static-link" href="/#entwurf">Gesetzentwurf</a>
+          <a class="toc-static-link" href="/methodik">Methodik</a>
+          <a class="toc-static-link" href="/versionen">Versionen</a>
+          <a class="toc-static-link" href="/kontakt">Kontakt</a>
+          <a class="toc-static-link" href="/rechtliches">Rechtliches</a>
+          <div class="toc-static-divider" aria-hidden="true"></div>
+          <a class="toc-static-link is-current" href="#ablauf">Ablauf</a>
+          <a class="toc-static-link" href="#stimmen">Votes &amp; Reaktionen</a>
+          <a class="toc-static-link" href="#aenderung">Änderungsvorschläge</a>
+          <a class="toc-static-link" href="#review">Review</a>
+          <a class="toc-static-link" href="#minimd-hilfe">MiniMD</a>
+          <a class="toc-static-link" href="#llm">LLM-Unterstützung</a>
+        </div>
+      </div>
+    </details>
+  </div>
+</nav>
+{% endblock %}

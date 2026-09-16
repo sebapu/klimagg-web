@@ -1,0 +1,158 @@
+{# ======================================================================
+  KlimaGG-Web — kontakt.html
+  ----------------------------------------------------------------------
+  Role: Public contact and interest form; submissions are forwarded by e-mail.
+====================================================================== #}
+{% extends "base.html" %}
+
+{% block title %}{{ settings.PROJECT_NAME }} · Kontakt{% endblock %}
+{% block meta_description %}Kontakt, fachliches Feedback, Kooperation und technische Rückmeldungen zu {{ settings.PROJECT_NAME }}.{% endblock %}
+{% block page_kind %}static{% endblock %}
+{% block klimagg_app %}false{% endblock %}
+{% block header_subtitle %}Kontakt · Feedback · Zusammenarbeit{% endblock %}
+
+{% block main %}
+<main id="hauptinhalt">
+  <section class="hero">
+    <div class="shell">
+      <div class="section-header">
+        <div>
+          <h1 class="section-title">Kontakt &amp; Interesse</h1>
+          <p class="section-sub">Allgemeine Anfrage · fachliches Feedback · Kooperation · Technik</p>
+        </div>
+      </div>
+
+      <div class="law-surface">
+        <div class="einleitung">
+          <p>
+            Nutze das Formular für Rückfragen, fachliches Feedback, Kooperationen oder technische Hinweise.
+            Die Angaben werden nicht in der Anwendungsdatenbank gespeichert, sondern an die konfigurierte Kontaktadresse weitergeleitet.
+          </p>
+        </div>
+
+        <section class="legal-article" aria-labelledby="kontakt-formular">
+          <h2 id="kontakt-formular">Kontaktformular</h2>
+
+          {% set contact_status = request.query_params.get('status') %}
+          {% set contact_address = settings.MAIL_KONTAKT_ADDRESS or settings.MAIL_INFO_ADDRESS %}
+          {% if contact_status == 'sent' %}
+            <div class="anmerkung" role="status"><p>Danke, die Anfrage wurde versendet.</p></div>
+          {% elif contact_status == 'rate_limited' %}
+            <div class="anmerkung" role="alert"><p>Es wurden zu viele Anfragen in kurzer Zeit gesendet. Bitte versuche es später erneut.</p></div>
+          {% elif contact_status == 'mail_error' %}
+            <div class="anmerkung" role="alert">
+              <p>
+                Die Anfrage konnte gerade nicht versendet werden.
+                {% if contact_address %}Du kannst direkt an <a href="mailto:{{ contact_address }}">{{ contact_address }}</a> schreiben.{% endif %}
+              </p>
+            </div>
+          {% elif contact_status == 'error' %}
+            <div class="anmerkung" role="alert"><p>Bitte prüfe die Pflichtfelder und sende die Anfrage erneut.</p></div>
+          {% endif %}
+
+          <form method="post" action="/api/contact/interest" class="juristisch" style="margin-top:0.9rem;">
+            <div class="contact-hp" aria-hidden="true">
+              <label>Webseite <input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+            </div>
+
+            <div class="contact-form-grid">
+              <label class="field">
+                <span>Name *</span>
+                <input class="input" type="text" name="name" autocomplete="name" maxlength="160" required />
+              </label>
+
+              <label class="field">
+                <span>E-Mail *</span>
+                <input class="input" type="email" name="email" autocomplete="email" maxlength="254" required />
+              </label>
+
+              <label class="field">
+                <span>Organisation</span>
+                <input class="input" type="text" name="organization" autocomplete="organization" maxlength="200" />
+              </label>
+
+              <label class="field">
+                <span>Rolle/Funktion</span>
+                <input class="input" type="text" name="role" maxlength="160" />
+              </label>
+
+              <label class="field field-full">
+                <span>Interessensbereich *</span>
+                <select name="interest_type" required>
+                  <option value="">Bitte auswählen</option>
+                  <option value="Allgemeine Anfrage">Allgemeine Anfrage</option>
+                  <option value="Fachliches Feedback">Fachliches Feedback</option>
+                  <option value="Beteiligung">Beteiligung</option>
+                  <option value="Kooperation / Pilotprojekt">Kooperation / Pilotprojekt</option>
+                  <option value="Technik / Open Source">Technik / Open Source</option>
+                  <option value="Presse / Öffentlichkeit">Presse / Öffentlichkeit</option>
+                  <option value="Sonstiges">Sonstiges</option>
+                </select>
+              </label>
+
+              <label class="field field-full">
+                <span>Nachricht *</span>
+                <textarea class="textarea" name="message" rows="7" maxlength="4000" required></textarea>
+              </label>
+            </div>
+
+            <label class="contact-consent">
+              <input type="checkbox" name="datenschutz_ok" value="1" required />
+              <span>
+                Ich bin einverstanden, dass meine Angaben zur Bearbeitung der Anfrage per E-Mail verarbeitet werden.
+                Details stehen unter <a href="/rechtliches#datenschutz">Datenschutz</a>.
+              </span>
+            </label>
+
+            <div style="margin-top:1rem; display:flex; gap:0.6rem; flex-wrap:wrap; align-items:center;">
+              <button class="btn btn-primary" type="submit">Anfrage senden</button>
+              <span class="klein">Pflichtfelder sind mit * markiert.</span>
+            </div>
+          </form>
+        </section>
+
+        {% if contact_address or settings.MAIL_INFO_ADDRESS or settings.MAIL_DATENSCHUTZ_ADDRESS %}
+        <section class="legal-article" aria-labelledby="kontakt-wege">
+          <h2 id="kontakt-wege">Direkte Kontaktwege</h2>
+          <div class="juristisch">
+            {% if contact_address %}<p><b>Kontakt:</b> <a href="mailto:{{ contact_address }}">{{ contact_address }}</a></p>{% endif %}
+            {% if settings.MAIL_INFO_ADDRESS and settings.MAIL_INFO_ADDRESS != contact_address %}
+              <p><b>Allgemein:</b> <a href="mailto:{{ settings.MAIL_INFO_ADDRESS }}">{{ settings.MAIL_INFO_ADDRESS }}</a></p>
+            {% endif %}
+            {% if settings.MAIL_DATENSCHUTZ_ADDRESS %}
+              <p><b>Datenschutz:</b> <a href="mailto:{{ settings.MAIL_DATENSCHUTZ_ADDRESS }}">{{ settings.MAIL_DATENSCHUTZ_ADDRESS }}</a></p>
+            {% endif %}
+          </div>
+        </section>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
+
+{% block overlays %}
+<nav class="toc app-sidebar app-left" aria-label="Orientierung">
+  <div class="app-panel">
+    <div class="app-panel-header"><h3>Orientierung</h3><small>Sitemap · Kontakt</small></div>
+    <details class="app-details" open>
+      <summary>Inhalt</summary>
+      <div class="app-details-body">
+        <div class="toc-sitemap">
+          <a class="toc-static-link" href="/">Startseite</a>
+          <a class="toc-static-link" href="/#entwurf">Gesetzentwurf</a>
+          <a class="toc-static-link" href="/mitmachen">Mitmachen</a>
+          <a class="toc-static-link" href="/methodik">Methodik</a>
+          <a class="toc-static-link" href="/versionen">Versionen</a>
+          <a class="toc-static-link" href="/rechtliches">Rechtliches</a>
+          <div class="toc-static-divider" aria-hidden="true"></div>
+          <a class="toc-static-link is-current" href="#kontakt-formular">Kontaktformular</a>
+          {% if contact_address or settings.MAIL_INFO_ADDRESS or settings.MAIL_DATENSCHUTZ_ADDRESS %}
+            <a class="toc-static-link" href="#kontakt-wege">Direkte Kontaktwege</a>
+          {% endif %}
+        </div>
+      </div>
+    </details>
+  </div>
+</nav>
+{% endblock %}

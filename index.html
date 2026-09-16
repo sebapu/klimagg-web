@@ -1,0 +1,748 @@
+{# ======================================================================
+  KlimaGG-Web — index.html
+  ----------------------------------------------------------------------
+  Version:        v2.0.1
+  Route:          GET /
+  Role:           Landing page and interactive law workspace.
+  Integration:    DOM hooks are consumed by /static/script.js.
+====================================================================== #}
+{% extends "base.html" %}
+
+{% block title %}{{ settings.PROJECT_NAME }} – Offener Entwurf{% endblock %}
+{% block meta_description %}{{ settings.PROJECT_NAME }}: offenen Entwurf lesen, bewerten und nachvollziehbar verbessern.{% endblock %}
+{% block page_kind %}home{% endblock %}
+{% block body_class %}left-collapsed right-collapsed{% endblock %}
+{% block klimagg_app %}true{% endblock %}
+
+{% block main %}
+<main id="hauptinhalt">
+  <section id="start" class="hero home-hero">
+    <div class="shell">
+      <div class="hero-grid home-hero-grid">
+        <div class="home-hero-copy">
+          <div class="hero-kicker">Offen · nachvollziehbar · versioniert</div>
+          <h1 class="hero-title home-hero-title">
+            <span class="highlight"><b>{{ settings.PROJECT_NAME }}</b></span>
+            <span class="hero-title-sub">Ein Entwurf zum Mitgestalten</span>
+          </h1>
+          <p class="hero-claim home-hero-lead">
+            Ein öffentlicher Arbeitsentwurf zum Lesen, Bewerten und Verbessern.
+          </p>
+        </div>
+
+        <aside class="hero-panel home-project-status" aria-label="Aktuelle Themen und Projektstatistik">
+          <div class="project-stats-header">
+            <div class="hero-panel-title">Projektstand</div>
+            <div class="hero-panel-header">
+              <div class="hero-panel-sub">
+                Stand: <a class="mono" href="/versionen">{{ APP_VERSION }}</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="home-project-tabs" role="tablist" aria-label="Projektinformationen">
+            <button class="home-project-tab is-active" type="button" role="tab" aria-selected="true" data-home-project-tab="topics">Aktuelle Themen</button>
+            <button class="home-project-tab" type="button" role="tab" aria-selected="false" data-home-project-tab="stats">Statistik</button>
+          </div>
+
+          <div class="home-project-tab-panel" role="tabpanel" data-home-project-panel="topics">
+            {% set topic_items = current_topics.get("items", []) if current_topics else [] %}
+            {% if topic_items %}
+              <div class="home-topic-list">
+                {% for topic in topic_items %}
+                  <article class="home-topic-item">
+                    <strong>{{ topic.title }}</strong>
+                    <p>{{ topic.text }}</p>
+                    {% if topic.link_url %}
+                      <a href="{{ topic.link_url }}">{{ topic.link_label or "Mehr erfahren" }} →</a>
+                    {% endif %}
+                  </article>
+                {% endfor %}
+              </div>
+              {% if current_topics.get("updated_at_label") %}
+                <div class="home-topics-updated">Aktualisiert: {{ current_topics.get("updated_at_label") }}</div>
+              {% endif %}
+            {% else %}
+              <p class="home-topics-empty">Aktuell keine besonderen Hinweise.</p>
+            {% endif %}
+          </div>
+
+          <div class="home-project-tab-panel" role="tabpanel" data-home-project-panel="stats" hidden>
+            <div class="home-project-stats-label">Aktivität</div>
+            <ul class="project-kpi-list" id="project-kpi-list" aria-label="Aktivität: Gesamt und letzte 30 Tage"></ul>
+            <div class="home-project-stats-note">Gesamt · <span>+ letzte 30 Tage</span></div>
+          </div>
+
+          <a class="home-status-link" href="/versionen">Versionen ansehen →</a>
+        </aside>
+
+        <p class="home-hero-thesis">
+          Der aktuelle Stand ist öffentlich. Artikel können gelesen und bewertet,
+          Änderungsvorschläge geprüft und neue Versionen nachvollzogen werden.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="einstieg" class="home-guide-section" aria-labelledby="home-use-title">
+    <div class="shell">
+      <div class="home-guide-header">
+        <h2 class="section-title home-guide-title" id="home-use-title">Wähle deinen Einstieg</h2>
+        <p class="section-sub home-guide-intro">
+          Direkt den Entwurf lesen oder zuerst Arbeitsweise, Versionen und Beteiligung ansehen.
+        </p>
+      </div>
+
+      <div class="home-choice-grid" aria-label="Einstiegswege">
+        <button class="home-choice-button" type="button" data-home-use="draft" aria-pressed="true">
+          <strong>Entwurf lesen</strong>
+          <span>Lesen, verstehen, abstimmen.</span>
+        </button>
+        <button class="home-choice-button" type="button" data-home-use="overview" aria-pressed="false">
+          <strong>Überblick</strong>
+          <span>Aufbau und Arbeitsstand.</span>
+        </button>
+        <button class="home-choice-button" type="button" data-home-use="background" aria-pressed="false">
+          <strong>Methodik &amp; Versionen</strong>
+          <span>Arbeitsweise und veröffentlichte Stände.</span>
+        </button>
+        <button class="home-choice-button" type="button" data-home-use="contribution" aria-pressed="false">
+          <strong>Mit dem Entwurf arbeiten</strong>
+          <span>Stimmen, Reviews, Änderungsvorschläge.</span>
+        </button>
+      </div>
+
+      <div class="home-active-info" id="home-use-info">
+        <div class="home-use-panel" data-home-use-panel="draft">
+          <h3>Entwurf lesen</h3>
+          <p>Der aktuelle Text steht im Mittelpunkt. Lesetiefe und Artikelumfang lassen sich direkt in der Arbeitsoberfläche einstellen.</p>
+          <div class="home-panel-columns">
+            <div>
+              <h4>Schnell orientieren</h4>
+              <ul>
+                <li>Kurzinfos geben einen schnellen Einstieg.</li>
+                <li>Einleitungen erklären Struktur und Zusammenhänge.</li>
+                <li>Der Volltext zeigt alle verfügbaren Textblöcke.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Beim Lesen</h4>
+              <p>Artikel können bewertet, kommentiert und über die Seitenleisten weiterbearbeitet werden.</p>
+              <button class="home-inline-action" type="button" id="home-sidebar-toggle" aria-pressed="false">Hier öffnen</button>
+            </div>
+          </div>
+          <div class="home-chip-links">
+            <a class="home-chip-link" href="#lesen">Zum Lesemodus</a>
+            <a class="home-chip-link" href="#entwurf">Zum Entwurf</a>
+          </div>
+        </div>
+
+        <div class="home-use-panel" data-home-use-panel="overview" hidden>
+          <h3>Überblick</h3>
+          <div class="home-panel-columns">
+            <div>
+              <h4>Dokument</h4>
+              <p>Der Entwurf ist als versionierter Regeltext mit einzelnen Artikeln und nachvollziehbaren Fassungen organisiert.</p>
+            </div>
+            <div>
+              <h4>Beteiligung</h4>
+              <p>Stimmen, Änderungsvorschläge und Reviews bleiben als getrennte Signale sichtbar und fließen kontrolliert in neue Releases ein.</p>
+            </div>
+          </div>
+          <div class="home-chip-links">
+            <a class="home-chip-link" href="/methodik">Methodik</a>
+            <a class="home-chip-link" href="/versionen">Versionen</a>
+            <a class="home-chip-link" href="/kontakt">Kontakt</a>
+          </div>
+        </div>
+
+        <div class="home-use-panel" data-home-use-panel="background" hidden>
+          <h3>Methodik &amp; Versionen</h3>
+          <p>Arbeitsregeln und veröffentlichte Stände machen die Entwicklung des Entwurfs nachvollziehbar.</p>
+          <div class="home-panel-columns">
+            <div>
+              <h4>Methodik</h4>
+              <p>Textformat, Reviewlogik und Beteiligungsprozess.</p>
+            </div>
+            <div>
+              <h4>Versionen</h4>
+              <p>Statische Snapshots dokumentieren veröffentlichte Stände.</p>
+            </div>
+          </div>
+          <div class="home-chip-links">
+            <a class="home-chip-link" href="/methodik">Methodik</a>
+            <a class="home-chip-link" href="/versionen">Versionen</a>
+          </div>
+        </div>
+
+        <div class="home-use-panel" data-home-use-panel="contribution" hidden>
+          <h3>Mit dem Entwurf arbeiten</h3>
+          <p>Beteiligung beginnt beim Lesen. Stimmen geben schnelles Feedback; Reviews prüfen bestehende Vorschläge; eigene Kommentare beschreiben konkrete Änderungen.</p>
+          <div class="home-panel-columns">
+            <div>
+              <h4>Direkt einsteigen</h4>
+              <ol>
+                <li>Entwurf lesen und Artikel bewerten.</li>
+                <li>Vorschläge anderer Nutzer reviewen.</li>
+                <li>Konkrete Änderung vorschlagen.</li>
+                <li>Neue Versionen nachvollziehen.</li>
+              </ol>
+            </div>
+            <div>
+              <h4>Anmeldung</h4>
+              <p>Für persönliche Beiträge und dauerhaft zugeordnete Stimmen nutzt die Plattform die Anmeldung per E-Mail-Link.</p>
+            </div>
+          </div>
+          <div class="home-chip-links">
+            <a class="home-chip-link" href="/mitmachen">So funktioniert Mitmachen</a>
+            <a class="home-chip-link" href="#entwurf">Zum Entwurf</a>
+            <button class="home-chip-link" type="button" id="login-button">Anmelden</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lesen" class="home-guide-section" aria-labelledby="home-reading-title">
+    <div class="shell">
+      <div class="home-guide-header">
+        <h2 class="section-title home-guide-title" id="home-reading-title">Wähle deinen Lesefokus</h2>
+        <p class="section-sub home-guide-intro">
+          Artikelumfang und Texttiefe lassen sich für einen verständlichen Einstieg festlegen.
+        </p>
+      </div>
+
+      <div class="home-choice-grid" aria-label="Lesemodus">
+        <button class="home-choice-button" type="button" data-home-reading-mode="entry" aria-pressed="true">
+          <strong>10 Min · Einstieg</strong>
+          <span>Roter Faden und Kernaussagen.</span>
+        </button>
+
+        <button class="home-choice-button" type="button" data-home-reading-mode="basis" aria-pressed="false">
+          <strong>60 Min · Grundlagen</strong>
+          <span>Systemlogik, Einordnung, Zusammenhänge.</span>
+        </button>
+
+        <button class="home-choice-button" type="button" data-home-reading-mode="full" aria-pressed="false">
+          <strong>Volltext</strong>
+          <span>Alle Artikel, Normtext und Anmerkungen.</span>
+        </button>
+
+        <button class="home-choice-button" type="button" id="home-reading-stories" aria-pressed="false">
+          <strong>+ Geschichten</strong>
+          <span>Alltag, Wirkung und Betroffenheit.</span>
+        </button>
+      </div>
+
+      <div class="home-active-info home-reading-info">
+        <h3 id="home-reading-info-title">10 Min · Einstieg</h3>
+        <p id="home-reading-info-text">
+          Du siehst die Kurzinfos der zentralen Artikel und damit den roten Faden,
+          ohne sofort in Einleitungen, Normtext und Anmerkungen einzusteigen.
+        </p>
+
+        <div class="home-reading-note" id="home-story-info" hidden>
+          <strong>Geschichten zugeschaltet:</strong>
+          Die Story-Ebene ergänzt Alltag, Wirkung und Betroffenheit. Sie bleibt unabhängig
+          vom gewählten Lesemodus ein- oder ausschaltbar.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="entwurf">
+    <div class="shell">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Gesetzentwurf</h2>
+          <p class="section-sub">Aktueller Arbeitsentwurf. Lesetiefe oben wählen; Navigation und Arbeitsbereich lassen sich seitlich öffnen.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="shell-wide shell-draft">
+      <div id="draft-layout">
+        <section id="articles-section" class="law-surface law-surface-flat">
+         <div id="articles-container">
+           {% if ssr_articles and (ssr_articles|length) > 0 %}
+             {% for a in ssr_articles %}
+               <article class="artikel" id="artikel-{{ a.id }}"
+                        data-article-id="{{ a.id }}" data-article-slug="{{ a.slug }}"
+                        data-current-version-id="{{ a.current_version_id }}" data-version-id="{{ a.current_version_id }}">
+                 <header>
+                   <h2>{{ a.display_label }}</h2>
+                 </header>
+                 <div class="content-blocks">
+                   {{ a.content_blocks.kurzinfo | safe }}
+                   {{ a.content_blocks.story | safe }}
+                   {{ a.content_blocks.einleitung | safe }}
+                   {{ a.content_blocks.juristisch | safe }}
+                   {{ a.content_blocks.juristisch2 | safe }}
+                   {{ a.content_blocks.anmerkung | safe }}
+                 </div>
+               </article>
+             {% endfor %}
+           {% else %}
+             <p>Artikel werden geladen …</p>
+           {% endif %}
+         </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
+
+{% block overlays %}
+
+<nav class="toc app-sidebar app-left" aria-label="Orientierung" hidden>
+  <div class="app-panel">
+    <div class="app-panel-header">
+      <h3>Orientierung</h3>
+      <small>Anzeige · Inhalt · Stimmungsbild</small>
+    </div>
+
+    <details class="app-details" data-collapsible="nav-display" open>
+      <summary>Anzeige</summary>
+      <div class="app-details-body">
+        <div class="nav-block">
+          <div class="nav-block-title klein">Artikelumfang</div>
+          <div class="toggle-row" role="group" aria-label="Artikelumfang">
+            <button type="button" class="toggle-chip-btn" data-article-scope="toc" id="article-scope-toc">Mini (S)</button>
+            <button type="button" class="toggle-chip-btn" data-article-scope="core" id="article-scope-core">Normal (L)</button>
+            <button type="button" class="toggle-chip-btn" data-article-scope="all" id="article-scope-all">Alles (XL)</button>
+          </div>
+        </div>
+
+        <div class="nav-block">
+          <div class="nav-block-title klein">Textumfang</div>
+          <div class="toggle-row">
+            <label class="toggle-chip"><input type="checkbox" id="toggle-kurzinfo" checked /><span>Kurz</span></label>
+            <label class="toggle-chip"><input type="checkbox" id="toggle-story" /><span>Story</span></label>
+            <label class="toggle-chip"><input type="checkbox" id="toggle-einleitung" /><span>Einleitung</span></label>
+            <label class="toggle-chip"><input type="checkbox" id="toggle-juristisch" /><span>Juristisch</span></label>
+            <input type="checkbox" id="toggle-juristisch2" hidden aria-hidden="true" tabindex="-1" />
+            <label class="toggle-chip"><input type="checkbox" id="toggle-anmerkung" /><span>Info</span></label>
+          </div>
+        </div>
+
+        <div class="nav-block">
+          <div class="nav-block-title klein">Kommentare</div>
+          <div class="toggle-row" role="group" aria-label="Kommentare">
+            <label class="toggle-chip"><input type="checkbox" id="toggle-comments" /><span>Kommentare anzeigen</span></label>
+            <label class="toggle-chip"><input type="checkbox" id="toggle-comment-badges" checked /><span>Badges anzeigen</span></label>
+          </div>
+        </div>
+
+        <div class="nav-block">
+          <div class="nav-block-title klein">Lesedichte / Stimmungsbild</div>
+          <div class="toggle-row" role="group" aria-label="Lesedichte">
+            <button type="button" class="toggle-chip-btn" data-font-size="normal" id="font-size-normal">Normal</button>
+            <button type="button" class="toggle-chip-btn" data-font-size="compact" id="font-size-compact">Kompakt</button>
+            <button type="button" class="toggle-chip-btn" data-font-size="dense" id="font-size-dense">Dicht</button>
+            <label class="toggle-chip"><input type="checkbox" id="toggle-mood-overview" checked /><span>Stimmungsbild anzeigen</span></label>
+          </div>
+        </div>
+
+        <div class="nav-block">
+          <div class="nav-block-title klein">Versionen</div>
+          <div class="toggle-row" role="group" aria-label="Versionen">
+            <label class="toggle-chip" title="Zeigt die Vorschau (Diff) der nächsten Release auf Basis qualifizierter Kommentare."><input type="checkbox" id="toggle-next-draft" /><span>Next-Draft</span></label>
+            <label class="toggle-chip" title="Zeigt die Diff-Ansicht zur zuletzt veröffentlichten Version (falls vorhanden)."><input type="checkbox" id="toggle-last-version" /><span>Last-Version</span></label>
+          </div>
+        </div>
+      </div>
+    </details>
+	
+    <details class="app-details" data-collapsible="nav-content" open>
+      <summary>Inhalt</summary>
+      <div class="app-details-body">
+        <div class="nav-block">
+          <details class="app-subdetails app-subdetails-sitemap" data-collapsible="nav-sitemap">
+            <summary>Sitemap</summary>
+            <div class="app-subdetails-body">
+              <div class="toc-sitemap">
+                <details class="sitemap-details" open>
+                  <summary><span class="toc-static-link is-current">Startseite</span></summary>
+                  <div class="sitemap-sub">
+                    <a class="toc-static-link" href="#start">Überblick</a>
+                    <a class="toc-static-link" href="#einstieg">Einstieg</a>
+                    <a class="toc-static-link" href="#lesen">Lesemodus</a>
+                    <a class="toc-static-link" href="#entwurf">Gesetzentwurf</a>
+                  </div>
+                </details>
+
+                <div class="toc-static-divider" aria-hidden="true"></div>
+
+                <a class="toc-static-link" href="/mitmachen">Mitmachen</a>
+                <a class="toc-static-link" href="/methodik">Methodik</a>
+                <a class="toc-static-link" href="/versionen">Versionen</a>
+                <a class="toc-static-link" href="/kontakt">Kontakt</a>
+                <a class="toc-static-link" href="/rechtliches">Rechtliches</a>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <div class="nav-block">
+          <div class="nav-block-title klein">Inhaltsverzeichnis</div>
+          <ul id="toc-list" class="app-toc"></ul>
+        </div>
+      </div>
+    </details>
+
+    <details class="app-details" data-collapsible="nav-mood" open>
+      <summary>Stimmungsbild</summary>
+      <div class="app-details-body">
+        <div class="nav-block mood-overview-panel" id="mood-overview-panel">
+          <div id="mood-chart" class="mood-chart" aria-label="Stimmungsbild (Donut-Diagramm)"></div>
+          <div id="mood-legend" class="mood-legend"></div>
+        </div>
+      </div>
+    </details>
+
+  </div>
+
+  <div id="left-resize-handle" class="resize-handle resize-handle-left"></div>
+</nav>
+
+<aside id="user-panel" class="app-sidebar app-right" aria-label="Nutzerbereich" hidden>
+  <div class="app-panel">
+    <div class="app-panel-header">
+      <h2>Nutzerbereich</h2>
+    </div>
+
+    <details id="user-status-card" class="app-mutedbox app-details user-status-card" data-collapsible="user-status" open>
+      <summary>
+        <span class="userbox-title">Status <span id="user-status-title-suffix" class="userbox-title-suffix">(nicht angemeldet)</span></span>
+      </summary>
+      <div class="app-details-body">
+        <div id="user-status-section" class="userbox-body">
+		
+          <div id="auth-flow-card" class="userbox-block">
+            <strong class="userbox-subsection-title">Anmeldung</strong>
+            <div id="auth-flow-root" class="klein" aria-live="polite">
+              <p class="hint">Wir schicken dir einen Anmeldelink per E-Mail.</p>
+            </div>
+          </div>
+
+          <div id="legal-info-box" class="klein userbox-block">
+            <div class="userbox-subsection-title">Rechtliches</div>
+			<p>
+              Kontakt: <a href="/kontakt">Kontakt &amp; Interesse</a>. Datenschutz, Nutzung und Lizenz: <a href="/rechtliches">Rechtliches</a>.
+            </p>
+          </div>
+
+          <div id="user-display-card" class="userbox-block">
+            <div class="userbox-subsection-title">Anzeige</div>
+            <div class="toggle-row user-toggle-row" role="group" aria-label="Anzeige">
+              <label class="toggle-chip"><input type="checkbox" id="toggle-personal-mood" checked /><span>Bewertung anzeigen</span></label>
+              <label class="toggle-chip"><input type="checkbox" id="toggle-bookmarks" disabled /><span>Lesezeichen</span></label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </details>	
+
+    <details class="app-mutedbox app-details" id="user-votes-overview-section" data-collapsible="user-votes">
+      <summary>Abstimmungs-Übersicht</summary>
+      <div class="app-details-body">
+        <div class="klein hint" id="user-votes-overview-hint">Eigene Stimmen pro Artikel und Release (⚪ = nicht abgestimmt).</div>
+        <div class="user-votes-table-wrap" id="user-votes-table-wrap">
+          <table class="user-votes-table" id="user-votes-table" aria-label="Eigene Stimmen pro Artikel und Release">
+            <thead>
+              <tr id="user-votes-table-head-row">
+                <th>Artikel</th>
+              </tr>
+            </thead>
+            <tbody id="user-votes-table-body">
+              <tr>
+                <td class="klein" colspan="2">Lade …</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </details>
+
+    <details class="app-mutedbox app-details comment-panel" id="comment-overview-section" data-collapsible="comment">
+      <summary>Kommentar-Übersicht</summary>
+      <div class="app-details-body">
+        <div id="comment-overview-view" class="comment-overview-view">
+          <div class="comment-overview-toolbar">
+		    <div id="comment-filter-tabs" class="comment-filter-tabs" aria-label="Filter"></div>
+			<div class="comment-overview-toolbar-right">
+			  <button id="comment-refresh" class="btn btn-ghost btn-sm" type="button" disabled>Aktualisieren</button>
+			  <button id="comment-new" class="btn btn-ghost btn-sm" type="button" disabled>Neuer Kommentar</button>
+			</div>
+          </div>
+	    
+          <div id="comment-overview-list" class="comment-overview-list" aria-live="polite"></div>
+          <div id="comment-overview-status" class="klein"></div>
+        </div>
+
+        <div id="comment-draft-view" class="comment-draft-view" hidden>
+          <button id="comment-back-to-overview" class="btn btn-ghost btn-sm" type="button">
+            Zurück zur Kommentar-Übersicht
+          </button>
+
+        <div class="comment-progress klein" aria-label="Kommentar-Status">
+          <span class="comment-progress-step active" title="Schritt 1: Entwurf erstellen – Textvorschlag formulieren, speichern und überarbeiten.">Entwurf</span>
+          <span class="comment-progress-arrow" aria-hidden="true">&gt;</span>
+          <span class="comment-progress-step future" title="Schritt 2: Review – andere Nutzer:innen prüfen Form, Recht, Stil und Verständlichkeit.">Review</span>
+          <span class="comment-progress-arrow" aria-hidden="true">&gt;</span>
+          <span class="comment-progress-step future" title="Schritt 3: Veröffentlicht – nach Review/Moderation wird der Beitrag öffentlich sichtbar.">Veröffentlicht</span>
+        </div>
+        <div class="comment-form-section" align="left">
+        <label class="field comment-mode-field">
+          <span class="klein">Kommentar-Modus</span>
+          <select id="comment-mode"
+                  class="input input-sm"
+                  aria-label="Kommentar-Modus"
+                  data-new-article-min-trust="{{ settings.COMMENT_NEW_ARTICLE_MIN_TRUST }}"
+                  data-delete-article-min-trust="{{ settings.COMMENT_DELETE_ARTICLE_MIN_TRUST }}"
+                  data-meta-min-trust="{{ settings.COMMENT_META_SHOW_IN_EDITOR_MIN_TRUST }}">
+            <option value="change">Änderung an bestehendem Artikel</option>
+            <option value="new_article">Neuen Artikel vorschlagen</option>
+            <option value="delete_article">Artikel-Löschung beantragen</option>
+          </select>
+        </label>
+        <div class="klein comment-mode-hint" id="comment-mode-hint">Standard: Änderung an einem bestehenden Artikel.</div>
+        <div class="comment-article-picker" id="comment-article-picker">
+          <button id="comment-pick-nearest" class="btn btn-ghost btn-sm" type="button" disabled title="Wählt den nächstliegenden Artikel im Text">Nächstliegenden wählen</button>
+          <select id="comment-article-select" class="input input-sm" disabled aria-label="Artikel auswählen">
+            <option value="">Artikel auswählen …</option>
+          </select>
+        </div>
+        <div class="klein" id="comment-context-display">Gewählter Artikel: –</div>
+        <div class="comment-mode-note hidden" id="comment-new-article-note">
+          Neuer Artikel: Fülle die automatisch erzeugte Meta-Maske aus. Der Artikel wird erst beim ersten Speichern/Vorschau angelegt.
+        </div>
+        <div class="comment-mode-note hidden" id="comment-delete-article-note">
+          Artikel-Löschung: Das Patch-Eingabefeld wird nicht genutzt. Beim Speichern erzeugt das System automatisch einen Voll-Löschpatch.
+        </div>
+        <details class="comment-llm-support" id="comment-llm-support" hidden>
+          <summary>
+            <span>LLM-Unterstützung</span>
+            <span class="klein" id="comment-llm-summary">Externe Hilfe für Kommentar-Entwürfe</span>
+          </summary>
+          <div class="comment-llm-body">
+            <p class="klein hint">
+              Externe Sprachmodelle werden nicht in die Plattform eingebunden. Du arbeitest in einem eigenen Chat
+              und kopierst das Ergebnis anschließend manuell in den Kommentar-Entwurf.
+            </p>
+            <ol class="comment-llm-steps klein hint">
+              <li>Lade Gesetzentwurf, Artikelkontext und LLM-Anweisungen herunter. Diese Dateien sind der Kontext, den du dem Sprachmodell in seinen Chat gibst.</li>
+              <li>Klicke auf „Vorlage kopieren“, füge sie in den Chat ein und ergänze dort deine gewünschten Anweisungen und Ideen.</li>
+            </ol>
+            <div class="comment-llm-actions" role="group" aria-label="LLM-Kontextdateien">
+              <button class="btn btn-ghost btn-sm" type="button" id="comment-llm-download-law">Gesetzentwurf</button>
+              <button class="btn btn-ghost btn-sm" type="button" id="comment-llm-download-article">Artikelkontext</button>
+              <button class="btn btn-ghost btn-sm" type="button" id="comment-llm-download-instructions">LLM-Anweisungen</button>
+              <button class="btn btn-ghost btn-sm" type="button" id="comment-llm-copy-prompt">Vorlage kopieren</button>
+            </div>
+            <div class="klein" id="comment-llm-status" aria-live="polite"></div>
+          </div>
+        </details>
+        <label class="field" id="comment-proposal-field">
+          <span class="comment-proposal-head">
+            <span class="klein" id="comment-proposal-label">Änderungsvorschlag</span>
+            <a class="klein comment-minimd-help-link"
+               href="/mitmachen#minimd-hilfe"
+               target="_blank"
+               rel="noopener"
+               title="MiniMD: **fett**, *kursiv*, `code`, [Link](https://...), - Liste, 1. nummerierte Liste, zwei Ebenen mit zwei Leerzeichen Einrückung, ::: story … :::">MiniMD-Hilfe</a>
+          </span>
+          <textarea id="comment-proposal" class="textarea" rows="4" placeholder="Was soll sich ändern? …"></textarea>
+        </label>
+        <label class="field">
+          <span class="klein">Begründung</span>
+          <textarea id="comment-explanation" class="textarea" rows="3" placeholder="Warum ist das wichtig? …"></textarea>
+        </label>
+        <div class="comment-related-field" id="comment-related-field">
+          <label class="toggle-chip comment-related-toggle">
+            <input id="comment-related-enabled" type="checkbox" />
+            <span>Zusammenhang mit anderen Kommentaren angeben</span>
+          </label>
+          <div class="comment-related-body" id="comment-related-body" hidden>
+            <label class="field">
+              <span class="klein">Bestehenden eigenen Entwurfs-Verbund auswählen</span>
+              <select id="comment-related-group-select" class="input" aria-label="Eigene Kommentar-Verknüpfung auswählen">
+                <option value="">Neuen Zusammenhang beschreiben</option>
+              </select>
+            </label>
+            <label class="field">
+              <span class="klein">Titel / Kurzbeschreibung</span>
+              <input id="comment-related-title" class="input" type="text" maxlength="160" placeholder="z.B. Klimabonität und Transformationskredit" />
+            </label>
+            <label class="field">
+              <span class="klein">Zusammenhang / verknüpfte Kommentare</span>
+              <textarea id="comment-related-note" class="textarea" rows="3" placeholder="Optional: Kommentar-Nummern oder Links nennen, z.B. Kommentar #42 und #43."></textarea>
+            </label>
+            <label class="field">
+              <span class="klein">Gemeinsame Quellen / Hinweise</span>
+              <textarea id="comment-related-sources" class="textarea" rows="2" placeholder="Optional: Quellen oder Hinweise, die den Zusammenhang insgesamt betreffen."></textarea>
+            </label>
+            <label class="toggle-chip comment-related-bundle">
+              <input id="comment-related-integrate-bundle" type="checkbox" />
+              <span>Nur gemeinsam mit den verbundenen eigenen Kommentaren integrieren</span>
+            </label>
+            <p class="klein hint comment-related-hint">
+              Eigene Entwürfe können als Verbund markiert werden. Fremde Kommentare werden hier nur erwähnt und verlinkt; sie werden nicht automatisch Teil deines Verbunds.
+            </p>
+          </div>
+        </div>
+        <label class="field">
+          <span class="klein">Quellen (Links/DOI)</span>
+          <textarea id="comment-sources" class="textarea" rows="2" placeholder="Quelle 1 …"></textarea>
+        </label>
+		
+
+        <div class="impact-scores" id="comment-impact-scores" aria-label="Selbsteinschätzung des Entwurfs">
+          <div class="impact-head">
+            <div class="impact-head-left">
+              <div class="impact-head-title">Selbsteinschätzung</div>
+              <div class="klein impact-hint">
+                Durch den Vorschlag wird der Gesetzentwurf …
+              </div>
+            </div>
+            <div class="klein impact-scale-global" aria-hidden="true">
+              <span>gar nicht</span><span>sehr viel</span>
+            </div>
+          </div>
+
+          
+          <datalist id="impact-ticks-0-4">
+            <option value="0" label="0"></option>
+            <option value="1" label="1"></option>
+            <option value="2" label="2"></option>
+            <option value="3" label="3"></option>
+            <option value="4" label="4"></option>
+          </datalist>
+
+          <div class="impact-row" data-impact-key="goal">
+            <div class="impact-text">
+              <div class="impact-title">Zielbeitrag</div>
+              <div class="klein impact-desc">
+                … stärker auf die Zielsetzung des Entwurfs ausgerichtet.
+              </div>
+            </div>
+            <div class="impact-control">
+              <div class="impact-range">
+                <input id="comment-impact-goal" class="impact-slider" type="range" min="0" max="4" step="1" value="0" list="impact-ticks-0-4" aria-label="Zielbeitrag (0 bis 4)" />
+                <span class="impact-value klein" id="comment-impact-goal-value">–</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="impact-row" data-impact-key="clarity">
+            <div class="impact-text">
+              <div class="impact-title">Verständnis</div>
+              <div class="klein impact-desc">
+                … einfacher zu verstehen.
+              </div>
+            </div>
+            <div class="impact-control">
+              <div class="impact-range">
+                <input id="comment-impact-clarity"class="impact-slider" type="range" min="0" max="4" step="1" value="0" list="impact-ticks-0-4" aria-label="Verständnis (0 bis 4)" />
+                <span class="impact-value klein" id="comment-impact-clarity-value">–</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="impact-row" data-impact-key="practical">
+            <div class="impact-text">
+              <div class="impact-title">Praxisbezug</div>
+              <div class="klein impact-desc">
+                … einfacher umsetzbar.
+              </div>
+            </div>
+            <div class="impact-control">
+              <div class="impact-range">
+                <input id="comment-impact-practical" class="impact-slider" type="range" min="0" max="4" step="1" value="0"  list="impact-ticks-0-4" aria-label="Praxisbezug (0 bis 4)" />
+                <span class="impact-value klein" id="comment-impact-practical-value">–</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="impact-row" data-impact-key="legal">
+            <div class="impact-text">
+              <div class="impact-title">Rechtssicherheit</div>
+              <div class="klein impact-desc">
+                … juristisch klarer.
+              </div>
+            </div>
+            <div class="impact-control">
+              <div class="impact-range">
+                <input id="comment-impact-legal" class="impact-slider" type="range" min="0" max="4" step="1" value="0" list="impact-ticks-0-4" aria-label="Rechtssicherheit (0 bis 4)" />
+                <span class="impact-value klein" id="comment-impact-legal-value">–</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+		<div style="height:0.6rem"></div>
+        <div class="comment-source-checks" align="left">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" align="left">
+            <tr>
+              <td width="26" valign="top" align="left">
+                <input id="comment-llm-assisted" type="checkbox" />
+              </td>
+              <td valign="top" align="left">
+                <label for="comment-llm-assisted" class="klein">
+                  Mit LLM-Unterstützung erstellt.
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td width="26" valign="top" align="left">
+                <input id="comment-cc0" type="checkbox" />
+              </td>
+              <td valign="top" align="left">
+                <label for="comment-cc0" class="klein">
+                  Ich veröffentliche diesen Beitrag unter der <a href="/rechtliches#lizenz">CC0 1.0 Public Domain Lizenz</a>.
+                </label>
+              </td>
+            </tr>
+            <tr>
+              <td width="26" valign="top" align="left">
+                <input id="comment-rules" type="checkbox" />
+              </td>
+              <td valign="top" align="left">
+                <label for="comment-rules" class="klein">
+                  Ich halte mich an die <a href="/rechtliches#nutzungsbedingungen">Nutzungsbedingungen</a>.
+                </label>
+              </td>
+            </tr>
+          </table>
+        </div>
+		<div style="height:0.6rem"><br><br><br></div>
+		<div style="clear:both; height:0.6rem;"></div>
+		
+        <button id="comment-save-draft" class="btn btn-ghost btn-full" type="button" disabled>Entwurf speichern</button>
+        <button id="comment-submit" class="btn btn-primary btn-full" type="button" disabled>Zur Review einreichen</button>
+        <button id="comment-preview-toggle" class="btn btn-ghost btn-full" type="button" disabled>Vorschau im Artikel</button>
+        <button id="comment-delete-draft" class="btn btn-ghost btn-full" type="button" disabled>Entwurf löschen</button>
+        <div id="comment-status-text" class="klein"></div>
+      </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="app-mutedbox app-details review-overview-metrics" id="review-overview-section" data-collapsible="reviews">
+      <summary>Review-Übersicht</summary>
+      <div class="app-details-body">
+        <div class="klein" data-review-metric="total">Reviews gesamt: –</div>
+        <div class="klein" data-review-metric="recent">Reviews seit letztem eigenen Kommentar: –</div>
+        <div class="klein" data-review-metric="hit-rate">Trefferquote (Übernahmen): –</div>
+      </div>
+    </details>
+
+  </div>
+
+  <div id="right-resize-handle" class="resize-handle resize-handle-right"></div>
+</aside>
+
+
+{% endblock %}

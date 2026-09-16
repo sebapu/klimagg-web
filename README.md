@@ -1,69 +1,265 @@
-# KlimaGG-Web
+# klimagg-web
 
-**KlimaGG-Web** ist die öffentliche Codebasis der Webseite zum Klima-Generationen-Gesetz (KlimaGG: www.klimagg.de / www.klima-generationen-gesetz.de).
+## Deutsch
 
-Die Webseite dient als offene Beteiligungsplattform für die Entwicklung, Diskussion und Verbesserung eines deutschen Klimaschutz-Gesetzentwurfs. Nutzerinnen und Nutzer können den Gesetzentwurf lesen, Artikel bewerten, Änderungsvorschläge kommentieren und Beiträge im Review-Prozess einordnen.
+`klimagg-web` ist eine kleine Webplattform, mit der strukturierte Gesetzes- und Regeltexte veröffentlicht, kommentiert, bewertet, reviewed und versioniert werden können.
 
-Ziel des Projekts ist ein transparenter, nachvollziehbarer und niedrigschwelliger Beteiligungsprozess für ein Gesetz, das Klimaschutz, Freiheit, Infrastrukturmodernisierung und Generationengerechtigkeit verbindet.
+**Dies ist ein früher öffentlicher Arbeitsstand.** Das Repository macht den technischen Kern der laufenden Plattform einsehbar und lokal ausführbar. Der aktuelle Zweck ist vor allem Transparenz, Diskussion und Weiterentwicklung – noch nicht die Bereitstellung einer vollständig dokumentierten oder gehärteten Standardlösung für den Produktivbetrieb.
 
-## Projektstand
+Die Software entstand ursprünglich für die öffentliche Entwicklung eines konkreten Gesetzentwurfs und wurde für dieses Repository auf einen generischen Kern reduziert.
 
-Dieses Repository enthält die öffentliche technische Basis der Webseite. Nicht enthalten sind produktive Datenbanken, lokale Umgebungsdateien, private Secrets, Server-Konfigurationen und personenbezogene Daten.
+### Was die Plattform kann
 
-Die produktive Webseite läuft getrennt vom öffentlichen Repository. Dieses Repository dient als nachvollziehbare Entwicklungs- und Veröffentlichungsbasis.
+* strukturierte Artikel und Artikelversionen;
+* Votes und Reaktionen;
+* präzise Textänderungsvorschläge mit MiniMD / Patch v2;
+* normale Kommentare ohne Textänderung;
+* Reviews;
+* Trust-basierte Beteiligung;
+* Next-Draft-Auswahl und Konfliktbehandlung;
+* Release-Vorbereitung und öffentliche HTML-Snapshots;
+* Magic-Link-Login;
+* Adminfunktionen über `User.is_admin`;
+* datensparsame öffentliche Exporte;
+* optionale externe LLM-Unterstützung über Markdown-Kontexte.
 
-## Technischer Überblick
+Der Stack ist bewusst einfach:
 
-KlimaGG-Web ist eine minimalistische Python/FastAPI-Webanwendung mit serverseitigem HTML-Rendering und einer schlanken JavaScript/CSS-Oberfläche.
+* FastAPI
+* SQLAlchemy
+* Jinja2
+* Vanilla JavaScript
+* SQLite
+* kein Frontend-Framework
+* keine automatische Alembic-Migration
 
-Zentrale Bestandteile:
+### Drei Demo-Profile
 
-- **FastAPI-Backend** für API-Endpunkte, Authentifizierung, Artikel, Votes, Kommentare, Reviews, News und Admin-Funktionen.
-- **Jinja2-Templates** für Landing Page, Entwurfsseite, Einzelartikel und statische Seiten.
-- **SQLAlchemy-Datenmodell** für Nutzer, Artikelversionen, Stimmen, Kommentare, Reviews, Reports, News und Metriken.
-- **MiniMD-/Inline-Diff-Pipeline** für artikelgenaue Änderungsvorschläge, Kommentar-Diffkarten und Merge-Vorschauen.
-- **Review- und Trust-Logik** für die strukturierte Bewertung von Kommentaren und Änderungsvorschlägen.
-- **Snapshot-/Export-Werkzeuge** für Release- und Transparenz-Exporte.
-- **LLM-Kontext-Dateien und Anweisungen** für externe Unterstützung beim Erstellen strukturierter Kommentarentwürfe.
+Das Repository enthält drei lokale Beispieldatensätze:
 
-Die App ist bewusst einfach gehalten: keine unnötigen Cookies, keine große Framework-Komplexität, kein GraphQL, kein schweres Frontend-Build-System.
+* `neutral` – vollständig synthetischer Muster-Gesetzentwurf;
+* `wohnen` – größerer Wohnungs-Gesetzentwurf mit rekonstruierter Versionsgeschichte;
+* `bahn` – größerer Schienenmobilitäts-Entwurf mit technischen Kommentaren und Reviews.
 
+Alle Demo-Nutzer und Beteiligungsdaten sind synthetisch.
 
-## Was ist KlimaGG-Web?
+### Kontakt
 
-KlimaGG-Web ist die Webplattform hinter dem Klima-Generationen-Gesetz. Sie verbindet einen öffentlich lesbaren Gesetzentwurf mit Beteiligungsfunktionen: Abstimmung, Kommentar, Änderungsvorschlag, Review und später nachvollziehbare Releases.
+Fragen, Hinweise und Austausch:
 
-Der technische Kern ist darauf ausgelegt, Gesetzestext nicht nur als statischen Text anzuzeigen, sondern als versionierbaren, kommentierbaren und prüfbaren Arbeitsstand. Änderungen werden artikel- und blockgenau verarbeitet. Kommentare können konkrete Textänderungen enthalten, die als Inline-Diff und Kommentar-Diffkarte sichtbar werden.
+**Sebastian Putzke**
+`sebastian.putzke@klimagg.de`
 
-Die Plattform soll zeigen, wie partizipative Gesetzesentwicklung digital, transparent und überprüfbar organisiert werden kann.
+Technische Hinweise können auch direkt über GitHub Issues eingebracht werden.
 
+---
 
-## Nicht im Repository enthalten
+## English
 
-Dieses öffentliche Repository enthält keine produktiven oder personenbezogenen Daten.
+`klimagg-web` is a small web platform for publishing, discussing, reviewing and versioning structured legal or policy documents.
 
-Nicht enthalten sein dürfen insbesondere:
+**This is an early public working version.** The repository makes the technical core of the platform inspectable and locally runnable. Its current purpose is transparency, discussion and further development. It is not yet a fully documented or hardened reference deployment.
 
-- `.env`
-- lokale oder produktive Datenbanken wie `*.db`, `*.sqlite`, `*.sqlite3`
-- private Schlüssel, Tokens oder Zugangsdaten
-- produktive Serverkonfigurationen
-- lokale virtuelle Python-Umgebungen wie `.venv/`
-- temporäre Testausgaben und lokale Laufzeitdaten
-- produktive Backups
+The project was originally built for a concrete public-law drafting project and has been reduced into a reusable core.
 
-Produktive Daten und Deployment-spezifische Konfigurationen bleiben außerhalb des öffentlichen Repositories.
+Main features include:
 
+* structured articles and versions;
+* votes and reactions;
+* precise MiniMD / Patch v2 change proposals;
+* comments;
+* reviews;
+* trust-aware participation;
+* Next Draft selection and conflict handling;
+* release preparation and public HTML snapshots;
+* Magic-Link authentication;
+* admin access through `User.is_admin`;
+* privacy-conscious public exports;
+* optional external LLM assistance.
 
-## Architektur
+---
 
-Die Anwendung basiert auf FastAPI und Jinja2. Das Backend liefert sowohl HTML-Seiten als auch REST-Endpunkte aus. Die Templates liegen bewusst im Projekt-Root; statische Assets wie `style.css`, `script.js` und `auth_complete.js` werden kontrolliert ausgeliefert.
+## Quick start
 
-Die Datenhaltung erfolgt über SQLAlchemy-Modelle. Das Datenmodell umfasst unter anderem Nutzerkonten, Magic-Link-Login, Artikel und Artikelversionen, Votes, Kommentare, Reviews, Flags, Reports, News und Metriken.
+Create a virtual environment and install dependencies:
 
-Die zentrale Text- und Diff-Logik liegt in `indiff.py`. MiniMD ist dabei das persistente Arbeitsformat, HTML ist die operative Darstellungs- und Anker-Ebene. Die Diff-Pipeline erzeugt Inline-Diffs, Kommentar-Diffkarten, Merge-Vorschauen und Validierungen.
+```bash
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+```
 
-Konfiguration erfolgt über Umgebungsvariablen bzw. `.env` mittels `pydantic-settings`. Für lokale Entwicklung ist SQLite vorgesehen; produktiv kann eine andere Datenbank über `DATABASE_URL` konfiguriert werden.
+Create a local configuration:
 
+```bash
+cp .env.example .env
+```
 
-> Hinweis: Dieses Repository ist die öffentliche Codebasis. Produktive Datenbanken, Secrets und serverseitige Betriebsdateien werden nicht versioniert und gehören nicht in Pull Requests oder Commits.
+For local development, the intended authentication settings are:
+
+```text
+AUTH_MAGIC_LINK_EMAIL_ENABLED=false
+AUTH_EXPOSE_LOGIN_URL=true
+```
+
+Validate the local configuration and start the application:
+
+```bash
+python tools/check_env.py --mode local
+./dev_server.sh
+```
+
+Open:
+
+```text
+http://127.0.0.1:8000
+```
+
+## Demo data
+
+Create a fresh local demo database with one of the included profiles:
+
+```bash
+python3 seed.py neutral --reset
+python3 seed.py wohnen --reset
+python3 seed.py bahn --reset
+```
+
+The profiles cover different parts of the workflow:
+
+* `neutral`: active proposals, votes, reviews, Next Draft selection and patch conflicts;
+* `wohnen`: archived historical proposals and a reconstructed version transition;
+* `bahn`: technical comments and structured reviews.
+
+Demo email addresses use the reserved `.invalid` domain.
+
+## Repository structure
+
+The core is intentionally kept small:
+
+```text
+app.py
+config.py
+db.py
+models.py
+schemas.py
+review.py
+indiff.py
+mail.py
+export_snapshot.py
+
+base.html
+index.html
+entwurf.html
+artikel.html
+admin.html
+versionen.html
+kontakt.html
+rechtliches.html
+methodik.html
+mitmachen.html
+
+script.js
+admin.js
+auth_complete.js
+style.css
+
+seed.py
+demo/
+  neutral/
+  wohnen/
+  bahn/
+
+llm-api/
+  LLM-Instructions-Change.md
+  LLM-Instructions-New-Article.md
+
+tools/
+  check_env.py
+```
+
+Runtime data such as `.env`, SQLite databases, generated exports, release output and local demo state must not be committed.
+
+## Database
+
+The public distribution supports SQLite only.
+
+The schema is defined by the SQLAlchemy models in `models.py`. There is deliberately no automatic Alembic migration step.
+
+For a new empty non-demo database:
+
+```bash
+.venv/bin/python -c 'import models; from db import Base, engine; Base.metadata.create_all(bind=engine)'
+```
+
+Do not use this as an automatic migration procedure for an existing production database.
+
+## Authentication
+
+There is one authentication path:
+
+```text
+Magic Link -> JWT -> User.is_admin
+```
+
+There is no separate admin password, HTTP Basic Auth or development authentication bypass.
+
+Local development can expose the generated Magic-Link URL instead of sending email. A public installation must not do this.
+
+## Configuration and private data
+
+Configuration is supplied through environment variables or a local `.env`.
+
+Use `.env.example` as documentation. Never commit the real `.env`.
+
+The repository is not a backup location. Do not commit:
+
+* production databases;
+* user accounts or email addresses;
+* login tokens;
+* SMTP credentials;
+* JWT secrets;
+* API tokens;
+* private backups;
+* runtime exports containing personal data.
+
+Public snapshots are generated separately by `export_snapshot.py` and are intended to contain public document state and anonymized aggregates rather than account-level personal data.
+
+## MiniMD and Patch v2
+
+`indiff.py` contains the canonical MiniMD / diff / merge logic.
+
+Change proposals are anchored to exact source text and baseline hashes so that an edit is not silently applied to an unrelated document state.
+
+Persisted MiniMD block names are part of the data contract and should not be renamed casually.
+
+## External LLM assistance
+
+The application can export Markdown context for use with an external language model.
+
+The external model has no live access to the platform and cannot save, publish or approve changes. The user manually copies a resulting MiniMD proposal back into the application.
+
+Generic instructions are included in:
+
+```text
+llm-api/LLM-Instructions-Change.md
+llm-api/LLM-Instructions-New-Article.md
+```
+
+Generated context files are runtime artifacts and should not be committed.
+
+## Production use
+
+This first public release intentionally does not prescribe a production deployment stack.
+
+A real public installation additionally needs HTTPS, a reverse proxy, process supervision, filesystem permissions, backups and host hardening. See [`SECURITY.md`](SECURITY.md) before exposing an installation publicly.
+
+## Security
+
+Security-sensitive areas include authentication, admin authorization, MiniMD rendering, exports, file serving and process-management functions.
+
+Please report vulnerabilities privately as described in [`SECURITY.md`](SECURITY.md).
+
+## License
+
+`klimagg-web` is released under the existing MIT License. See [`LICENSE`](LICENSE).
+

@@ -1,0 +1,256 @@
+{
+  "schema_version": "2.0.0",
+  "data_notice": {
+    "synthetic_user_activity": true,
+    "source_grounded_comments": true,
+    "text": "Nutzerkonten, Votes, Reaktionen und Reviews sind synthetisch. Die offenen Kommentare basieren auf den ausdrücklich offenen Optimierungs- und Forschungsfragen der zugrunde liegenden Systemarchitektur."
+  },
+  "users": [
+    {
+      "key": "demo_reader",
+      "email": "bahn-reader@example.invalid",
+      "pseudonym": "Demo-Leser",
+      "trust_level": 5,
+      "is_admin": false
+    },
+    {
+      "key": "demo_engineering",
+      "email": "bahn-engineering@example.invalid",
+      "pseudonym": "Demo-Engineering",
+      "trust_level": 15,
+      "is_admin": false
+    },
+    {
+      "key": "demo_logistics",
+      "email": "bahn-logistics@example.invalid",
+      "pseudonym": "Demo-Logistik",
+      "trust_level": 15,
+      "is_admin": false
+    },
+    {
+      "key": "demo_energy",
+      "email": "bahn-energy@example.invalid",
+      "pseudonym": "Demo-Energie",
+      "trust_level": 15,
+      "is_admin": false
+    },
+    {
+      "key": "demo_planning",
+      "email": "bahn-planning@example.invalid",
+      "pseudonym": "Demo-Planung",
+      "trust_level": 15,
+      "is_admin": false
+    },
+    {
+      "key": "demo_safety",
+      "email": "bahn-safety@example.invalid",
+      "pseudonym": "Demo-Safety",
+      "trust_level": 20,
+      "is_admin": false
+    },
+    {
+      "key": "demo_reviewer",
+      "email": "bahn-review@example.invalid",
+      "pseudonym": "Demo-Review",
+      "trust_level": 20,
+      "is_admin": false
+    },
+    {
+      "key": "demo_admin",
+      "email": "bahn-admin@example.invalid",
+      "pseudonym": "Demo-Admin",
+      "trust_level": 25,
+      "is_admin": true
+    }
+  ],
+  "article_votes": [
+    {
+      "user": "demo_reader",
+      "article": "paragraf-1-zweck-des-gesetzes",
+      "vote": 1
+    },
+    {
+      "user": "demo_engineering",
+      "article": "paragraf-24-technischer-referenzstandard",
+      "vote": 1
+    },
+    {
+      "user": "demo_logistics",
+      "article": "paragraf-29a-umschlag-und-gepaecklogistik",
+      "vote": 0
+    },
+    {
+      "user": "demo_energy",
+      "article": "paragraf-29b-energie-und-speichersystem",
+      "vote": 1
+    },
+    {
+      "user": "demo_planning",
+      "article": "paragraf-50-stationsorientierte-entwicklung",
+      "vote": 1
+    },
+    {
+      "user": "demo_safety",
+      "article": "paragraf-56-betriebsreserve",
+      "vote": 0
+    }
+  ],
+  "article_reactions": [
+    {
+      "user": "demo_reader",
+      "article": "paragraf-38-integrierte-mobilitaet",
+      "emoji": "💡"
+    },
+    {
+      "user": "demo_engineering",
+      "article": "paragraf-23-technische-grundsaetze",
+      "emoji": "🛠️"
+    },
+    {
+      "user": "demo_safety",
+      "article": "paragraf-55-sicherheitsaufsicht",
+      "emoji": "🔎"
+    }
+  ],
+  "comments": [
+    {
+      "key": "speed-optimum",
+      "article": "paragraf-24-technischer-referenzstandard",
+      "author": "demo_engineering",
+      "category": "technical",
+      "text": "Der Referenzstandard nennt etwa 200 km/h. In der Zusatzarchitektur bleibt ausdrücklich offen, ob das Lebenszyklusoptimum des Universalstandards bei 180, 200 oder 220 km/h liegt. Zu prüfen sind Fahrzeugumlauf, Energie, Aerodynamik, Trassenbau, Instandhaltung, Kapazitätsbelegung und Güterzeitwert."
+    },
+    {
+      "key": "station-loop",
+      "article": "paragraf-24-technischer-referenzstandard",
+      "author": "demo_engineering",
+      "category": "technical",
+      "text": "Für die Stationsschleife sind optimale Länge, Abzweiggeschwindigkeit und Abstand zwischen Halteschleifen noch offen. Zu simulieren sind Zeitverlust des haltenden Verkehrs, Beschleunigungsstrecke, Einfädelung und Flächenbedarf."
+    },
+    {
+      "key": "cargo-units",
+      "article": "paragraf-29a-umschlag-und-gepaecklogistik",
+      "author": "demo_logistics",
+      "category": "technical",
+      "text": "Die genaue Geometrie der S/M/L-Ladeeinheiten und ihr Verhältnis zu ISO-Containern und Wechselbehältern ist noch nicht festgelegt. Ziel ist maximale europäische Kompatibilität bei automatisiertem U200-Umschlag."
+    },
+    {
+      "key": "cargo-hub-throughput",
+      "article": "paragraf-29a-umschlag-und-gepaecklogistik",
+      "author": "demo_logistics",
+      "category": "technical",
+      "text": "Die reale Umschlagzeit und nötige Parallelisierung eines Cargo-Hubs müssen durch eine Durchsatzsimulation mit realistischen Ladungsmixen, Puffern, Verspätungen und Störungen bestimmt werden."
+    },
+    {
+      "key": "battery-sizing",
+      "article": "paragraf-29b-energie-und-speichersystem",
+      "author": "demo_energy",
+      "category": "technical",
+      "text": "Kapazität, Leistung und Zellchemie der Bordbatterien für P60/P120/C60/C120 bleiben Optimierungsvariablen. Sie sind gegen Fahrzeugmasse, Rekuperationsnutzen, Notreichweite, Kosten und Lebensdauer zu optimieren."
+    },
+    {
+      "key": "stationary-storage",
+      "article": "paragraf-29b-energie-und-speichersystem",
+      "author": "demo_energy",
+      "category": "technical",
+      "text": "Unterwerksabstände, BESS-Leistung und -Kapazität, 2×25-kV-Anteil, Netzanschlussleistung und wirtschaftliche Netzdienstleistungen sind noch quantitativ zu bestimmen."
+    },
+    {
+      "key": "resilience-thresholds",
+      "article": "paragraf-56-betriebsreserve",
+      "author": "demo_reviewer",
+      "category": "system",
+      "text": "Verbindliche Grenzwerte für Restkapazität und Reisezeit bei N-1-Streckenausfällen, Knotenausfällen und längeren Baustellen sind noch nicht festgelegt. Zunächst sollen Netzentwürfe mit standardisierten Szenarien getestet werden."
+    },
+    {
+      "key": "urban-network",
+      "article": "paragraf-50-stationsorientierte-entwicklung",
+      "author": "demo_planning",
+      "category": "planning",
+      "text": "Welche historischen Bahntrassen als urbane Erschließung weiterverwendet werden und wo neue Umfahrungen oder Tunnel erforderlich sind, kann nicht bundesweit pauschal entschieden werden und muss stadtweise modelliert werden."
+    },
+    {
+      "key": "dangerous-heavy-freight",
+      "article": "paragraf-29-gueterverkehr",
+      "author": "demo_safety",
+      "category": "safety",
+      "text": "Offen ist, welche Gefahrgut- und Schwerlastverkehre aus Safety-, Achslast- oder Tunnelgründen vom U200-Regelstandard abweichen müssen."
+    },
+    {
+      "key": "personnel-cost-model",
+      "article": "paragraf-61-regelmaessige-systempruefung",
+      "author": "demo_reviewer",
+      "category": "economics",
+      "text": "Das Personal- und Kostenmodell muss nach Festlegung von Zielnetz, Cargo-Hubs, Energieanlagen und Speichern neu gerechnet werden. Die bisherige Größenordnung von 120.000–140.000 direkten FTE ist ausdrücklich nur eine Arbeitshypothese."
+    }
+  ],
+  "comment_votes": [
+    {
+      "user": "demo_reviewer",
+      "comment": "speed-optimum",
+      "vote": 1
+    },
+    {
+      "user": "demo_reader",
+      "comment": "station-loop",
+      "vote": 1
+    },
+    {
+      "user": "demo_engineering",
+      "comment": "cargo-hub-throughput",
+      "vote": 1
+    },
+    {
+      "user": "demo_energy",
+      "comment": "battery-sizing",
+      "vote": 1
+    },
+    {
+      "user": "demo_safety",
+      "comment": "resilience-thresholds",
+      "vote": 1
+    },
+    {
+      "user": "demo_planning",
+      "comment": "urban-network",
+      "vote": 1
+    }
+  ],
+  "comment_reactions": [
+    {
+      "user": "demo_reader",
+      "comment": "speed-optimum",
+      "emoji": "🔎"
+    },
+    {
+      "user": "demo_engineering",
+      "comment": "station-loop",
+      "emoji": "🛠️"
+    },
+    {
+      "user": "demo_energy",
+      "comment": "stationary-storage",
+      "emoji": "💡"
+    }
+  ],
+  "reviews": [
+    {
+      "comment": "speed-optimum",
+      "reviewer": "demo_reviewer",
+      "recommendation": "revise",
+      "note": "Die Systemarchitektur selbst markiert den Referenzwert 200 km/h als noch quantitativ zu validieren. Ein Review sollte daher zunächst Anforderungen und Vergleichsrechnung schärfen, nicht einen Wert ohne Modellierung festschreiben."
+    },
+    {
+      "comment": "cargo-hub-throughput",
+      "reviewer": "demo_reviewer",
+      "recommendation": "revise",
+      "note": "Der offene Punkt ist ausreichend konkret für eine diskrete Durchsatzsimulation; ein belastbarer Gesetzes- oder Standardwert folgt erst aus den Ergebnissen."
+    },
+    {
+      "comment": "battery-sizing",
+      "reviewer": "demo_reviewer",
+      "recommendation": "revise",
+      "note": "Die Quellen nennen Funktionen und plausible Größenordnungen, aber keinen bereits validierten Standardwert. Die Batteriegröße bleibt deshalb eine Optimierungsvariable."
+    }
+  ]
+}

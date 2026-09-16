@@ -1,0 +1,200 @@
+{# ======================================================================
+  KlimaGG-Web — rechtliches.html
+  ----------------------------------------------------------------------
+  Role: Legal notice, privacy information, terms of use, and licensing.
+  Instance-specific operator data is supplied through settings/.env.
+====================================================================== #}
+{% extends "base.html" %}
+
+{% block title %}{{ settings.PROJECT_NAME }} · Rechtliches{% endblock %}
+{% block page_kind %}static{% endblock %}
+{% block klimagg_app %}false{% endblock %}
+{% block header_subtitle %}Impressum · Datenschutz · Nutzung · Lizenz{% endblock %}
+
+{% block main %}
+<main id="hauptinhalt">
+  <section class="hero">
+    <div class="shell">
+      <div class="section-header">
+        <div>
+          <h1 class="section-title">Rechtliches</h1>
+          <p class="section-sub">Impressum · Datenschutz · Nutzungsbedingungen · Lizenz</p>
+        </div>
+      </div>
+
+      <div class="law-surface">
+        <section class="legal-article" aria-labelledby="onboarding">
+          <h2 id="onboarding">Anmeldung und Beteiligung</h2>
+          <div class="einleitung">
+            <p>
+              Die Anmeldung erfolgt per zeitlich begrenztem E-Mail-Link statt Passwort.
+              Neue Nutzer wählen anschließend ein Pseudonym; eine Postleitzahl ist optional.
+            </p>
+            <ul>
+              <li><b>Wofür ist die Anmeldung?</b> Für Votes, Reaktionen, Kommentar-Entwürfe und Reviews.</li>
+              <li><b>Welche Basisdaten werden genutzt?</b> E-Mail-Adresse, Pseudonym und optional eine PLZ.</li>
+              <li><b>Kann ich mein Konto löschen?</b> Ja. Die Anwendung unterstützt eine geplante oder sofortige anonymisierende Löschung.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="legal-article" aria-labelledby="impressum">
+          <h2 id="impressum">Impressum</h2>
+          <div class="juristisch">
+            <p><b>Anbieter / verantwortliche Stelle:</b> {{ settings.LEGAL_PROVIDER_NAME or "Nicht konfiguriert" }}</p>
+            <p><b>Anschrift:</b> {{ settings.LEGAL_PROVIDER_ADDRESS or "Nicht konfiguriert" }}</p>
+            {% if settings.MAIL_KONTAKT_ADDRESS or settings.MAIL_INFO_ADDRESS %}
+              {% set legal_contact = settings.MAIL_KONTAKT_ADDRESS or settings.MAIL_INFO_ADDRESS %}
+              <p><b>E-Mail:</b> <a href="mailto:{{ legal_contact }}">{{ legal_contact }}</a></p>
+            {% endif %}
+            {% if settings.MAIL_DATENSCHUTZ_ADDRESS %}
+              <p><b>Datenschutz:</b> <a href="mailto:{{ settings.MAIL_DATENSCHUTZ_ADDRESS }}">{{ settings.MAIL_DATENSCHUTZ_ADDRESS }}</a></p>
+            {% endif %}
+            {% if settings.LEGAL_CONTENT_RESPONSIBLE %}
+              <p><b>Inhaltlich verantwortlich:</b> {{ settings.LEGAL_CONTENT_RESPONSIBLE }}</p>
+            {% endif %}
+          </div>
+          {% if not settings.LEGAL_PROVIDER_NAME or not settings.LEGAL_PROVIDER_ADDRESS %}
+            <div class="anmerkung"><p class="klein">Die Betreiberangaben müssen vor einem öffentlichen Produktivbetrieb in <code>.env</code> konfiguriert werden.</p></div>
+          {% endif %}
+        </section>
+
+        <section class="legal-article" aria-labelledby="datenschutz">
+          <h2 id="datenschutz">Datenschutz</h2>
+          <div class="einleitung">
+            <p>
+              Die Anwendung kommt ohne Tracking-Cookies und Werbenetzwerke aus.
+              Für Betrieb, Anmeldung und Beteiligung werden nur die dafür erforderlichen Daten verarbeitet.
+              Die optionale Reichweitenmessung arbeitet ohne Cookies und ohne Cross-Day-Nutzerprofil.
+            </p>
+          </div>
+
+          <div class="juristisch">
+            <p><b>1. Verantwortliche Stelle</b></p>
+            <p>{{ settings.LEGAL_PROVIDER_NAME or "Nicht konfiguriert" }}{% if settings.LEGAL_PROVIDER_ADDRESS %}, {{ settings.LEGAL_PROVIDER_ADDRESS }}{% endif %}</p>
+            {% if settings.MAIL_DATENSCHUTZ_ADDRESS %}
+              <p><b>Datenschutzkontakt:</b> <a href="mailto:{{ settings.MAIL_DATENSCHUTZ_ADDRESS }}">{{ settings.MAIL_DATENSCHUTZ_ADDRESS }}</a></p>
+            {% endif %}
+
+            <p style="margin-top:0.8rem;"><b>2. Verarbeitungszwecke</b></p>
+            <ul>
+              <li><b>Websitebetrieb:</b> technische Auslieferung, Stabilität, Fehleranalyse und Missbrauchsschutz.</li>
+              <li><b>Magic-Link-Anmeldung:</b> E-Mail-Adresse, zeitlich befristeter Token sowie technische Sicherheitsdaten.</li>
+              <li><b>Beteiligung:</b> Accountzuordnung für Votes, Reaktionen, Kommentare und Reviews.</li>
+              <li><b>Kontaktformular:</b> Weiterleitung der eingegebenen Kontaktdaten und Nachricht per E-Mail; keine Speicherung in der Anwendungsdatenbank.</li>
+              <li><b>Optionale Reichweitenmessung:</b> aggregierte tägliche Pageviews und Visitors-Schätzung ohne Cookies.</li>
+            </ul>
+
+            <p style="margin-top:0.8rem;"><b>3. Gespeicherte Daten</b></p>
+            <ul>
+              <li><b>Account:</b> E-Mail-Adresse, Pseudonym, optional PLZ sowie Kontostatus.</li>
+              <li><b>Authentifizierung:</b> Magic-Link-Tokens mit Ablauf-/Nutzungsstatus und den für Sicherheitszwecke gespeicherten technischen Metadaten.</li>
+              <li><b>Beteiligung:</b> Votes, Reaktionen, Kommentare, Reviews und zugehörige Zeit-/Versionsbezüge.</li>
+              <li><b>Reichweitenmessung:</b> tägliche Aggregate und kurzzeitig ein täglicher Hash zur Deduplizierung; die Anwendung speichert dabei keine rohe IP-Adresse oder User-Agent im Analytics-Datensatz.</li>
+            </ul>
+
+            <p style="margin-top:0.8rem;"><b>4. Speicherdauer</b></p>
+            <ul>
+              <li>Magic-Link-Tokens sind zeitlich begrenzt und nur einmal verwendbar.</li>
+              <li>Deduplizierungs-Keys der Reichweitenmessung werden nach der konfigurierten Frist gelöscht.</li>
+              <li>Accountdaten bleiben bis zur Löschung bzw. Anonymisierung des Kontos gespeichert.</li>
+              <li>Öffentliche Beiträge können nach Accountlöschung in anonymisierter Form erhalten bleiben, soweit dies für die nachvollziehbare Dokumententwicklung erforderlich ist.</li>
+            </ul>
+
+            <p style="margin-top:0.8rem;"><b>5. Cookies / LocalStorage</b></p>
+            <p>
+              Die Anwendung benötigt keine Tracking-Cookies. LocalStorage wird für lokale UI-Zustände
+              und den Anmeldestatus verwendet.
+            </p>
+
+            <p style="margin-top:0.8rem;"><b>6. Öffentliche Exporte</b></p>
+            <p>
+              Release- und Monats-Snapshots enthalten nur öffentliche Inhalte und aggregierte Beteiligungsdaten.
+              Account-E-Mail, PLZ, interne User-IDs, Reviewer-IDs und vergleichbare personenbezogene Felder werden nicht exportiert.
+            </p>
+
+            <p style="margin-top:0.8rem;"><b>7. Betroffenenrechte</b></p>
+            <p>
+              Für einen Produktivbetrieb müssen hier die für den konkreten Betreiber geltenden
+              Informationspflichten, Rechtsgrundlagen und Betroffenenrechte vollständig angegeben werden.
+            </p>
+
+            {% if settings.LEGAL_PRIVACY_AUTHORITY_NAME %}
+              <p style="margin-top:0.8rem;"><b>8. Datenschutzaufsicht</b></p>
+              <p>{{ settings.LEGAL_PRIVACY_AUTHORITY_NAME }}{% if settings.LEGAL_PRIVACY_AUTHORITY_ADDRESS %}, {{ settings.LEGAL_PRIVACY_AUTHORITY_ADDRESS }}{% endif %}</p>
+            {% endif %}
+
+            {% if settings.LEGAL_NOTICE_DATE %}
+              <p style="margin-top:0.8rem;"><b>Stand:</b> {{ settings.LEGAL_NOTICE_DATE }}</p>
+            {% endif %}
+          </div>
+        </section>
+
+        <section class="legal-article" aria-labelledby="nutzungsbedingungen">
+          <h2 id="nutzungsbedingungen">Nutzungsbedingungen</h2>
+          <div class="juristisch">
+            <p><b>1. Sachliche Beteiligung</b></p>
+            <ul>
+              <li>Keine rechtswidrigen, beleidigenden, bedrohenden oder menschenfeindlichen Inhalte.</li>
+              <li>Keine personenbezogenen Daten Dritter ohne geeignete Rechtsgrundlage.</li>
+              <li>Kein Spam und keine automatisierte Manipulation der Beteiligungsfunktionen.</li>
+              <li>Nur Inhalte einstellen, für deren Veröffentlichung die erforderlichen Rechte vorliegen.</li>
+            </ul>
+
+            <p style="margin-top:0.8rem;"><b>2. Moderation</b></p>
+            <p>
+              Beiträge können zur Sicherung von Qualität, Sicherheit und Rechtskonformität moderiert,
+              archiviert oder entfernt werden. Ein Anspruch auf Veröffentlichung besteht nicht.
+            </p>
+
+            <p style="margin-top:0.8rem;"><b>3. Nutzerbeiträge</b></p>
+            <p>
+              Beim Einreichen eines Beitrags bestätigt der Nutzer die in der Oberfläche angegebene
+              offene Lizenzierung des Beitrags.
+            </p>
+          </div>
+        </section>
+
+        <section class="legal-article" aria-labelledby="lizenz">
+          <h2 id="lizenz">Lizenz</h2>
+          <div class="juristisch">
+            <p>
+              Die mit der Standardkonfiguration veröffentlichten Textbeiträge und Exporte sind für offene
+              Weiterverwendung vorgesehen. Die Oberfläche verwendet für Nutzerbeiträge
+              <b>CC0 1.0 Public Domain</b>
+              (<a href="https://creativecommons.org/publicdomain/zero/1.0/deed.de">Kurzfassung</a> ·
+              <a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode">Rechtstext</a>).
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
+
+{% block overlays %}
+<nav class="toc app-sidebar app-left" aria-label="Orientierung">
+  <div class="app-panel">
+    <div class="app-panel-header"><h3>Orientierung</h3><small>Sitemap · Rechtliches</small></div>
+    <details class="app-details" open>
+      <summary>Inhalt</summary>
+      <div class="app-details-body">
+        <div class="toc-sitemap">
+          <a class="toc-static-link" href="/">Startseite</a>
+          <a class="toc-static-link" href="/#entwurf">Gesetzentwurf</a>
+          <a class="toc-static-link" href="/mitmachen">Mitmachen</a>
+          <a class="toc-static-link" href="/methodik">Methodik</a>
+          <a class="toc-static-link" href="/kontakt">Kontakt</a>
+          <a class="toc-static-link" href="/versionen">Versionen</a>
+          <div class="toc-static-divider" aria-hidden="true"></div>
+          <a class="toc-static-link is-current" href="#impressum">Impressum</a>
+          <a class="toc-static-link" href="#datenschutz">Datenschutz</a>
+          <a class="toc-static-link" href="#nutzungsbedingungen">Nutzungsbedingungen</a>
+          <a class="toc-static-link" href="#lizenz">Lizenz</a>
+        </div>
+      </div>
+    </details>
+  </div>
+</nav>
+{% endblock %}

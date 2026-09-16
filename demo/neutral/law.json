@@ -1,0 +1,155 @@
+{
+  "schema_version": "2.0.0",
+  "law": {
+    "slug": "mustertg",
+    "title": "Muster-Gesetz über öffentliche Trinkwasserstellen",
+    "short_title": "MusterTG",
+    "version": "1.0",
+    "status": "published"
+  },
+  "articles": [
+    {
+      "public_code": "Art. 1",
+      "slug": "zweck",
+      "sort_order": 10,
+      "title": "Zweck",
+      "type": "article",
+      "blocks": {
+        "kurzinfo": [
+          "Öffentlich zugängliches Trinkwasser soll nach gemeinsamen Mindestregeln bereitgestellt werden können."
+        ],
+        "story": [
+          "Ein heißer Sommertag. Eine Person ist mehrere Stunden in der Innenstadt unterwegs und möchte ihre Wasserflasche auffüllen.",
+          "Ob das möglich ist, hängt heute von Ort, Betreiber und lokalen Angeboten ab."
+        ],
+        "einleitung": [
+          "Das Gesetz schafft einen gemeinsamen Rahmen für öffentlich zugängliche Trinkwasserstellen.",
+          "Es regelt Mindestangebot, Betrieb, Qualität und öffentlich verfügbare Informationen."
+        ],
+        "juristisch": [
+          "(1) Zweck dieses Gesetzes ist es, einen einfachen und verlässlichen Zugang zu kostenfreiem Trinkwasser im öffentlichen Raum zu unterstützen.",
+          "(2) Hierzu werden Mindestanforderungen an Bereitstellung, Betrieb, Kennzeichnung und öffentliche Information festgelegt."
+        ],
+        "anmerkung": [
+          "Konkrete Anforderungen an Angebot und Betrieb werden in den folgenden Artikeln geregelt."
+        ]
+      }
+    },
+    {
+      "public_code": "Art. 2",
+      "slug": "begriffe",
+      "sort_order": 20,
+      "title": "Begriffe",
+      "type": "article",
+      "blocks": {
+        "kurzinfo": [
+          "Was zählt als öffentliche Trinkwasserstelle?"
+        ],
+        "einleitung": [
+          "Der Artikel definiert die zentralen Begriffe des Gesetzes."
+        ],
+        "juristisch": [
+          "Im Sinne dieses Gesetzes ist",
+          "1. eine öffentliche Trinkwasserstelle eine dauerhaft oder saisonal betriebene Einrichtung, an der Trinkwasser unentgeltlich entnommen werden kann;",
+          "2. öffentlich zugänglich eine Trinkwasserstelle, wenn sie ohne besondere persönliche Berechtigung genutzt werden kann;",
+          "3. Betriebszeit der Zeitraum, in dem die Trinkwasserstelle bestimmungsgemäß nutzbar ist."
+        ],
+        "anmerkung": [
+          "Die öffentliche Zugänglichkeit kann auch bei Einrichtungen mit begrenzten Öffnungszeiten erfüllt sein."
+        ]
+      }
+    },
+    {
+      "public_code": "Art. 3",
+      "slug": "mindestangebot",
+      "sort_order": 30,
+      "title": "Mindestangebot",
+      "type": "article",
+      "blocks": {
+        "kurzinfo": [
+          "Wie viele Trinkwasserstellen sollen mindestens vorhanden sein?"
+        ],
+        "einleitung": [
+          "Das Mindestangebot wird an die Einwohnerzahl einer Gemeinde gekoppelt."
+        ],
+        "juristisch": [
+          "(1) Gemeinden mit mindestens 20.000 Einwohnerinnen und Einwohnern stellen mindestens eine öffentliche Trinkwasserstelle bereit.",
+          "(2) Für jeweils weitere 20.000 Einwohnerinnen und Einwohner ist mindestens eine weitere Trinkwasserstelle bereitzustellen.",
+          "(3) Bei der Standortwahl sollen insbesondere stark frequentierte öffentliche Räume berücksichtigt werden."
+        ],
+        "anmerkung": [
+          "Die Einwohnergrenze ist ein veränderbarer quantitativer Parameter."
+        ]
+      }
+    },
+    {
+      "public_code": "Art. 4",
+      "slug": "betrieb-und-qualitaet",
+      "sort_order": 40,
+      "title": "Betrieb und Qualität",
+      "type": "article",
+      "blocks": {
+        "kurzinfo": [
+          "Trinkwasserstellen müssen tatsächlich nutzbar und hygienisch sicher sein."
+        ],
+        "einleitung": [
+          "Der Artikel verbindet Betriebszeit, Wasserqualität und Störungsbehebung."
+        ],
+        "juristisch": [
+          "(1) Öffentliche Trinkwasserstellen sind mindestens vom 1. April bis zum 31. Oktober betriebsbereit zu halten.",
+          "(2) Das bereitgestellte Wasser muss den geltenden Anforderungen an Trinkwasser entsprechen.",
+          "(3) Störungen, die eine Nutzung verhindern, sind innerhalb einer angemessenen Frist zu beheben."
+        ],
+        "juristisch2": [
+          "Das zuständige Bundesministerium kann durch Rechtsverordnung technische Mindestanforderungen an Hygiene, Kennzeichnung, Wartung, Frostschutz und Funktionskontrolle festlegen."
+        ],
+        "anmerkung": [
+          "Technische Einzelanforderungen werden auf Verordnungsebene konkretisiert."
+        ]
+      }
+    },
+    {
+      "public_code": "Art. 5",
+      "slug": "oeffentliche-informationen",
+      "sort_order": 50,
+      "title": "Öffentliche Informationen",
+      "type": "article",
+      "blocks": {
+        "kurzinfo": [
+          "Standort und Betriebsstatus der Trinkwasserstellen sollen öffentlich auffindbar sein."
+        ],
+        "einleitung": [
+          "Einheitliche öffentliche Informationen erleichtern Nutzung, Karten und digitale Anwendungen."
+        ],
+        "juristisch": [
+          "(1) Für jede öffentliche Trinkwasserstelle sind mindestens folgende Informationen öffentlich bereitzustellen:",
+          "1. Standort,",
+          "2. Betriebszeit,",
+          "3. aktueller Betriebsstatus,",
+          "4. zuständige Stelle.",
+          "(2) Die Informationen sind in maschinenlesbarer Form bereitzustellen und regelmäßig zu aktualisieren."
+        ],
+        "anmerkung": [
+          "Für Interoperabilität kann ein einheitlicher Datenstandard erforderlich sein."
+        ]
+      }
+    },
+    {
+      "public_code": "Art. 6",
+      "slug": "evaluation",
+      "sort_order": 60,
+      "title": "Evaluation und Inkrafttreten",
+      "type": "article",
+      "blocks": {
+        "kurzinfo": [
+          "Die Wirkung des Gesetzes soll regelmäßig überprüft werden."
+        ],
+        "juristisch": [
+          "(1) Die Anwendung dieses Gesetzes wird drei Jahre nach Inkrafttreten erstmals evaluiert.",
+          "(2) Dabei sind insbesondere Verfügbarkeit, Nutzung, Betriebskosten und festgestellte Umsetzungsprobleme zu untersuchen.",
+          "(3) Dieses Gesetz tritt sechs Monate nach seiner Verkündung in Kraft."
+        ]
+      }
+    }
+  ]
+}
