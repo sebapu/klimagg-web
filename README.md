@@ -8,6 +8,24 @@
 
 Die Software entstand ursprünglich für die öffentliche Entwicklung eines konkreten Gesetzentwurfs und wurde für dieses Repository auf einen generischen Kern reduziert.
 
+### Verhältnis zu klimagg.de
+
+`klimagg-web` enthält den öffentlich veröffentlichten, generalisierten
+Softwarekern, der für Teile der Plattform auf [klimagg.de](https://www.klimagg.de/)
+entwickelt wurde.
+
+Das Repository ist **kein vollständiger Quellcode-Spiegel von klimagg.de**.
+Insbesondere folgt aus der MIT-Lizenz dieses Repositories keine automatische
+Lizenzierung sonstiger Softwarebestandteile, Daten oder redaktioneller Inhalte
+von klimagg.de.
+
+Die eigenständigen Inhalte des KlimaGG-Projekts werden getrennt veröffentlicht:
+
+- [`klimagg-law`](https://github.com/sebapu/klimagg-law) – Gesetzesentwürfe und
+  Versionsgeschichte;
+- [`klimagg-tech`](https://github.com/sebapu/klimagg-tech) – Modelle,
+  technische Spezifikationen, Analysen und Referenzimplementierungen.
+  
 ### Was die Plattform kann
 
 * strukturierte Artikel und Artikelversionen;
@@ -261,5 +279,17 @@ Please report vulnerabilities privately as described in [`SECURITY.md`](SECURITY
 
 ## License
 
-`klimagg-web` is released under the existing MIT License. See [`LICENSE`](LICENSE).
+The software contained in this repository is licensed under the
+**MIT License**. See [`LICENSE`](LICENSE).
+
+This licence applies to the software distributed as part of `klimagg-web`,
+including its Python, JavaScript, HTML/template, CSS and supporting source files,
+unless a file is explicitly marked otherwise.
+
+This repository does not license the complete website or all content published
+on klimagg.de. Editorial content of the KlimaGG project is subject to its
+separately stated content licence.
+
+Third-party software and dependencies remain subject to their respective
+licences.
 
